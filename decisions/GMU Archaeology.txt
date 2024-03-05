@@ -1,0 +1,7 @@
+political_decisions = {
+#mycenaean_excavations = {
+
+#forced_mycenaean_excavations = {
+
+#minoan_excavations = {
+#forced_minoan_excavations = {

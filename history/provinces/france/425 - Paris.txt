@@ -1,0 +1,37 @@
+owner = FRA
+controller = FRA
+add_core = FRA
+trade_goods = grain
+life_rating = 40
+1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+	railroad = 5
+	fort = 4
+	
+	state_building = {
+		level = 10
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = canned_food_factory
+		upgrade = yes
+	}
+state_building = {
+		level = 6
+		building = small_arms_factory
+		upgrade = yes
+	}
+}
+state_building = {
+		level = 8
+		building = explosives_factory
+		upgrade = yes
+	}
+}

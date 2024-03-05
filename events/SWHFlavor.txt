@@ -1,0 +1,51 @@
+country_event = {
+	id = 33100
+	title = "EVTNAME33100"
+	desc = "EVTDESC33100"
+	picture = "danishgovernment"
+	
+	trigger = {
+		tag = SWH
+		NOT = {
+			AND = {
+				owns = 370
+				owns = 371
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA33100"
+		change_tag = HOL
+	}
+}
+
+country_event = {
+	id = 33101
+	title = "EVTNAME33101"
+	desc = "EVTDESC33101"
+	picture = "danishgovernment"
+	
+	trigger = {
+		tag = SWH
+		NOT = {
+			AND = {
+				owns = 369
+				owns = 529
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA33101"
+		change_tag = SCH
+	}
+}

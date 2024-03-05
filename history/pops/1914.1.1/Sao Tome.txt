@@ -1,0 +1,81 @@
+#Sao Tome e Principe (16000)
+#Under Portuguese Rule 1836
+#Sao Tome (16000/4000 POPS)
+1954 = {
+	officers = {
+		culture = African
+		religion =  catholic 
+		size = 42
+	 } 
+	officers = {
+		culture = African
+		religion = animist
+		size = 2
+	 } 
+	soldiers = {
+		culture = African
+		religion =  catholic 
+		size = 171
+	 } 
+	soldiers = {
+		culture = African
+		religion = animist
+		size = 8
+	 } 
+	aristocrats = {
+		culture = African
+		religion =  catholic 
+		size = 571
+	 } 
+	aristocrats = {
+		culture = African
+		religion = animist
+		size = 28
+	 } 
+	bureaucrats = {
+		culture = African
+		religion =  catholic 
+		size = 14
+	 } 
+	capitalists = {
+		culture = African
+		religion =  catholic 
+		size = 71
+	 } 
+	capitalists = {
+		culture = African
+		religion = animist
+		size = 3
+	 } 
+	clergymen = {
+		culture = African
+		religion =  catholic 
+		size = 142
+	 } 
+	clergymen = {
+		culture = African
+		religion = animist
+		size = 7
+	 } 
+	artisans = {
+		culture = African
+		religion =  catholic 
+		size = 317
+	 } 
+	artisans = {
+		culture = African
+		religion = animist
+		size = 15
+	 } 
+	farmers = {
+		culture = African
+		religion =  catholic 
+		size = 11613
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 579
+	 } 
+
+}

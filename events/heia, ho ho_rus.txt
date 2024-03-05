@@ -1,0 +1,254 @@
+#DEATH_OF_KUK
+country_event = {
+	id = 666
+	news = yes
+	news_desc_long = "EVTDESC1_NEWS_LONG"
+	news_desc_medium = "EVTDESC1_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC1_NEWS_SHORT"
+	title = "The Collapse of The German Empire"
+	desc= "Our empire lost his last battle, we can't continue our dreams of empire, now we are goin to become a republic!."
+	picture = "911"
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = XXX
+	}
+	
+	option = {
+		name = "Nothin ever last forever..."
+		prestige = -150
+		GER = {
+	end_war = ENG
+	end_war = ITA
+	end_war = SER
+	end_war = JAP
+	end_war = ROM
+	end_war = USA
+	end_war = FRA
+	end_war = RUS
+	}
+		RUS = {
+	release_vassal = CPL
+	}
+		release_vassal = POL
+		release_vassal = UBD
+		371 = {
+		secede_province = DEN 
+		}
+		397 = {
+		secede_province = LUX 
+		}
+		573 = {
+		secede_province = FRA 
+		}
+		533 = {
+		secede_province = ENG 
+		}
+		691 = {
+		secede_province = CPL 
+		}
+		685 = {
+		secede_province = CPL
+		}
+		698 = {
+		secede_province = RUS
+		}
+		697 = {
+		secede_province = RUS
+		}
+		695 = {
+		secede_province = RUS
+		}
+		696 = {
+		secede_province = RUS
+		}
+		693 = {
+		secede_province = RUS
+		}
+		694 = {
+		secede_province = RUS
+		}
+		690 = {
+		secede_province = RUS
+		}
+		CPL = {
+			inherit = POL
+			capital = 706
+	}
+		any_owned = { 
+			limit = {
+					is_core = PZN
+					}
+				secede_province = POL 
+				remove_core = GER
+				}
+		any_owned = { 
+			limit = {
+					is_core = DEN
+					}
+				remove_core = GER
+				}
+		any_owned = { 
+			limit = {
+					is_core = POL
+					}
+				remove_core = GER
+				}
+		any_owned = { 
+			limit = {
+					is_core = FRA
+					}
+				secede_province = FRA 
+				remove_core = GER
+				}
+		any_owned = { 
+			limit = {
+					is_core = BAV
+					}
+				secede_province = GEC
+				}
+				any_owned = { 
+			limit = {
+					is_core = BAD
+					}
+				secede_province = GEC
+				}
+				any_owned = { 
+			limit = {
+					is_core = WUR
+					}
+				secede_province = GEC
+				}
+				any_owned = { 
+			limit = {
+					is_core = RHI
+					}
+				secede_province = GEC
+				}
+				any_owned = { 
+			limit = {
+					is_core = WES
+					}
+				secede_province = GEC
+				}
+				any_owned = { 
+			limit = {
+					is_core = HAN
+					}
+				secede_province = GEC
+				}
+				any_owned = { 
+			limit = {
+					is_core = HOL
+					}
+				secede_province = GEC
+				}
+		571 = {
+		secede_province = GER 
+		}
+		any_pop = {
+			consciousness = 4
+			militancy = 2
+		}
+		BYE = {
+		947 = {
+		secede_province = POL 
+		}
+		UBD = {
+		change_tag = LAT
+		}
+		KUK = {
+		country_event = { id = 49 days = 2 }
+		}
+		BUL = {
+		country_event = { id = 57 days = 2 }
+		}
+		TUR = {
+		country_event = { id = 61 days = 2 }
+		}
+		LAT = {
+		any_owned = { 
+			limit = {
+					is_core = EST
+					}
+				secede_province = EST
+				}
+		}
+		any_owned = { 
+			limit = {
+					is_core = LIT
+					}
+				secede_province = LIT
+				}
+		}
+                government = democracy
+                political_reform = wealth_voting
+                political_reform = appointed
+	        political_reform = public_meetings
+	        political_reform = state_press
+	        political_reform = state_controlled
+		political_reform = non_secret_ballots
+                remove_country_modifier = ger_mobo
+                war_exhaustion = -15
+		leadership = 40
+		GEC = {
+			war = {
+				target = GER
+				attacker_goal = {
+					casus_belli = civil_war
+				}		
+				defender_goal = {
+					casus_belli = civil_war
+				}
+			}
+			set_global_flag = ger_died_finally
+		}
+		GEC = {
+			capital = 599
+                        money = 150000
+            government = proletarian_dictatorship
+	}
+	CPL = {
+			947 = {
+		secede_province = RUS
+		}
+		360 = {
+		secede_province = RUS
+		}
+		938 = {
+		secede_province = RUS
+		}
+		936 = {
+		secede_province = RUS
+		}
+		939 = {
+		secede_province = RUS
+		}
+		719 = {
+		secede_province = RUS
+		}
+		937 = {
+		secede_province = RUS
+		}
+		940 = {
+		secede_province = RUS
+		}
+		957 = {
+		secede_province = RUS
+		}
+		956 = {
+		secede_province = RUS
+		}
+		955 = {
+		secede_province = RUS
+		}
+	}
+	RUS = {
+                diplomatic_influence = {
+				who = CPL
+				value = 200
+			}
+}
+}

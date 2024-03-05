@@ -1,0 +1,24 @@
+#Bulgaria mobo
+country_event = {
+	id = 17
+	title = "The Romanian Army"
+	desc = "To truly authenticate the Great War your country has been given historical mobolisation."
+	picture = "rom"
+
+	trigger = {
+		tag = ROM
+                year = 1914
+                month = 6
+		is_vassal = no
+		NOT = {
+			has_country_modifier = rom_mobo
+		}
+	}
+
+
+	option = {
+		name = "Glory to Romania!"
+		ROM = { add_country_modifier = { name = rom_mobo duration = -1 } }
+
+	}
+}

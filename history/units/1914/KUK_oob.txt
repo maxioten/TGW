@@ -1,0 +1,1272 @@
+NET= {	
+value = -200
+	truce_until="1950.1.1"
+}
+
+army = {
+	name = "Army 1"
+	location = 619
+	regiment = {
+		name= "Hussars" 
+        home = 619
+		type = hussar
+	}
+	regiment = {
+		name= "Hussars" 
+        home = 619
+		type = hussar
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 619
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 619
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 619
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 619
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 619
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 619
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 619
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 619
+		type = infantry
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 619
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 619
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery"
+        home = 619
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 619
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 619
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 619
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 619
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+        home = 619
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+        home = 619
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+	    home = 619	
+		type = artillery
+        }
+}
+
+army = {
+	name = "Army 2"
+	location = 641
+	regiment = {
+		name= "Hussars" 
+        home = 641
+		type = hussar
+	}
+	regiment = {
+		name= "Hussars" 
+        home = 641
+		type = hussar
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 641
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 641
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 641
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 641
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 641
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 641
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 641
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 641
+		type = infantry
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 641
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 641
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery"
+        home = 641
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 641
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 641
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+         home = 641
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+         home = 641
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+         home = 641
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+         home = 641
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+         home = 641
+		type = artillery
+        }
+}
+
+army = {
+	name = "Army 3"
+	location = 625
+	regiment = {
+		name= "Hussars" 
+        home = 625
+		type = hussar
+	}
+	regiment = {
+		name= "Hussars" 
+        home = 625
+		type = hussar
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 625
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+         home = 625
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 625
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 625
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+         home = 625
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 625
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 625
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 625
+		type = infantry
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 625
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 625
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery"
+        home = 625
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 625
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+          home = 625
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 625
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 625
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+        home = 625
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+        home = 625
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+        home = 625
+		type = artillery
+        }
+}
+
+army = {
+	name = "Army 4"
+	location = 631
+	regiment = {
+		name= "Hussars" 
+        home = 631
+		type = hussar
+	}
+	regiment = {
+		name= "Hussars" 
+        home = 631
+		type = hussar
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 631
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 631
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 631
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 631
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 631
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 631
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 631
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 631
+		type = infantry
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 631
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 631
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery"
+        home = 631
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 631
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 631
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+         home = 631
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+         home = 631
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+         home = 631
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+         home = 631
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+         home = 631
+		type = artillery
+        }
+}
+
+army = {
+	name = "Army 5"
+	location = 654
+	regiment = {
+		name= "Hussars" 
+        home = 654
+		type = hussar
+	}
+	regiment = {
+		name= "Hussars" 
+        home = 654
+		type = hussar
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 654
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 654
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 654
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 654
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 654
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 654
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 654
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 654
+		type = infantry
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 654
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 654
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery"
+        home = 654
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 654
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 654
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+         home = 654
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+         home = 654
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+         home = 654
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+         home = 654
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+         home = 654
+		type = artillery
+        }
+}
+
+army = {
+	name = "Army 6"
+	location = 771
+	regiment = {
+		name= "Hussars" 
+        home = 771
+		type = hussar
+	}
+	regiment = {
+		name= "Hussars" 
+        home = 771
+		type = hussar
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 771
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 771
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 771
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 771
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 771
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 771
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 771
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 771
+		type = infantry
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 771
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 771
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery"
+        home = 771
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 771
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 771
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+         home = 771
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+         home = 771
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+         home = 771
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+         home = 771
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+         home = 771
+		type = artillery
+        }
+}
+
+army = {
+	name = "Army 7"
+	location = 633
+	regiment = {
+		name= "Hussars" 
+        home = 633
+		type = hussar
+	}
+	regiment = {
+		name= "Hussars" 
+        home = 633
+		type = hussar
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 633
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 633
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 633
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 633
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 633
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 633
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 633
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 633
+		type = infantry
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 633
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 633
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery"
+        home = 633
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 633
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 633
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+         home = 633
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+         home = 633
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+         home = 633
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+         home = 633
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+         home = 633
+		type = artillery
+        }
+}
+
+navy = {
+	name = "Imperial Austrian Fleet"
+	location = 736
+	leader = {
+		name = "Miklos Horthy"
+		type = sea
+		date="1914.1.1"
+		personality = attack_2.1
+		background = defence_2.1
+		picture="horthy"
+	}
+	ship = {
+		name= "Dreadnought" 
+		type = battlecruiser
+	}
+	ship = {
+		name= "Dreadnought" 
+		type = battlecruiser
+	}
+	ship = {
+		name= "Dreadnought" 
+		type = battlecruiser
+	}
+	ship = {
+		name= "Ship" 
+		type = battleship
+	}
+	ship = {
+		name= "Ship" 
+		type = battleship
+	}
+	ship = {
+		name= "Ship" 
+		type = battleship
+	}
+	ship = {
+		name= "Ship" 
+		type = battleship
+	}
+	ship = {
+		name= "Ship" 
+		type = battleship
+    }	
+	ship = {
+		name= "Ship" 
+		type = battleship
+	}
+	ship = {
+		name= "Ship" 
+		type = battleship
+	}
+	ship = {
+		name= "Ship" 
+		type = battleship
+	}
+	ship = {
+		name= "Ship" 
+		type = battleship
+	}
+	ship = {
+		name= "Ship" 
+		type = cruiser
+	}
+	ship = {
+		name= "Ship" 
+		type = cruiser
+	}
+	ship = {
+		name= "Ship" 
+		type = cruiser
+	}
+	ship = {
+		name= "Ship" 
+		type = cruiser
+	}
+	ship = {
+	    name= "Ship" 
+		type = cruiser
+	}
+	ship = {
+		name= "Ship" 
+		type = cruiser
+	}
+	ship = {
+		name= "Ship" 
+		type = cruiser
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "Torpedo Craft" 
+		type = commerce_raider
+	}
+	ship = {
+		name= "U-67" 
+		type = carrier
+	}
+	ship = {
+		name= "UB-21" 
+		type = carrier
+	}
+	ship = {
+		name= "UB-22" 
+		type = carrier
+	}
+	ship = {
+		name= "U-52" 
+		type = carrier
+	}
+	ship = {
+		name= "U-24" 
+		type = carrier
+	}
+	ship = {
+		name= "Transport" 
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport" 
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport" 
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport" 
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport" 
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport" 
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport" 
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport" 
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport" 
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport" 
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport" 
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport" 
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport" 
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport" 
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport" 
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport" 
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport" 
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport" 
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport" 
+		type = steam_transport
+	}
+	ship = {
+		name= "Transport" 
+		type = steam_transport
+	}
+}
+
+
+leader = {
+	name = "Svetozar Boroevic"
+	date = 1914.1.1
+	type = land
+	personality = attack_3.1
+	background = defence_6.1
+	prestige = 0.8
+        picture = "boroevic"
+}
+
+leader = {
+	name = "Oskar Potiorek"
+	date = 1914.1.1
+	type = land
+	personality = -attack_3.3
+	background = -defence_1.1
+	prestige = 0.5
+        picture = "oskar"
+}
+
+leader = {
+	name = "Franz Conrad von Hotzendorf"
+	date = 1914.1.1
+	type = land
+	personality = -attack_2.1
+	background =  -defence_2.1
+	prestige = 0.5
+        picture = "hortzendorf"
+}
+
+
+leader = {
+	name = "H. K. von Kovesshaza"
+	date = 1914.1.1
+	type = land
+	personality = attack_1.1
+	background = defence_1.1
+	prestige = 0.5
+        picture = "kovess"
+}
+
+
+leader = {
+	name = "Stjepan Sarkotic"
+	date = 1914.1.1
+	type = land
+	personality = attack_4.1
+	background = -defence_2.1
+        prestige = 0.5
+        picture = "stjepan"
+}
+
+leader = {
+	name = "E. von Bohm-Ermolli"
+	date = 1914.1.1
+	type = land
+	personality = -attack_1.1
+	background = -defence_1.1
+	prestige = 0.7
+        picture = "bohm"
+}
+

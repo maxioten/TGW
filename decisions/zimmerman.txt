@@ -1,0 +1,24 @@
+political_decisions = {
+zimmerman = {
+                picture = zimmerman
+		potential = {
+			tag = GER
+			NOT = { has_country_flag = zimmerman }
+			}
+			allow = {
+			OR = {
+			year = 1917
+                        war_with = USA
+			}
+				
+			}
+		effect = {
+		set_country_flag = zimmerman
+                prestige = 100
+		MEX = { country_event = 1234567 }
+		}
+				
+		}
+}
+
+

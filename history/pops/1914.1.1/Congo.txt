@@ -1,0 +1,428 @@
+#Middle Congo Region (148000)
+#under the rule of Loango in 1836
+#Nkuna (400000/100000 POPS)
+1977 = {
+	officers = {
+		culture = African
+		religion =  catholic 
+		size = 264
+	 } 
+	officers = {
+		culture = African
+		religion = catholic 
+		size = 4
+	 } 
+	soldiers = {
+		culture = African
+		religion =  catholic 
+		size = 1060
+	 } 
+	soldiers = {
+		culture = African
+		religion = catholic 
+		size = 16
+	 } 
+	aristocrats = {
+		culture = African
+		religion =  catholic 
+		size = 3536
+	 } 
+	aristocrats = {
+		culture = African
+		religion = catholic 
+		size = 53
+	 } 
+	bureaucrats = {
+		culture = African
+		religion =  catholic 
+		size = 87
+	 } 
+	bureaucrats = {
+		culture = African
+		religion = catholic 
+		size = 1
+	 } 
+	capitalists = {
+		culture = African
+		religion =  catholic 
+		size = 441
+	 } 
+	capitalists = {
+		culture = African
+		religion = catholic 
+		size = 6
+	 } 
+	clergymen = {
+		culture = African
+		religion =  catholic 
+		size = 796
+	 } 
+	clergymen = {
+		culture = African
+		religion = catholic 
+		size = 12
+	 } 
+	clergymen = {
+		culture = African
+		religion =  catholic 
+		size = 86
+	 } 
+	clergymen = {
+		culture = African
+		religion = catholic 
+		size = 1
+	 } 
+	artisans = {
+		culture = African
+		religion =  catholic 
+		size = 1989
+	 } 
+	artisans = {
+		culture = African
+		religion = catholic 
+		size = 30
+	 } 
+	farmers = {
+		culture = African
+		religion =  catholic 
+		size = 39472
+	 } 
+	farmers = {
+		culture = African
+		religion = catholic 
+		size = 601
+	 } 
+	farmers = {
+		culture = African
+		religion =  catholic 
+		size = 17680
+	 } 
+	farmers = {
+		culture = African
+		religion = catholic 
+		size = 269
+	 } 
+	farmers = {
+		culture = African
+		religion =  animist
+		size = 14536
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 221
+	 } 
+}
+#Madingou (160000/40000 POPS)
+1978 = {
+	officers = {
+		culture = African
+		religion =  catholic 
+		size = 104
+	 } 
+	officers = {
+		culture = African
+		religion = catholic 
+		size = 1
+	 } 
+	soldiers = {
+		culture = African
+		religion =  catholic 
+		size = 419
+	 } 
+	soldiers = {
+		culture = African
+		religion = catholic 
+		size = 6
+	 } 
+	aristocrats = {
+		culture = African
+		religion =  catholic 
+		size = 1398
+	 } 
+	aristocrats = {
+		culture = African
+		religion = catholic 
+		size = 21
+	 } 
+	bureaucrats = {
+		culture = African
+		religion =  catholic 
+		size = 34
+	 } 
+	capitalists = {
+		culture = African
+		religion =  catholic 
+		size = 174
+	 } 
+	capitalists = {
+		culture = African
+		religion = catholic 
+		size = 2
+	 } 
+	clergymen = {
+		culture = African
+		religion =  catholic 
+		size = 349
+	 } 
+	clergymen = {
+		culture = African
+		religion = catholic 
+		size = 5
+	 } 
+	artisans = {
+		culture = African
+		religion =  catholic 
+		size = 786
+	 } 
+	artisans = {
+		culture = African
+		religion = catholic 
+		size = 11
+	 } 
+	farmers = {
+		culture = African
+		religion =  catholic 
+		size = 28357
+	 } 
+	farmers = {
+		culture = African
+		religion = catholic 
+		size = 431
+	 } 
+}
+#Loango (320000/80000 POPS)
+2624 = {
+	officers = {
+		culture = African
+		religion =  catholic 
+		size = 132
+	 } 
+	officers = {
+		culture = African
+		religion = animist
+		size = 2
+	 } 
+	soldiers = {
+		culture = African
+		religion =  catholic 
+		size = 531
+	 } 
+	soldiers = {
+		culture = African
+		religion = animist
+		size = 8
+	 } 
+	aristocrats = {
+		culture = African
+		religion =  catholic 
+		size = 1773
+	 } 
+	aristocrats = {
+		culture = African
+		religion = animist
+		size = 27
+	 } 
+	bureaucrats = {
+		culture = African
+		religion =  catholic 
+		size = 44
+	 } 
+	capitalists = {
+		culture = African
+		religion =  catholic 
+		size = 221
+	 } 
+	capitalists = {
+		culture = African
+		religion = animist
+		size = 3
+	 } 
+	clergymen = {
+		culture = African
+		religion =  catholic 
+		size = 443
+	 } 
+	clergymen = {
+		culture = African
+		religion = animist
+		size = 6
+	 } 
+	artisans = {
+		culture = African
+		religion =  catholic 
+		size = 996
+	 } 
+	artisans = {
+		culture = African
+		religion = animist
+		size = 15
+	 } 
+	farmers = {
+		culture = African
+		religion =  catholic 
+		size = 35944
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 547
+	 } 
+}
+#uncolonized in 1836 
+#Djambala (28000/7000 POPS)
+1980 = {
+	officers = {
+		culture = African
+		religion =  catholic 
+		size = 53
+	 } 
+	soldiers = {
+		culture = African
+		religion =  catholic 
+		size = 215
+	 } 
+	soldiers = {
+		culture = African
+		religion = catholic 
+		size = 3
+	 } 
+	aristocrats = {
+		culture = African
+		religion =  catholic 
+		size = 450
+	 } 
+	aristocrats = {
+		culture = African
+		religion = catholic 
+		size = 6
+	 } 
+	aristocrats = {
+		culture = African
+		religion =  catholic 
+		size = 268
+	 } 
+	aristocrats = {
+		culture = African
+		religion = catholic 
+		size = 4
+	 } 
+	bureaucrats = {
+		culture = African
+		religion =  catholic 
+		size = 17
+	 } 
+	capitalists = {
+		culture = African
+		religion =  catholic 
+		size = 89
+	 } 
+	capitalists = {
+		culture = African
+		religion = catholic 
+		size = 1
+	 } 
+	clergymen = {
+		culture = African
+		religion =  catholic 
+		size = 179
+	 } 
+	clergymen = {
+		culture = African
+		religion = animist
+		size = 2
+	 } 
+	artisans = {
+		culture = African
+		religion =  catholic 
+		size = 403
+	 } 
+	artisans = {
+		culture = African
+		religion = animist
+		size = 6
+	 } 
+	farmers = {
+		culture = African
+		religion =  catholic 
+		size = 14578
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 222
+	 } 
+}
+#Impfondo (32000/8000 POPS)
+1981 = {
+	officers = {
+		culture = African
+		religion =  catholic 
+		size = 50
+	 } 
+	soldiers = {
+		culture = African
+		religion =  catholic 
+		size = 203
+	 } 
+	soldiers = {
+		culture = African
+		religion = catholic 
+		size = 3
+	 } 
+	aristocrats = {
+		culture = African
+		religion =  catholic 
+		size = 679
+	 } 
+	aristocrats = {
+		culture = African
+		religion = catholic 
+		size = 10
+	 } 
+	bureaucrats = {
+		culture = African
+		religion =  catholic 
+		size = 16
+	 } 
+	capitalists = {
+		culture = African
+		religion =  catholic 
+		size = 84
+	 } 
+	capitalists = {
+		culture = African
+		religion = catholic 
+		size = 1
+	 } 
+	clergymen = {
+		culture = African
+		religion =  catholic 
+		size = 169
+	 } 
+	clergymen = {
+		culture = African
+		religion = catholic 
+		size = 2
+	 } 
+	artisans = {
+		culture = African
+		religion =  catholic 
+		size = 382
+	 } 
+	artisans = {
+		culture = African
+		religion = catholic 
+		size = 5
+	 } 
+	farmers = {
+		culture = African
+		religion =  catholic 
+		size = 13779
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 209
+	 } 
+}

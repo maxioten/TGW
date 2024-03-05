@@ -1,0 +1,676 @@
+#MaAfricanland Region (296000)  
+#uncolonized in 1836/dominated by Mutapa in 1836
+#Harare (68000/17000 POPS) 
+2068 = {
+	capitalists = {
+		culture = british
+		religion =  protestant 
+		size = 1143
+	 } 
+	capitalists = {
+		culture = british
+		religion = protestant 
+		size = 26
+	 } 
+	officers = {
+		culture = british
+		religion =  protestant 
+		size = 191
+	 } 
+	officers = {
+		culture = british
+		religion = protestant 
+		size = 4
+	 } 
+	soldiers = {
+		culture = british
+		religion =  protestant 
+		size = 769
+	 } 
+	soldiers = {
+		culture = british
+		religion = protestant 
+		size = 17
+	 } 
+	aristocrats = {
+		culture = british
+		religion =  protestant 
+		size = 9149
+	 } 
+	aristocrats = {
+		culture = british
+		religion = protestant 
+		size = 210
+	 } 
+	bureaucrats = {
+		culture = british
+		religion =  protestant 
+		size = 182
+	 } 
+	bureaucrats = {
+		culture = british
+		religion = protestant 
+		size = 4
+	 } 
+	bureaucrats = {
+		culture = African
+		religion =  protestant 
+		size = 45
+	 } 
+	bureaucrats = {
+		culture = African
+		religion = animist
+		size = 1
+	 } 
+	clergymen = {
+		culture = African
+		religion =  protestant 
+		size = 2287
+	 } 
+	clergymen = {
+		culture = African
+		religion = animist
+		size = 52
+	 } 
+	artisans = {
+		culture = African
+		religion =  protestant 
+		size = 3153
+	 } 
+	artisans = {
+		culture = African
+		religion = animist
+		size = 72
+	 } 
+	artisans = {
+		culture = African
+		religion =  protestant 
+		size = 17386
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 400
+	 } 
+	farmers = {
+		culture = African
+		religion =  protestant 
+		size = 185997
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 4281
+	 } 
+}
+#Gweru (96000/24000 POPS) 
+2069 = {
+	capitalists = {
+		culture = british
+		religion =  protestant 
+		size = 530
+	 } 
+	capitalists = {
+		culture = british
+		religion = protestant 
+		size = 12
+	 } 
+	officers = {
+		culture = british
+		religion =  protestant 
+		size = 88
+	 } 
+	officers = {
+		culture = british
+		religion = protestant 
+		size = 2
+	 } 
+	soldiers = {
+		culture = british
+		religion =  protestant 
+		size = 356
+	 } 
+	soldiers = {
+		culture = british
+		religion = protestant 
+		size = 8
+	 } 
+	aristocrats = {
+		culture = british
+		religion =  protestant 
+		size = 86
+	 } 
+	aristocrats = {
+		culture = british
+		religion = protestant 
+		size = 1
+	 } 
+	aristocrats = {
+		culture = African
+		religion =  protestant 
+		size = 4166
+	 } 
+	aristocrats = {
+		culture = African
+		religion = animist
+		size = 95
+	 } 
+	bureaucrats = {
+		culture = African
+		religion =  protestant 
+		size = 105
+	 } 
+	bureaucrats = {
+		culture = African
+		religion = animist
+		size = 2
+	 } 
+	clergymen = {
+		culture = African
+		religion =  protestant 
+		size = 1042
+	 } 
+	clergymen = {
+		culture = African
+		religion = animist
+		size = 24
+	 } 
+	clergymen = {
+		culture = African
+		religion =  protestant 
+		size = 19
+	 } 
+	artisans = {
+		culture = African
+		religion =  protestant 
+		size = 1465
+	 } 
+	artisans = {
+		culture = African
+		religion = animist
+		size = 33
+	 } 
+	farmers = {
+		culture = African
+		religion =  protestant 
+		size = 88872
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 2045
+	 } 
+	farmers = {
+		culture = African
+		religion =  protestant 
+		size = 5648
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 130
+	 } 
+}
+#Mutare (96000/24000 POPS) 
+2070 = {
+	officers = {
+		culture = African
+		religion =  protestant 
+		size = 96
+	 } 
+	officers = {
+		culture = African
+		religion = animist
+		size = 2
+	 } 
+	soldiers = {
+		culture = African
+		religion =  protestant 
+		size = 388
+	 } 
+	soldiers = {
+		culture = African
+		religion = animist
+		size = 8
+	 } 
+	aristocrats = {
+		culture = African
+		religion =  protestant 
+		size = 4623
+	 } 
+	aristocrats = {
+		culture = African
+		religion = animist
+		size = 106
+	 } 
+	bureaucrats = {
+		culture = African
+		religion =  protestant 
+		size = 115
+	 } 
+	bureaucrats = {
+		culture = African
+		religion = animist
+		size = 2
+	 } 
+	capitalists = {
+		culture = African
+		religion =  protestant 
+		size = 555
+	 } 
+	capitalists = {
+		culture = African
+		religion = animist
+		size = 12
+	 } 
+	capitalists = {
+		culture = African
+		religion =  protestant 
+		size = 22
+	 } 
+	clergymen = {
+		culture = African
+		religion =  protestant 
+		size = 1155
+	 } 
+	clergymen = {
+		culture = African
+		religion = animist
+		size = 26
+	 } 
+	artisans = {
+		culture = African
+		religion =  protestant 
+		size = 1593
+	 } 
+	artisans = {
+		culture = African
+		religion = animist
+		size = 36
+	 } 
+	farmers = {
+		culture = African
+		religion =  protestant 
+		size = 102779
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 2365
+	 } 
+}
+#Kariba (36000/9000 POPS) 
+2635 = {
+	officers = {
+		culture = African
+		religion =  protestant 
+		size = 146
+	 } 
+	officers = {
+		culture = African
+		religion = animist
+		size = 3
+	 } 
+	soldiers = {
+		culture = African
+		religion =  protestant 
+		size = 588
+	 } 
+	soldiers = {
+		culture = African
+		religion = animist
+		size = 13
+	 } 
+	aristocrats = {
+		culture = African
+		religion =  protestant 
+		size = 6998
+	 } 
+	aristocrats = {
+		culture = African
+		religion = animist
+		size = 161
+	 } 
+	bureaucrats = {
+		culture = African
+		religion =  protestant 
+		size = 174
+	 } 
+	bureaucrats = {
+		culture = African
+		religion = animist
+		size = 4
+	 } 
+	capitalists = {
+		culture = African
+		religion =  protestant 
+		size = 839
+	 } 
+	capitalists = {
+		culture = African
+		religion = animist
+		size = 19
+	 } 
+	capitalists = {
+		culture = African
+		religion =  protestant 
+		size = 35
+	 } 
+	clergymen = {
+		culture = African
+		religion =  protestant 
+		size = 1749
+	 } 
+	clergymen = {
+		culture = African
+		religion = animist
+		size = 40
+	 } 
+	artisans = {
+		culture = African
+		religion =  protestant 
+		size = 2412
+	 } 
+	artisans = {
+		culture = African
+		religion = animist
+		size = 55
+	 } 
+	farmers = {
+		culture = African
+		religion =  protestant 
+		size = 155580
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 3581
+	 } 
+}
+#Matabeleland Region (188000)  
+#under the rule of Matabele in 1836
+#Bulawayo (136000/34000 POPS) 
+2071 = {
+	capitalists = {
+		culture = british
+		religion =  protestant 
+		size = 244
+	 } 
+	capitalists = {
+		culture = british
+		religion = protestant 
+		size = 5
+	 } 
+	officers = {
+		culture = british
+		religion =  protestant 
+		size = 41
+	 } 
+	soldiers = {
+		culture = british
+		religion =  protestant 
+		size = 164
+	 } 
+	soldiers = {
+		culture = british
+		religion = protestant 
+		size = 3
+	 } 
+	aristocrats = {
+		culture = british
+		religion =  protestant 
+		size = 1955
+	 } 
+	aristocrats = {
+		culture = british
+		religion = protestant 
+		size = 45
+	 } 
+	bureaucrats = {
+		culture = british
+		religion =  protestant 
+		size = 39
+	 } 
+	bureaucrats = {
+		culture = African
+		religion =  protestant 
+		size = 9
+	 } 
+	clergymen = {
+		culture = African
+		religion =  protestant 
+		size = 488
+	 } 
+	clergymen = {
+		culture = African
+		religion = animist
+		size = 11
+	 } 
+	artisans = {
+		culture = African
+		religion =  protestant 
+		size = 673
+	 } 
+	artisans = {
+		culture = African
+		religion = animist
+		size = 15
+	 } 
+	farmers = {
+		culture = African
+		religion =  protestant 
+		size = 1271
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 29
+	 } 
+	farmers = {
+		culture = African
+		religion =  protestant 
+		size = 34212
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 787
+	 } 
+	farmers = {
+		culture = African
+		religion =  protestant 
+		size = 7973
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 183
+	 } 
+}
+#Hwange (96000/24000 POPS)
+2072 = {
+	officers = {
+		culture = African
+		religion =  protestant 
+		size = 153
+	 } 
+	officers = {
+		culture = African
+		religion = animist
+		size = 3
+	 } 
+	soldiers = {
+		culture = African
+		religion =  protestant 
+		size = 615
+	 } 
+	soldiers = {
+		culture = African
+		religion = animist
+		size = 14
+	 } 
+	aristocrats = {
+		culture = African
+		religion =  protestant 
+		size = 7321
+	 } 
+	aristocrats = {
+		culture = African
+		religion = animist
+		size = 168
+	 } 
+	bureaucrats = {
+		culture = African
+		religion =  protestant 
+		size = 182
+	 } 
+	bureaucrats = {
+		culture = African
+		religion = animist
+		size = 4
+	 } 
+	capitalists = {
+		culture = African
+		religion =  protestant 
+		size = 914
+	 } 
+	capitalists = {
+		culture = African
+		religion = animist
+		size = 21
+	 } 
+	clergymen = {
+		culture = African
+		religion =  protestant 
+		size = 1829
+	 } 
+	clergymen = {
+		culture = African
+		religion = animist
+		size = 42
+	 } 
+	artisans = {
+		culture = African
+		religion =  protestant 
+		size = 2522
+	 } 
+	artisans = {
+		culture = African
+		religion = animist
+		size = 58
+	 } 
+	farmers = {
+		culture = African
+		religion =  protestant 
+		size = 17574
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 404
+	 } 
+	farmers = {
+		culture = African
+		religion =  protestant 
+		size = 145176
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 3341
+	 } 
+}
+#Masvingo (72000/18000 POPS) 
+2073 = {
+	officers = {
+		culture = African
+		religion =  protestant 
+		size = 82
+	 } 
+	officers = {
+		culture = African
+		religion = animist
+		size = 1
+	 } 
+	soldiers = {
+		culture = African
+		religion =  protestant 
+		size = 328
+	 } 
+	soldiers = {
+		culture = African
+		religion = animist
+		size = 7
+	 } 
+	aristocrats = {
+		culture = African
+		religion =  protestant 
+		size = 3910
+	 } 
+	aristocrats = {
+		culture = African
+		religion = animist
+		size = 90
+	 } 
+	bureaucrats = {
+		culture = African
+		religion =  protestant 
+		size = 97
+	 } 
+	bureaucrats = {
+		culture = African
+		religion = animist
+		size = 2
+	 } 
+	capitalists = {
+		culture = African
+		religion =  protestant 
+		size = 488
+	 } 
+	capitalists = {
+		culture = African
+		religion = animist
+		size = 11
+	 } 
+	clergymen = {
+		culture = African
+		religion =  protestant 
+		size = 977
+	 } 
+	clergymen = {
+		culture = African
+		religion = animist
+		size = 22
+	 } 
+	artisans = {
+		culture = African
+		religion =  protestant 
+		size = 1346
+	 } 
+	artisans = {
+		culture = African
+		religion = animist
+		size = 31
+	 } 
+	farmers = {
+		culture = African
+		religion =  protestant 
+		size = 2543
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 58
+	 } 
+	farmers = {
+		culture = African
+		religion =  protestant 
+		size = 84372
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 1942
+	 } 
+
+}

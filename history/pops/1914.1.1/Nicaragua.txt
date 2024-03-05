@@ -1,0 +1,465 @@
+#Nicaragua Region (292000)
+#Ruled by Central America 1836
+#Managua (192000/48000 POPS)
+2197 = {
+	officers = {
+		culture = mestizo
+		religion =  catholic 
+		size = 386
+	 } 
+	officers = {
+		culture = mestizo
+		religion = catholic 
+		size = 19
+	 } 
+	soldiers = {
+		culture = mestizo
+		religion =  catholic 
+		size = 1548
+	 } 
+	soldiers = {
+		culture = mestizo
+		religion = catholic 
+		size = 77
+	 } 
+	aristocrats = {
+		culture = mestizo
+		religion =  catholic 
+		size = 3543
+	 } 
+	aristocrats = {
+		culture = mestizo
+		religion = catholic 
+		size = 176
+	 } 
+	bureaucrats = {
+		culture = mestizo
+		religion =  catholic 
+		size = 88
+	 } 
+	bureaucrats = {
+		culture = mestizo
+		religion = catholic 
+		size = 4
+	 } 
+	capitalists = {
+		culture = mestizo
+		religion =  catholic 
+		size = 442
+	 } 
+	capitalists = {
+		culture = mestizo
+		religion = catholic 
+		size = 22
+	 } 
+	clergymen = {
+		culture = mestizo
+		religion =  catholic 
+		size = 885
+	 } 
+	clergymen = {
+		culture = mestizo
+		religion = catholic 
+		size = 44
+	 } 
+	clerks = {
+		culture = mestizo
+		religion =  catholic 
+		size = 1881
+	 } 
+	clerks = {
+		culture = mestizo
+		religion = catholic 
+		size = 93
+	 } 
+	artisans = {
+		culture = mestizo
+		religion =  catholic 
+		size = 1786
+	 } 
+	artisans = {
+		culture = mestizo
+		religion = catholic 
+		size = 89
+	 } 
+	craftsmen = {
+		culture = mestizo
+		religion =  catholic 
+		size = 5737
+	 } 
+	craftsmen = {
+		culture = mestizo
+		religion = catholic 
+		size = 286
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  catholic 
+		size = 13816
+	 } 
+	farmers = {
+		culture = mestizo
+		religion = catholic 
+		size = 688
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  catholic 
+		size = 58464
+	 } 
+	farmers = {
+		culture = mestizo
+		religion = catholic 
+		size = 2915
+	 } 
+}
+#Rivas (40000/10000 POPS)
+2198 = {
+	officers = {
+		culture = mestizo
+		religion =  catholic 
+		size = 277
+	 } 
+	officers = {
+		culture = mestizo
+		religion = catholic 
+		size = 13
+	 } 
+	soldiers = {
+		culture = mestizo
+		religion =  catholic 
+		size = 1111
+	 } 
+	soldiers = {
+		culture = mestizo
+		religion = catholic 
+		size = 55
+	 } 
+	aristocrats = {
+		culture = mestizo
+		religion =  catholic 
+		size = 2543
+	 } 
+	aristocrats = {
+		culture = mestizo
+		religion = catholic 
+		size = 126
+	 } 
+	bureaucrats = {
+		culture = mestizo
+		religion =  catholic 
+		size = 62
+	 } 
+	bureaucrats = {
+		culture = mestizo
+		religion = catholic 
+		size = 3
+	 } 
+	capitalists = {
+		culture = mestizo
+		religion =  catholic 
+		size = 317
+	 } 
+	capitalists = {
+		culture = mestizo
+		religion = catholic 
+		size = 15
+	 } 
+	clergymen = {
+		culture = mestizo
+		religion =  catholic 
+		size = 635
+	 } 
+	clergymen = {
+		culture = mestizo
+		religion = catholic 
+		size = 31
+	 } 
+	clerks = {
+		culture = mestizo
+		religion =  catholic 
+		size = 1349
+	 } 
+	clerks = {
+		culture = mestizo
+		religion = catholic 
+		size = 67
+	 } 
+	artisans = {
+		culture = mestizo
+		religion =  catholic 
+		size = 60
+	 } 
+	artisans = {
+		culture = mestizo
+		religion = catholic 
+		size = 3
+	 } 
+	artisans = {
+		culture = mestizo
+		religion =  catholic 
+		size = 1221
+	 } 
+	artisans = {
+		culture = mestizo
+		religion = catholic 
+		size = 60
+	 } 
+	craftsmen = {
+		culture = mestizo
+		religion =  catholic 
+		size = 4117
+	 } 
+	craftsmen = {
+		culture = mestizo
+		religion = catholic 
+		size = 205
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  catholic 
+		size = 51882
+	 } 
+	farmers = {
+		culture = mestizo
+		religion = catholic 
+		size = 2587
+	 } 
+}
+#Esteli (48000/12000 POPS)
+2199 = {
+	officers = {
+		culture = mestizo
+		religion =  catholic 
+		size = 329
+	 } 
+	officers = {
+		culture = mestizo
+		religion = catholic 
+		size = 16
+	 } 
+	soldiers = {
+		culture = mestizo
+		religion =  catholic 
+		size = 1319
+	 } 
+	soldiers = {
+		culture = mestizo
+		religion = catholic 
+		size = 65
+	 } 
+	aristocrats = {
+		culture = mestizo
+		religion =  catholic 
+		size = 3019
+	 } 
+	aristocrats = {
+		culture = mestizo
+		religion = catholic 
+		size = 150
+	 } 
+	bureaucrats = {
+		culture = mestizo
+		religion =  catholic 
+		size = 75
+	 } 
+	bureaucrats = {
+		culture = mestizo
+		religion = catholic 
+		size = 3
+	 } 
+	capitalists = {
+		culture = mestizo
+		religion =  catholic 
+		size = 377
+	 } 
+	capitalists = {
+		culture = mestizo
+		religion = catholic 
+		size = 18
+	 } 
+	clergymen = {
+		culture = mestizo
+		religion =  catholic 
+		size = 754
+	 } 
+	clergymen = {
+		culture = mestizo
+		religion = catholic 
+		size = 37
+	 } 
+	clerks = {
+		culture = mestizo
+		religion =  catholic 
+		size = 1603
+	 } 
+	clerks = {
+		culture = mestizo
+		religion = catholic 
+		size = 79
+	 } 
+	artisans = {
+		culture = mestizo
+		religion =  catholic 
+		size = 70
+	 } 
+	artisans = {
+		culture = mestizo
+		religion = catholic 
+		size = 3
+	 } 
+	artisans = {
+		culture = mestizo
+		religion =  catholic 
+		size = 1451
+	 } 
+	artisans = {
+		culture = mestizo
+		religion = catholic 
+		size = 72
+	 } 
+	craftsmen = {
+		culture = mestizo
+		religion =  catholic 
+		size = 4889
+	 } 
+	craftsmen = {
+		culture = mestizo
+		religion = catholic 
+		size = 243
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  catholic 
+		size = 61596
+	 } 
+	farmers = {
+		culture = mestizo
+		religion = catholic 
+		size = 3071
+	 } 
+}
+#Bluefields (12000/3000 POPS)
+2200 = {
+	officers = {
+		culture = mestizo
+		religion =  protestant 
+		size = 126
+	 } 
+	officers = {
+		culture = mestizo
+		religion = catholic 
+		size = 6
+	 } 
+	soldiers = {
+		culture = mestizo
+		religion =  protestant 
+		size = 507
+	 } 
+	soldiers = {
+		culture = mestizo
+		religion = catholic 
+		size = 25
+	 } 
+	aristocrats = {
+		culture = mestizo
+		religion =  protestant 
+		size = 1162
+	 } 
+	aristocrats = {
+		culture = mestizo
+		religion = catholic 
+		size = 57
+	 } 
+	bureaucrats = {
+		culture = mestizo
+		religion =  protestant 
+		size = 28
+	 } 
+	bureaucrats = {
+		culture = mestizo
+		religion = catholic 
+		size = 1
+	 } 
+	capitalists = {
+		culture = mestizo
+		religion =  protestant 
+		size = 144
+	 } 
+	capitalists = {
+		culture = mestizo
+		religion = catholic 
+		size = 7
+	 } 
+	clergymen = {
+		culture = mestizo
+		religion =  protestant 
+		size = 290
+	 } 
+	clergymen = {
+		culture = mestizo
+		religion = catholic 
+		size = 14
+	 } 
+	clerks = {
+		culture = mestizo
+		religion =  protestant 
+		size = 616
+	 } 
+	clerks = {
+		culture = mestizo
+		religion = catholic 
+		size = 30
+	 } 
+	artisans = {
+		culture = mestizo
+		religion =  protestant 
+		size = 585
+	 } 
+	artisans = {
+		culture = mestizo
+		religion = catholic 
+		size = 29
+	 } 
+	craftsmen = {
+		culture = mestizo
+		religion =  protestant 
+		size = 1881
+	 } 
+	craftsmen = {
+		culture = mestizo
+		religion = catholic 
+		size = 93
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  protestant 
+		size = 7439
+	 } 
+	farmers = {
+		culture = mestizo
+		religion = catholic 
+		size = 370
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  catholic 
+		size = 12492
+	 } 
+	farmers = {
+		culture = mestizo
+		religion = animist
+		size = 622
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  catholic 
+		size = 3776
+	 } 
+	farmers = {
+		culture = mestizo
+		religion = catholic 
+		size = 188
+	 } 
+
+}

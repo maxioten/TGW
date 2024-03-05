@@ -1,0 +1,179 @@
+#Hispanola Region (516000) #see Dominican Republic.txt for balance of region
+#Ruled by Haiti 1836
+#Port au Prince (312000/78000 POPS)
+2213 = {
+	officers = {
+		culture = mestizo		religion =  catholic 
+		size = 317
+	 } 
+	officers = {
+		culture = mestizo		religion = catholic 
+		size = 6
+	 } 
+	soldiers = {
+		culture = mestizo		religion =  catholic 
+		size = 1271
+	 } 
+	soldiers = {
+		culture = mestizo		religion = catholic 
+		size = 25
+	 } 
+	aristocrats = {
+		culture = mestizo		religion =  catholic 
+		size = 16405
+	 } 
+	aristocrats = {
+		culture = mestizo		religion = catholic 
+		size = 334
+	 } 
+	bureaucrats = {
+		culture = mestizo		religion =  catholic 
+		size = 409
+	 } 
+	bureaucrats = {
+		culture = mestizo		religion = catholic 
+		size = 8
+	 } 
+	capitalists = {
+		culture = mestizo		religion =  catholic 
+		size = 2050
+	 } 
+	capitalists = {
+		culture = mestizo		religion = catholic 
+		size = 41
+	 } 
+	clergymen = {
+		culture = mestizo		religion =  catholic 
+		size = 4101
+	 } 
+	clergymen = {
+		culture = mestizo		religion = catholic 
+		size = 83
+	 } 
+	clerks = {
+		culture = mestizo		religion =  catholic 
+		size = 8236
+	 } 
+	clerks = {
+		culture = mestizo		religion = catholic 
+		size = 168
+	 } 
+	artisans = {
+		culture = mestizo		religion =  catholic 
+		size = 7825
+	 } 
+	artisans = {
+		culture = mestizo		religion = catholic 
+		size = 159
+	 } 
+	craftsmen = {
+		culture = mestizo		religion =  catholic 
+		size = 25124
+	 } 
+	craftsmen = {
+		culture = mestizo		religion = catholic 
+		size = 512
+	 } 
+	farmers = {
+		culture = mestizo		religion =  catholic 
+		size = 307476
+	 } 
+	farmers = {
+		culture = mestizo		religion = catholic 
+		size = 6275
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  catholic 
+		size = 36911
+	 } 
+	farmers = {
+		culture = mestizo
+		religion = catholic 
+		size = 753
+	 } 
+}
+#Cap Haitien (204000/51000 POPS)
+2215 = {
+	officers = {
+		culture = mestizo		religion =  catholic 
+		size = 269
+	 } 
+	officers = {
+		culture = mestizo		religion = catholic 
+		size = 5
+	 } 
+	soldiers = {
+		culture = mestizo		religion =  catholic 
+		size = 1078
+	 } 
+	soldiers = {
+		culture = mestizo		religion = catholic 
+		size = 22
+	 } 
+	aristocrats = {
+		culture = mestizo		religion =  catholic 
+		size = 13935
+	 } 
+	aristocrats = {
+		culture = mestizo		religion = catholic 
+		size = 284
+	 } 
+	bureaucrats = {
+		culture = mestizo		religion =  catholic 
+		size = 347
+	 } 
+	bureaucrats = {
+		culture = mestizo		religion = catholic 
+		size = 7
+	 } 
+	capitalists = {
+		culture = mestizo		religion =  catholic 
+		size = 1741
+	 } 
+	capitalists = {
+		culture = mestizo		religion = catholic 
+		size = 35
+	 } 
+	clergymen = {
+		culture = mestizo		religion =  catholic 
+		size = 3483
+	 } 
+	clergymen = {
+		culture = mestizo		religion = catholic 
+		size = 71
+	 } 
+	clerks = {
+		culture = mestizo		religion =  catholic 
+		size = 6997
+	 } 
+	clerks = {
+		culture = mestizo		religion = catholic 
+		size = 142
+	 } 
+	artisans = {
+		culture = mestizo		religion =  catholic 
+		size = 6647
+	 } 
+	artisans = {
+		culture = mestizo		religion = catholic 
+		size = 135
+	 } 
+	craftsmen = {
+		culture = mestizo		religion =  catholic 
+		size = 21342
+	 } 
+	craftsmen = {
+		culture = mestizo		religion = catholic 
+		size = 435
+	 } 
+	farmers = {
+		culture = mestizo		religion =  catholic 
+		size = 292545
+	 } 
+	farmers = {
+		culture = mestizo		religion = catholic 
+		size = 5970
+	 } 
+
+}

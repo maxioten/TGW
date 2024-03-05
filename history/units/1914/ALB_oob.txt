@@ -1,0 +1,18 @@
+army = {
+
+name = "Royal Albanian Army" location = 849
+
+leader = {
+	name = "Xhemal Aranitasi"
+	date = "1930.1.1"
+        prestige = 0.3
+        picture ="european_general_7"
+	type = land
+	personality = daring
+	background = expert_raider
+   }
+
+regiment = { name = "Hussars Mbreteror" type = hussar home = 849 } 
+regiment = { name = "Brigada e pare" type = infantry home = 845 }
+regiment = { name = "Brigada e dyte" type = infantry home = 851 }
+}

@@ -1,0 +1,116 @@
+political_decisions = {
+	form_comintern = {
+		potential = {
+			is_greater_power = yes
+			
+			government = proletarian_dictatorship
+			
+			# Not in any faction
+			NOT = { has_country_modifier = axis_faction }
+			NOT = { has_country_modifier = allies_faction }
+			NOT = { has_country_modifier = comintern_faction }
+			
+			# Comintern has not formed yet
+			NOT = { has_global_flag = comintern_enabled }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = comintern_faction
+				
+				duration = -1
+			}
+			
+			nationalvalue = nv_equality
+
+			set_country_flag = comintern_leader
+			clr_global_flag = no_comintern_leader
+			set_global_flag = comintern_enabled
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	become_comintern_leader = {
+		potential = {
+			is_greater_power = yes
+			
+			government = proletarian_dictatorship
+			
+			has_country_modifier = comintern_faction
+			NOT = { has_country_flag = comintern_leader }
+			has_global_flag = comintern_enabled
+			has_global_flag = no_comintern_leader
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = comintern_faction
+				
+				duration = -1
+			}
+
+			set_country_flag = comintern_leader
+			clr_global_flag = no_comintern_leader
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	join_comintern = {
+		potential = {
+			OR = {
+				government = proletarian_dictatorship
+				government = democracy
+				sphere_owner = { has_country_modifier = comintern_faction }
+				#GER = { is_our_vassal = THIS }
+			}
+			
+			civilized = yes
+			
+			# Not in any faction
+			NOT = { has_country_modifier = axis_faction }
+			NOT = { has_country_modifier = allies_faction }
+			NOT = { has_country_modifier = comintern_faction }
+			
+			# Comintern exists
+			has_global_flag = comintern_enabled
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = comintern_faction
+				
+				duration = -1
+			}
+			
+			nationalvalue = nv_equality
+			
+			any_country = {
+				limit = { has_country_modifier = comintern_faction }
+				
+				relation = { who = THIS value = 400 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

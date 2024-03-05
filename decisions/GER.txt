@@ -1,0 +1,122 @@
+political_decisions = {
+	german_vasals = {
+		picture = russia_efe
+		potential = {
+			tag = GER
+			NOT = {
+				has_country_flag = russia_f
+			}
+		}
+		allow = {
+			has_global_flag = sendlenin
+			exists = UKR
+            		GER = { war_with = ENG }
+		}
+		effect = {
+			set_country_flag = russia_f
+			GER = {
+				relation = {
+					who = UKR
+					value = 200
+				}
+				diplomatic_influence = {
+					who = UKR
+					value = 200
+				}
+				relation = {
+					who = BYE
+					value = 200
+				}
+				diplomatic_influence = {
+					who = BYE
+					value = 200
+				}
+				relation = {
+					who = UBD
+					value = 200
+				}
+				diplomatic_influence = {
+					who = UBD
+					value = 200
+				}
+				relation = {
+					who = POL
+					value = 200
+				}
+				diplomatic_influence = {
+					who = POL
+					value = 200
+				}
+				relation = {
+					who = FIN
+					value = 200
+				}
+				diplomatic_influence = {
+					who = FIN
+					value = 200
+				}
+				relation = {
+					who = GEO
+					value = 100
+				}
+				diplomatic_influence = {
+					who = GEO
+					value = 100
+				}
+				relation = {
+					who = ARM
+					value = 100
+				}
+				diplomatic_influence = {
+					who = ARM
+					value = 100
+				}
+				relation = {
+					who = AZB
+					value = 100
+				}
+				diplomatic_influence = {
+					who = AZB
+					value = 100
+				}
+				create_vassal = UBD
+				create_vassal = POL
+			}
+			KUK = {
+				create_vassal = SER
+				create_vassal = MON
+				create_vassal = ALB
+			}
+			SER = {
+				807 = {
+				secede_province = BUL
+				}
+				806 = {
+			}
+			GRE = {
+				secede_province = BUL
+				}
+				805 = {
+				secede_province = BUL
+				}
+				822 = {
+				secede_province = BUL
+				}
+				823 = {
+			}
+			ROM = {
+				secede_province = BUL
+				}
+				818 = {
+				secede_province = BUL
+				}
+				674 = {
+				secede_province = BUL
+				}
+				675 = {
+				secede_province = BUL
+				}
+			}
+		}
+	}
+}

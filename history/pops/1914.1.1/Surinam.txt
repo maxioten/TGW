@@ -1,0 +1,214 @@
+#Surinam : 56640
+#Ruled by The Netherlands 1836
+#Paramaribo (48640/12160 POPS)
+2240 = {
+	officers = {
+		culture = dutch
+		religion = protestant 
+		size = 131
+	 } 
+	officers = {
+		culture = dutch
+		religion = protestant 
+		size = 6
+	 } 
+	soldiers = {
+		culture = dutch
+		religion = protestant 
+		size = 306
+	 } 
+	soldiers = {
+		culture = dutch
+		religion = protestant 
+		size = 15
+	 } 
+	soldiers = {
+		culture = mestizo
+		religion =  mahayana
+		size = 219
+	 } 
+	soldiers = {
+		culture = mestizo
+		religion = mahayana
+		size = 10
+	 } 
+	aristocrats = {
+		culture = mestizo
+		religion =  mahayana
+		size = 657
+	 } 
+	aristocrats = {
+		culture = mestizo
+		religion = mahayana
+		size = 32
+	 } 
+	aristocrats = {
+		culture = mestizo
+		religion =  hindu 
+		size = 1095
+	 } 
+	aristocrats = {
+		culture = avadhi
+		religion = hindu 
+		size = 54
+	 } 
+	bureaucrats = {
+		culture = mestizo
+		religion =  hindu 
+		size = 43
+	 } 
+	bureaucrats = {
+		culture = avadhi
+		religion = hindu 
+		size = 2
+	 } 
+	capitalists = {
+		culture = mestizo
+		religion =  hindu 
+		size = 219
+	 } 
+	capitalists = {
+		culture = avadhi
+		religion = hindu 
+		size = 10
+	 } 
+	clergymen = {
+		culture = mestizo
+		religion =  hindu 
+		size = 438
+	 } 
+	clergymen = {
+		culture = avadhi
+		religion = hindu 
+		size = 21
+	 } 
+	craftsmen = {
+		culture = mestizo
+		religion =  hindu 
+		size = 1078
+	 } 
+	craftsmen = {
+		culture = avadhi
+		religion = hindu 
+		size = 53
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  hindu 
+		size = 13336
+	 } 
+	farmers = {
+		culture = avadhi
+		religion = hindu 
+		size = 665
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  catholic 
+		size = 876
+	 } 
+	farmers = {
+		culture = mestizo
+		religion = catholic 
+		size = 43
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  protestant 
+		size = 17964
+	 } 
+	farmers = {
+		culture = mestizo
+		religion = protestant 
+		size = 895
+	 } 
+	farmers = {
+		culture = malay
+		religion =  sunni 
+		size = 2766
+	 } 
+}
+#Aperina (8000/2000 POPS)
+2245 = {
+	officers = {
+		culture = mestizo
+		religion =  protestant 
+		size = 16
+	 } 
+	soldiers = {
+		culture = mestizo
+		religion =  protestant 
+		size = 65
+	 } 
+	soldiers = {
+		culture = mestizo
+		religion = protestant 
+		size = 3
+	 } 
+	aristocrats = {
+		culture = mestizo
+		religion =  protestant 
+		size = 219
+	 } 
+	aristocrats = {
+		culture = mestizo
+		religion = protestant 
+		size = 10
+	 } 
+	bureaucrats = {
+		culture = mestizo
+		religion =  protestant 
+		size = 4
+	 } 
+	capitalists = {
+		culture = mestizo
+		religion =  protestant 
+		size = 26
+	 } 
+	capitalists = {
+		culture = mestizo
+		religion = protestant 
+		size = 1
+	 } 
+	clergymen = {
+		culture = mestizo
+		religion =  protestant 
+		size = 54
+	 } 
+	clergymen = {
+		culture = mestizo
+		religion = protestant 
+		size = 2
+	 } 
+	craftsmen = {
+		culture = mestizo
+		religion =  protestant 
+		size = 134
+	 } 
+	craftsmen = {
+		culture = mestizo
+		religion = protestant 
+		size = 6
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  protestant 
+		size = 4024
+	 } 
+	farmers = {
+		culture = mestizo
+		religion = protestant 
+		size = 200
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  catholic 
+		size = 327
+	 } 
+	farmers = {
+		culture = mestizo
+		religion = catholic 
+		size = 16
+	 } 
+
+}

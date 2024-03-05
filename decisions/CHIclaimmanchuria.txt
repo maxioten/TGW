@@ -1,0 +1,30 @@
+political_decisions = {	  
+ claim_outermanchuria = {
+				picture = "claim_outermanchuria"
+                potential = {
+                        tag = CHI
+                        NOT = { has_country_flag = claim_outermanchuria }
+                }
+
+                allow = {
+                       tag = CHI
+						NOT = {	
+							has_country_flag = claim_outermanchuria
+						}
+						is_greater_power = yes
+                        prestige = 45
+                        }
+                
+
+                effect = {
+                        badboy = 3
+                        set_country_flag = claim_outermanchuria
+                        1085 = { add_core = CHI }
+                        2617 = { add_core = CHI }
+                        1083 = { add_core = CHI }
+                        1082 = { add_core = CHI }
+                        1084 = { add_core = CHI }
+                        }
+                }
+
+        }

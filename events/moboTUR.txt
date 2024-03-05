@@ -1,0 +1,24 @@
+#Tur mobo 
+country_event = {
+	id = 10
+	title = "A call to all Muslims"
+	desc = "To truly authenticate the Great War your country has been given historical mobolisation."
+	picture = "tur"
+
+	trigger = {
+		tag = TUR
+                year = 1914
+                month = 6
+		is_vassal = no
+		NOT = {
+			has_country_modifier = tur_mobo
+		}
+	}
+
+
+	option = {
+		name = "Allahu Ackbar!"
+		TUR = { add_country_modifier = { name = tur_mobo duration = -1 } }
+
+	}
+}

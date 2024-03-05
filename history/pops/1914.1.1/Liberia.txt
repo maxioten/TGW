@@ -1,0 +1,424 @@
+#Liberia Region (880000) 
+#under the rule of Liberia in 1836
+#Monrovia (252000/63000 POPS) 
+1887 = {
+	officers = {
+		culture = African
+		religion =  protestant 
+		size = 665
+	 } 
+	officers = {
+		culture = African
+		religion = catholic
+		size = 11
+	 } 
+	soldiers = {
+		culture = African
+		religion =  protestant 
+		size = 2662
+	 } 
+	soldiers = {
+		culture = African
+		religion = catholic
+		size = 47
+	 } 
+	aristocrats = {
+		culture = African
+		religion =  protestant 
+		size = 101
+	 } 
+	aristocrats = {
+		culture = African
+		religion = catholic
+		size = 1
+	 } 
+	aristocrats = {
+		culture = African
+		religion =  protestant 
+		size = 3327
+	 } 
+	aristocrats = {
+		culture = African
+		religion = animist
+		size = 59
+	 } 
+	bureaucrats = {
+		culture = African
+		religion =  protestant 
+		size = 85
+	 } 
+	bureaucrats = {
+		culture = African
+		religion = animist
+		size = 1
+	 } 
+	capitalists = {
+		culture = African
+		religion =  protestant 
+		size = 428
+	 } 
+	capitalists = {
+		culture = African
+		religion = animist
+		size = 7
+	 } 
+	clergymen = {
+		culture = African
+		religion =  protestant 
+		size = 856
+	 } 
+	clergymen = {
+		culture = African
+		religion = animist
+		size = 15
+	 } 
+	artisans = {
+		culture = African
+		religion =  protestant 
+		size = 1424
+	 } 
+	artisans = {
+		culture = African
+		religion = animist
+		size = 25
+	 } 
+	farmers = {
+		culture = African
+		religion =  protestant 
+		size = 734
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 13
+	 } 
+	farmers = {
+		culture = African
+		religion =  sunni
+		size = 70642
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 1258
+	 } 
+}
+#Harper (204000/51000 POPS) 
+1888 = {
+	officers = {
+		culture = African
+		religion =  catholic 
+		size = 224
+	 } 
+	officers = {
+		culture = African
+		religion = animist
+		size = 4
+	 } 
+	soldiers = {
+		culture = African
+		religion =  catholic 
+		size = 899
+	 } 
+	soldiers = {
+		culture = African
+		religion = animist
+		size = 16
+	 } 
+	aristocrats = {
+		culture = African
+		religion =  catholic 
+		size = 1159
+	 } 
+	aristocrats = {
+		culture = African
+		religion = animist
+		size = 20
+	 } 
+	bureaucrats = {
+		culture = African
+		religion =  catholic 
+		size = 28
+	 } 
+	capitalists = {
+		culture = African
+		religion =  catholic 
+		size = 144
+	 } 
+	capitalists = {
+		culture = African
+		religion = animist
+		size = 2
+	 } 
+	clergymen = {
+		culture = African
+		religion =  catholic 
+		size = 289
+	 } 
+	clergymen = {
+		culture = African
+		religion = animist
+		size = 5
+	 } 
+	artisans = {
+		culture = African
+		religion =  catholic 
+		size = 481
+	 } 
+	artisans = {
+		culture = African
+		religion = animist
+		size = 8
+	 } 
+	farmers = {
+		culture = African
+		religion =  catholic 
+		size = 24134
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 429
+	 } 
+}
+#uncolonized in 1836
+#Bopulu (124000/31000 POPS) 
+1889 = {
+	officers = {
+		culture = African
+		religion =  protestant 
+		size = 224
+	 } 
+	officers = {
+		culture = African
+		religion = sunni
+		size = 4
+	 } 
+	soldiers = {
+		culture = African
+		religion =  protestant 
+		size = 899
+	 } 
+	soldiers = {
+		culture = African
+		religion = sunni
+		size = 16
+	 } 
+	aristocrats = {
+		culture = African
+		religion =  protestant 
+		size = 1159
+	 } 
+	aristocrats = {
+		culture = African
+		religion = sunni
+		size = 20
+	 } 
+	bureaucrats = {
+		culture = African
+		religion =  protestant 
+		size = 28
+	 } 
+	capitalists = {
+		culture = African
+		religion =  protestant 
+		size = 144
+	 } 
+	capitalists = {
+		culture = African
+		religion = sunni
+		size = 2
+	 } 
+	clergymen = {
+		culture = African
+		religion =  protestant 
+		size = 289
+	 } 
+	clergymen = {
+		culture = African
+		religion = sunni
+		size = 5
+	 } 
+	artisans = {
+		culture = African
+		religion =  protestant 
+		size = 481
+	 } 
+	artisans = {
+		culture = African
+		religion = sunni
+		size = 8
+	 } 
+	farmers = {
+		culture = African
+		religion =  protestant 
+		size = 1119
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 19
+	 } 
+	farmers = {
+		culture = African
+		religion =  sunni 
+		size = 23425
+	 } 
+}
+#Gbarnga (132000/33000 POPS) 
+1890 = {
+	officers = {
+		culture = African
+		religion =  protestant 
+		size = 224
+	 } 
+	officers = {
+		culture = African
+		religion = sunni
+		size = 4
+	 } 
+	soldiers = {
+		culture = African
+		religion =  protestant 
+		size = 899
+	 } 
+	soldiers = {
+		culture = African
+		religion = sunni
+		size = 16
+	 } 
+	aristocrats = {
+		culture = African
+		religion =  protestant 
+		size = 1159
+	 } 
+	aristocrats = {
+		culture = African
+		religion = sunni
+		size = 20
+	 } 
+	bureaucrats = {
+		culture = African
+		religion =  protestant 
+		size = 28
+	 } 
+	capitalists = {
+		culture = African
+		religion =  protestant 
+		size = 144
+	 } 
+	capitalists = {
+		culture = African
+		religion = sunni
+		size = 2
+	 } 
+	clergymen = {
+		culture = African
+		religion =  protestant 
+		size = 289
+	 } 
+	clergymen = {
+		culture = African
+		religion = sunni
+		size = 5
+	 } 
+	artisans = {
+		culture = African
+		religion =  protestant 
+		size = 481
+	 } 
+	artisans = {
+		culture = African
+		religion = sunni
+		size = 8
+	 } 
+	farmers = {
+		culture = African
+		religion =  protestant 
+		size = 24134
+	 } 
+	farmers = {
+		culture = African
+		religion = sunni
+		size = 429
+	 } 
+}
+#Zwedru (168000/42000 POPS) 
+1891 = {
+	officers = {
+		culture = African
+		religion =  protestant
+		size = 224
+	 } 
+	officers = {
+		culture = African
+		religion = protestant
+		size = 4
+	 } 
+	soldiers = {
+		culture = African
+		religion =  protestant
+		size = 899
+	 } 
+	soldiers = {
+		culture = African
+		religion = protestant
+		size = 16
+	 } 
+	aristocrats = {
+		culture = African
+		religion =  protestant
+		size = 1159
+	 } 
+	aristocrats = {
+		culture = African
+		religion = protestant
+		size = 20
+	 } 
+	bureaucrats = {
+		culture = African
+		religion =  protestant
+		size = 28
+	 } 
+	capitalists = {
+		culture = African
+		religion =  protestant
+		size = 144
+	 } 
+	capitalists = {
+		culture = African
+		religion = protestant
+		size = 2
+	 } 
+	clergymen = {
+		culture = African
+		religion =  protestant
+		size = 289
+	 } 
+	clergymen = {
+		culture = African
+		religion = protestant
+		size = 5
+	 } 
+	artisans = {
+		culture = African
+		religion =  protestant
+		size = 481
+	 } 
+	artisans = {
+		culture = African
+		religion = protestant
+		size = 8
+	 } 
+	farmers = {
+		culture = African
+		religion =  protestant
+		size = 24134
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 429
+	 } 
+
+}

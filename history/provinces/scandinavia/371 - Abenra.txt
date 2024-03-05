@@ -1,0 +1,14 @@
+owner = SWH
+controller = SWH
+add_core = SWH
+add_core = DEN
+add_core = SCH
+add_core = GER
+add_core = SCA
+trade_goods = cattle
+life_rating = 35
+1914.1.1 = {
+	owner = GER
+	controller = GER
+	railroad = 5
+}

@@ -1,0 +1,724 @@
+country_event = {
+
+	id = 37700
+	news = yes
+	news_desc_long = "EVTDESC37700_NEWS_LONG"
+	news_desc_medium = "EVTDESC37700_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC37700_NEWS_SHORT"
+
+	trigger = {
+		OR = {
+			tag = SPA
+			tag = IBR
+		}
+		year = 1837
+		NOT = {
+			year = 1840
+			}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1838
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1839
+		}
+	}
+
+	title = "EVTNAME37700"
+	desc = "EVTDESC37700"
+	picture = "Upperhouse"
+
+	option = {
+		name = "EVTOPTA37700"
+		clergymen = {
+			scaled_militancy = {
+				factor = -2
+				ideology = conservative
+			}
+		}
+		clergymen = {
+			scaled_militancy = {
+				factor = -3
+				ideology = reactionary
+			}
+		}
+		aristocrats = {
+			scaled_militancy = {
+				factor = -2
+				ideology = conservative
+			}
+		}
+		aristocrats = {
+			scaled_militancy = {
+				factor = -3
+				ideology = reactionary
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB37700"
+		clergymen = {
+			scaled_militancy = {
+				factor = 2
+				ideology = conservative
+			}
+		}
+		clergymen = {
+			scaled_militancy = {
+				factor = 3
+				ideology = reactionary
+			}
+		}
+		clergymen = {
+			scaled_consciousness = {
+				factor = 2
+				ideology = conservative
+			}
+		}
+		clergymen = {
+			scaled_consciousness = {
+				factor = 3
+				ideology = reactionary
+			}
+		}
+		aristocrats = {
+			scaled_militancy = {
+				factor = 2
+				ideology = conservative
+			}
+		}
+		aristocrats = {
+			scaled_militancy = {
+				factor = 3
+				ideology = reactionary
+			}
+		}
+		aristocrats = {
+			scaled_consciousness = {
+				factor = 2
+				ideology = conservative
+			}
+		}
+		aristocrats = {
+			scaled_consciousness = {
+				factor = 3
+				ideology = reactionary
+			}
+		}
+	}
+}
+
+country_event = {
+
+	id = 37701
+	news = yes
+	news_desc_long = "EVTDESC37701_NEWS_LONG"
+	news_desc_medium = "EVTDESC37701_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC37701_NEWS_SHORT"
+
+	trigger = {
+		OR = {
+			tag = SPA
+			tag = IBR
+		}
+		year = 1851
+		owns = 2209 #Havana
+		NOT = {
+			year = 1854
+			war_with = USA
+			}
+		}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1852
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1853
+		}
+	}
+
+	title = "EVTNAME37701"
+	desc = "EVTDESC37701"
+	picture = "Execution"
+
+	option = {
+		name = "EVTOPTA37701"
+		relation = { who = USA value = -50 }
+	}
+
+}
+
+country_event = {
+
+	id = 37702
+
+	trigger = {
+		OR = {
+			tag = SPA
+			tag = IBR
+		}
+		year = 1851
+		owns = 2209 #Havana
+		NOT = {
+			year = 1885
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1886
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1887
+		}
+	}
+
+	title = "EVTNAME37702"
+	desc = "EVTDESC37702"
+	picture = "Cubanrebels"
+
+	option = {
+		name = "EVTOPTA37702"
+		relation = { who = USA value = -75 }
+		SPA_2209 = {
+			any_pop = {
+				limit = {
+					has_pop_culture = caribeno
+					}
+				militancy = 3
+				}
+			any_pop = {
+				limit = {
+					has_pop_culture = afro_caribeno
+					}
+				militancy = 3
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = caribeno
+					}
+				consciousness = 3
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = afro_caribeno
+					}
+				consciousness = 3
+			}
+		}
+	}
+}
+
+#Offer to Buy Cuba 1/3
+country_event = {
+	id = 37703
+	title = "EVTNAME37703"
+	desc = "EVTDESC37703"
+	picture = "administration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA37703" #No
+		FROM = { country_event = 37704 }
+		
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.25
+				OR = {
+					has_country_modifier = in_bankrupcy
+					has_country_modifier = generalised_debt_default
+				}
+			}
+			modifier = {
+				factor = 0.8
+				is_greater_power = no
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB37703" #Yes
+		FROM = { country_event = 37705 }
+		SPA_2209 = { secede_province = FROM }
+		money = 100000
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				is_greater_power = yes
+			}
+		}
+	}
+}
+
+#The Spanish Have Refused 2/3
+country_event = {
+	id = 37704
+	title = "EVTNAME37704"
+	desc = "EVTDESC37704"
+	picture = "administration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA37704"
+		badboy = 6
+		any_greater_power = {
+			relation = {
+				who = USA
+				value = -150
+			}
+		}
+		SPA_2209 = {
+			add_core = USA
+		}
+		any_state = {
+			limit = {
+				is_slave = no
+			}
+			any_pop = {
+				consciousness = 1
+			}
+		}
+		relation = {
+			who = FROM
+			value = -150
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB37704"
+		any_state = {
+			limit = {
+				is_slave = yes
+			}
+			any_pop = {
+				militancy = 2
+				consciousness = 1
+			}
+		}
+		any_greater_power = {
+			relation = {
+				who = THIS
+				value = 25
+			}
+		}
+		relation = {
+			who = FROM
+			value = 25
+		}
+	}
+}
+
+#The Spanish Have Agreed 3/3
+country_event = {
+	id = 37705
+	title = "EVTNAME37705"
+	desc = "EVTDESC37705"
+	picture = "Celebration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA37705"
+		prestige = 20
+		money = -100000
+		SPA_2209 = {
+			add_core = USA
+			remove_core = FROM
+			secede_province = USA
+		}
+		relation = {
+			who = FROM
+			value = 100
+		}
+	}
+}
+
+country_event = {
+
+	id = 37706
+	news = yes
+	news_desc_long = "EVTDESC37706_NEWS_LONG"
+	news_desc_medium = "EVTDESC37706_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC37706_NEWS_SHORT"
+
+	trigger = {
+		OR = {
+			tag = SPA
+			tag = IBR
+		}
+		year = 1907
+		expressionism = 1
+		NOT = {
+			year = 1915
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1908
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1910
+		}
+	}
+
+	title = "EVTNAME37706"
+	desc = "EVTDESC37706"
+	picture = "picaso"
+
+	option = {
+		name = "EVTOPTA37706" 
+		prestige = 10
+	}
+
+}
+
+country_event = {
+
+	id = 37707
+
+	trigger = {
+		OR = {
+			tag = SPA
+			tag = IBR
+		}
+		year = 1854
+		government = hms_government
+		NOT = {
+			year = 1858
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1855
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1856
+		}
+	}
+
+	title = "EVTNAME37707"
+	desc = "EVTDESC37707"
+	picture = "Administration"
+
+	option = {
+		name = "EVTOPTA37707"
+		farmers = {
+			militancy = 2
+			consciousness = 2
+		}
+	}
+
+	option = {
+		name = "EVTOPTB37707"
+		clergymen = {
+			scaled_militancy = {
+				factor = 2
+				ideology = conservative
+			}
+		}
+		clergymen = {
+			scaled_militancy = {
+				factor = 3
+				ideology = reactionary
+			}
+		}
+		clergymen = {
+			scaled_consciousness = {
+				factor = 2
+				ideology = conservative
+			}
+		}
+		clergymen = {
+			scaled_consciousness = {
+				factor = 3
+				ideology = reactionary
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTC37707"
+		clergymen = {
+			scaled_consciousness = {
+				factor = 2
+				ideology = conservative
+			}
+		}
+		clergymen = {
+			scaled_consciousness = {
+				factor = 3
+				ideology = reactionary
+			}
+		}
+		aristocrats = {
+			scaled_consciousness = {
+				factor = 2
+				ideology = conservative
+			}
+		}
+		aristocrats = {
+			scaled_consciousness = {
+				factor = 3
+				ideology = reactionary
+			}
+		}
+		capitalists = {
+			scaled_consciousness = {
+				factor = 2
+				ideology = conservative
+			}
+		}
+		capitalists = {
+			scaled_consciousness = {
+				factor = 3
+				ideology = reactionary
+			}
+		}
+	}
+}
+
+#Madoz's Deamortisation
+country_event = {
+
+	id = 37708
+
+	trigger = {
+		OR = {
+			tag = SPA
+			tag = IBR
+		}
+		year = 1842
+		NOT = {
+			year = 1846
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1855
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1856
+		}
+	}
+
+	title = "EVTNAME37708"
+	desc = "EVTDESC37708"
+	picture = "Administration"
+
+	option = {
+		name = "EVTOPTA37708"
+		officers = {
+			militancy = 1
+			consciousness = 1
+		}
+		soldiers = {
+			militancy = 1
+			consciousness = 1
+		}
+		artisans = {
+			militancy = -1
+			consciousness = -1
+		}
+		craftsmen = {
+			militancy = -1
+			consciousness = -1
+		}
+	}
+
+	option = {
+		name = "EVTOPTB37708"
+		officers = {
+			militancy = -1
+			consciousness = -1
+		}
+		soldiers = {
+			militancy = -1
+			consciousness = -1
+		}
+		artisans = {
+			militancy = 1
+			consciousness = 1
+		}
+		craftsmen = {
+			militancy = 1
+			consciousness = 1
+		}
+	}
+}
+
+#The Maine Incident 1/2
+country_event = {
+	id = 37710
+	title = "EVTNAME37710"
+	desc = "EVTDESC37710"
+	picture = "ship_attacked"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		year = 1898
+		NOT = { year = 1900 }
+		SPA_2209 = {
+			OR = {
+				owned_by = SPA
+				owned_by = IBR
+			}
+			OR = {
+				average_militancy = 6
+				has_province_modifier = nationalist_agitation
+				controlled_by = REB
+			}
+		}
+		has_global_flag = american_civil_war_has_happened
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "EVTOPTA37710"
+		SPA_2209 = {
+			owner = { country_event = 37711 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB37710"
+		SPA_2209 = {
+			owner = {
+				relation = {
+					who = THIS
+					value = 100
+				}
+			}
+		}
+	}
+}
+
+#The Maine Incident 2/2
+country_event = {
+
+	id = 37711
+	title = "EVTNAME37711"
+	desc = "EVTDESC37711"
+	picture = "ship_attacked"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA37711"
+		add_casus_belli = {
+			target = USA
+			type = liberate_country
+			months = 12
+		}
+		war = {
+			target = USA
+			attacker_goal = {
+				casus_belli = status_quo
+			}
+			defender_goal = {
+				casus_belli = liberate_country
+				country = CUB
+			}
+			call_ally = no
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB37711"
+		release = CUB
+		USA = { create_vassal = CUB }
+	}
+}
+
+# Dissolution of Hispania
+country_event = {
+
+	id = 37715
+	title = "EVTNAME37715"
+	desc = "EVTDESC37715"
+	picture = ""
+	
+	trigger = {
+		tag = IBR
+		OR = {
+			POR = { exists = yes }
+			NOT = {
+				any_owned_province = { is_core = POR }
+			}
+		}
+		NOT = {
+			POR = { vassal_of = THIS }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA37715"
+		change_tag = SPA
+	}
+}

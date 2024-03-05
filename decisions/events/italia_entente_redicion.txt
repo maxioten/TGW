@@ -1,0 +1,140 @@
+#DEATH_OF_KUK
+country_event = {
+	id = 3
+	news = yes
+	news_desc_long = "EVTDESC1_NEWS_LONG"
+	news_desc_medium = "EVTDESC1_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC1_NEWS_SHORT"
+	title = "The Collapse of The Bulgarian Empire"
+	desc= "Our empire lost his last battle, we can't continue our dreams of empire, sadness!."
+	picture = "911"
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = XXX
+	}
+	
+	option = {
+		name = "Nothin ever last forever..."
+		prestige = -25
+		LOM={all_core={add_core = VEN}}
+			ITA = {			
+				release_vassal = SIC
+				release_vassal = SIC
+				release_vassal = VEN
+				release_vassal = VEN
+			government = proletarian_dictatorship
+			}
+			ITA = {			
+			capital = 720 
+			749 = {
+	        secede_province = PAP
+	        }
+			766 = {
+	        secede_province = SAR
+	        }
+			765 = {
+	        secede_province = SAR
+	        }
+			}
+		    KUK = {
+				create_vassal = VEN	
+                diplomatic_influence = {
+				who = VEN
+				value = 200
+			} 
+			}
+			war = {
+			target = SAR
+			attacker_goal = {
+				casus_belli = conquest 
+                state_province_id = 1496
+			}
+			
+			defender_goal = {
+				casus_belli = conquest
+			}
+		}
+		war = {
+			target = SIC
+			attacker_goal = {
+				casus_belli = conquest 
+                state_province_id = 1496
+			}
+			
+			defender_goal = {
+				casus_belli = conquest
+			}
+		}
+		war = {
+			target = PAP
+			attacker_goal = {
+				casus_belli = conquest 
+                state_province_id = 1496
+			}
+			
+			defender_goal = {
+				casus_belli = conquest
+			}
+		}
+            SIC = {
+				create_alliance = BUL
+				create_alliance = GER
+				create_alliance = KUK
+				create_alliance = TUR
+				war = {
+			target = SAR
+			attacker_goal = {
+				casus_belli = conquest 
+                state_province_id = 1496
+			}
+			
+			defender_goal = {
+				casus_belli = conquest
+			}
+		}
+		war = {
+			target = PAP
+			attacker_goal = {
+				casus_belli = conquest 
+                state_province_id = 1496
+			}
+			
+			defender_goal = {
+				casus_belli = conquest
+			}
+		}
+			}
+			VEN = {
+				create_alliance = BUL
+				create_alliance = GER
+				create_alliance = KUK
+				create_alliance = TUR
+			}
+			PAP = {
+				create_alliance = BUL
+				create_alliance = GER
+				create_alliance = KUK
+				create_alliance = TUR
+			}
+			SAR = {
+				create_alliance = BUL
+				create_alliance = GER
+				create_alliance = KUK
+				create_alliance = TUR
+				war = {
+			target = PAP
+			attacker_goal = {
+				casus_belli = conquest 
+                state_province_id = 1496
+			}
+			
+			defender_goal = {
+				casus_belli = conquest
+			}
+		}
+			}
+		}
+	}

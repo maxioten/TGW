@@ -1,0 +1,80 @@
+#Seychelles - 5000
+#ruled by Britain 1836
+#Seychelles (5000/1250 POPS)
+2127 = {
+	officers = {
+		culture = African
+		religion =  mahayana
+		size = 23
+	 } 
+	soldiers = {
+		culture = African
+		religion =  mahayana
+		size = 56
+	 } 
+	soldiers = {
+		culture = African
+		religion = mahayana
+		size = 1
+	 } 
+	soldiers = {
+		culture = African
+		religion =  hindu 
+		size = 40
+	 } 
+	aristocrats = {
+		culture = avadhi
+		religion =  hindu 
+		size = 40
+	 } 
+	aristocrats = {
+		culture = African
+		religion =  catholic 
+		size = 283
+	 } 
+	aristocrats = {
+		culture = African
+		religion = animist
+		size = 5
+	 } 
+	bureaucrats = {
+		culture = African
+		religion =  catholic 
+		size = 7
+	 } 
+	capitalists = {
+		culture = African
+		religion =  catholic 
+		size = 40
+	 } 
+	clergymen = {
+		culture = African
+		religion =  catholic 
+		size = 80
+	 } 
+	clergymen = {
+		culture = African
+		religion = animist
+		size = 1
+	 } 
+	artisans = {
+		culture = African
+		religion =  catholic 
+		size = 152
+	 } 
+	artisans = {
+		culture = African
+		religion = animist
+		size = 3
+	 } 
+	farmers = {
+		culture = African
+		religion =  catholic 
+		size = 6778
+	 } 
+	farmers = {
+		culture = African
+		religion = animist
+		size = 138
+	 } 
+}

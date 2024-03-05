@@ -1,0 +1,131 @@
+political_decisions = {
+	form_allies = {
+		potential = {
+			is_greater_power = yes
+			
+			OR = {
+				government = democracy
+				government = hms_government
+			}
+			
+			# Not in any faction
+			NOT = { has_country_modifier = axis_faction }
+			NOT = { has_country_modifier = allies_faction }
+			NOT = { has_country_modifier = comintern_faction }
+			
+			# Allies have not formed yet
+			NOT = { has_global_flag = allies_enabled }
+			
+			OR = {
+				has_global_flag = axis_enabled
+				has_global_flag = comintern_enabled
+			}
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = allies_faction
+				
+				duration = -1
+			}
+			
+			nationalvalue = nv_liberty
+
+			set_country_flag = allies_leader
+			clr_global_flag = no_allies_leader
+			set_global_flag = allies_enabled
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	become_allies_leader = {
+		potential = {
+			is_greater_power = yes
+			
+			OR = {
+				government = democracy
+				government = hms_government
+			}
+			
+			has_country_modifier = allies_faction
+			NOT = { has_country_flag = allies_leader }
+			has_global_flag = allies_enabled
+			has_global_flag = no_allies_leader
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = allies_faction
+				
+				duration = -1
+			}
+
+			set_country_flag = allies_leader
+			clr_global_flag = no_allies_leader
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	join_allies = {
+		potential = {
+			OR = {
+				NOT = {
+					OR = {
+						government = fascist_dictatorship
+						government = proletarian_dictatorship
+					}
+				}
+				
+				sphere_owner = { has_country_modifier = allies_faction }
+			}
+			
+			civilized = yes
+			
+			# Not in any faction
+			NOT = { has_country_modifier = axis_faction }
+			NOT = { has_country_modifier = allies_faction }
+			NOT = { has_country_modifier = comintern_faction }
+			
+			# Allies exists
+			has_global_flag = allies_enabled
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = allies_faction
+				
+				duration = -1
+			}
+			
+			nationalvalue = nv_liberty
+			
+			any_country = {
+				limit = { has_country_modifier = allies_faction }
+				
+				relation = { who = THIS value = 400 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

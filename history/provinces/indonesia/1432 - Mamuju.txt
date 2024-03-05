@@ -1,0 +1,11 @@
+owner = SLW
+controller = SLW
+add_core = SLW
+trade_goods = grain
+life_rating = 30
+naval_base = 5
+1914.1.1 = {
+	owner = NET
+	controller = NET
+	colonial = 2
+}

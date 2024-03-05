@@ -1,0 +1,966 @@
+country_event = {
+	id = 60000
+	title = "EVTNAME60000"
+	desc = "EVTDESC60000"
+	picture = "Unite"
+	
+	trigger = {
+		NOT = {
+			government = proletarian_dictatorship
+			government = presidential_dictatorship
+			government = bourgeois_dictatorship
+			government = fascist_dictatorship
+			government = absolute_monarchy
+		}
+		civilized = yes
+		political_parties = underground_parties
+		vote_franschise = none_voting
+		upper_house_composition = party_appointed
+		ruling_party_ideology = communist
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA60000"
+		government = proletarian_dictatorship
+	}
+}
+
+country_event = {
+	id = 60010
+	title = "EVTNAME60010"
+	desc = "EVTDESC60010"
+	picture = "Unite"
+	
+	trigger = {
+		NOT = {
+			government = proletarian_dictatorship
+			government = presidential_dictatorship
+			government = bourgeois_dictatorship
+			government = fascist_dictatorship
+			government = absolute_monarchy
+		}
+		civilized = yes
+		political_parties = underground_parties
+		vote_franschise = none_voting
+		upper_house_composition = party_appointed
+		ruling_party_ideology = reactionary
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA60010"
+		government = presidential_dictatorship
+	}
+}
+
+country_event = {
+	id = 60020
+	title = "EVTNAME60020"
+	desc = "EVTDESC60020"
+	picture = "Unite"
+	
+	trigger = {
+		NOT = {
+			government = proletarian_dictatorship
+			government = presidential_dictatorship
+			government = bourgeois_dictatorship
+			government = fascist_dictatorship
+			government = absolute_monarchy
+		}
+		civilized = yes
+		political_parties = underground_parties
+		vote_franschise = none_voting
+		upper_house_composition = party_appointed
+		ruling_party_ideology = anarcho_liberal
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA60020"
+		government = bourgeois_dictatorship
+	}
+}
+
+country_event = {
+	id = 60030
+	title = "EVTNAME60030"
+	desc = "EVTDESC60030"
+	picture = "Unite"
+	
+	trigger = {
+		NOT = {
+			government = proletarian_dictatorship
+			government = presidential_dictatorship
+			government = bourgeois_dictatorship
+			government = fascist_dictatorship
+			government = absolute_monarchy
+		}
+		civilized = yes
+		political_parties = underground_parties
+		vote_franschise = none_voting
+		upper_house_composition = party_appointed
+		ruling_party_ideology = fascist
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA60030"
+		government = fascist_dictatorship
+	}
+}
+
+country_event = {
+	id = 60050
+	title = "EVTNAME60050"
+	desc = "EVTDESC60050"
+	picture = "Unite"
+	
+	trigger = {
+		OR = {
+			AND = {
+				government = proletarian_dictatorship
+				NOT = { ruling_party_ideology = communist }
+			}
+			AND = {
+				government = presidential_dictatorship
+				NOT = { ruling_party_ideology = reactionary }
+			}
+			AND = {
+				government = bourgeois_dictatorship
+				NOT = { ruling_party_ideology = anarcho_liberal }
+			}
+			AND = {
+				government = fascist_dictatorship
+				NOT = { ruling_party_ideology = fascist }
+			}
+		}
+		civilized = yes
+		NOT = {
+			political_parties = underground_parties
+			vote_franschise = none_voting
+			upper_house_composition = party_appointed
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA60050"
+		government = democracy
+	}
+}
+
+country_event = {
+	id = 60040
+	title = "EVTNAME60040"
+	desc = "EVTDESC60040"
+	picture = "Monarchy"
+	
+	trigger = {
+		OR = {
+			government = hms_government
+			government = prussian_constitutionalism
+		}
+		civilized = yes
+		NOT = { ruling_party_ideology = fascist }
+		NOT = { ruling_party_ideology = anarcho_liberal }
+		NOT = { ruling_party_ideology = communist }
+		vote_franschise = none_voting
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA60040"
+		government = absolute_monarchy
+	}
+}
+
+country_event = {
+	id = 60060
+	title = "EVTNAME60060"
+	desc = "EVTDESC60060"
+	picture = "Monarchy"
+	
+	trigger = {
+		government = absolute_monarchy
+		NOT = {
+				vote_franschise = none_voting
+		}	
+		civilized = yes	
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTNAME60060"
+		government = prussian_constitutionalism
+	}
+}
+
+country_event = {
+	id = 60070
+	title = "EVTNAME60070"
+	desc = "EVTDESC60070"
+	picture = "Monarchy"
+	
+	trigger = {
+		government = prussian_constitutionalism
+		OR = {
+			political_parties = secret_ballots
+			political_parties = non_secret_ballots
+		}
+		civilized = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA60070"
+		government = hms_government
+	}
+}
+
+country_event = {
+	id = 60080
+	title = "EVTNAME60080"
+	desc = "EVTDESC60080"
+	picture = "Administration"
+	
+	trigger = {
+		government = democracy
+		vote_franschise = none_voting		
+		OR = {
+			ruling_party_ideology = conservative
+			ruling_party_ideology = reactionary
+		}
+		civilized = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA60080"
+		government = presidential_dictatorship
+	}
+}
+
+country_event = {
+	id = 60090
+	title = "EVTNAME60080"
+	desc = "EVTDESC60080"
+	picture = "Administration"
+	
+	trigger = {
+		government = democracy
+		vote_franschise = none_voting
+		OR = {
+			ruling_party_ideology = liberal
+			ruling_party_ideology = anarcho_liberal
+		}
+		civilized = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA60080"
+		government = bourgeois_dictatorship
+	}
+}
+
+country_event = {
+	id = 60100
+	title = "EVTNAME60080"
+	desc = "EVTDESC60080"
+	picture = "Administration"
+	
+	trigger = {
+		government = democracy
+		vote_franschise = none_voting
+		OR = {
+			ruling_party_ideology = socialist
+			ruling_party_ideology = communist
+		}
+		civilized = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA60080"
+		government = proletarian_dictatorship
+	}
+}
+
+country_event = {
+	id = 60110
+	title = "EVTNAME60080"
+	desc = "EVTDESC60080"
+	picture = "Administration"
+	
+	trigger = {
+		government = democracy
+		vote_franschise = none_voting
+		ruling_party_ideology = fascist
+		civilized = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA60080"
+		government = fascist_dictatorship
+	}
+}
+
+# Annex SoIs
+country_event = {
+	id = 60120
+	title = "EVTNAME60120"
+	desc = "EVTDESC60120"
+	picture = "greatpowers"
+	
+	trigger = {
+		ai = yes
+		war = no
+		part_of_sphere = yes
+		sphere_owner = {
+			is_greater_power = yes
+			is_culture_group = THIS
+			is_cultural_union = yes
+			war = no
+		}
+		OR = {
+			is_vassal = no
+			vassal_of = THIS
+		}
+		NOT = {
+			AND = {
+				OR = {
+					tag = AUS
+					tag = KUK
+				}
+				sphere_owner = {
+					tag = GER
+				}
+				NOT = {
+					exists = HUN
+				}
+			}
+		}
+		NOT = {	
+			tag = ISR 
+			}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA60120"
+		sphere_owner = {
+			country_event = { id=60130 days=0 }
+		}
+	}
+}
+
+# Get them Annexed
+country_event = {
+	id = 60130
+	title = "EVTNAME60130"
+	desc = "EVTDESC60130"
+	picture = "greatpowers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA60130"
+		prestige = 5
+		inherit = FROM
+	}
+	
+	option = {
+		name = "EVTOPTB60130"
+		any_pop = {
+			militancy = 0.1
+		}
+	}
+}
+
+country_event = {
+	id = 60140
+	title = "EVTNAME60140"
+	desc = "EVTDESC60140"
+	picture = "Administration"
+	
+	trigger = {
+		upper_house_composition = party_appointed
+		ruling_party_ideology = liberal 
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA60140"
+		political_reform = appointed
+	}
+}
+
+country_event = {
+	id = 60150
+	title = "EVTNAME60150"
+	desc = "EVTDESC60150"
+	picture = "Unite"
+	
+	trigger = {
+		has_country_modifier = female_suffrage
+		NOT = {
+			OR = {
+				vote_franschise = universal_weighted_voting
+				vote_franschise = universal_voting
+			}	
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA60150"
+		remove_country_modifier = female_suffrage
+	}
+}
+
+
+### War drafts ###
+
+country_event = {
+	id = 60160
+	title = "EVTNAME60160"
+	desc = "EVTDESC60160"
+	picture = "Unite"
+	
+	trigger = {
+		war = yes
+		civilized = yes
+		NOT = { has_country_flag = drafted }
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	immediate = { set_country_flag = drafted }
+	
+	option = {
+		name = "EVTOPTA60160"
+		political_reform = volunteer_army
+		
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				NOT = { war_policy = pacifism }
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB60160"
+		political_reform = one_year_draft
+		
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				NOT = { war_policy = anti_military }
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTC60160"
+		political_reform = two_year_draft
+		
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				NOT = { war_policy = pro_military }
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTD60160"
+		political_reform = four_year_draft
+		
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				NOT = { war_policy = jingoism }
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTE60160"
+		political_reform = mandatory_service
+		
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				NOT = { has_country_flag = in_great_war }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 60161
+	title = "EVTNAME60161"
+	desc = "EVTDESC60161"
+	picture = "Unite"
+	
+	trigger = {
+		war = no
+		has_country_flag = drafted
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = { clr_country_flag = drafted }
+	
+	option = {
+		name = "EVTOPTA60161"
+		political_reform = volunteer_army
+	}
+	
+	option = {
+		name = "EVTOPTB60161"
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+
+	id = 99999999
+	allow_multiple_instances = no
+	trigger = {
+		date = 1914.01.01
+		ai = no
+		not = { has_country_flag = stonks }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	title = "Monetary Injection"
+	desc = "Inflation is a myth"
+	immediate = {
+		money = 2000000
+		set_country_flag = stonks
+		
+		ammunition = 1000
+		small_arms = 1000
+		artillery = 1000
+		canned_food = 1000
+		wine = 2000
+		liquor = 2000
+		luxury_clothes = 500
+		machine_parts = 1000
+		clipper_convoy = 500
+		wool = 500
+	}
+	option = {
+		name = "OK"
+	}
+}
+
+#independence event
+country_event = {
+	id = 60162
+	title = "The Powderkeg of Europe"
+	desc = "Welcome to 1914, tension is brewing up in Europe, and there are rumours of a war impending, we must prepare."
+	news = yes
+	news_title = "EVTNAME60160_NEWS_TITLE"
+	news_desc_long = "EVTDESC60160_NEWS_LONG"
+	news_desc_medium = "EVTDESC60160_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC60160_NEWS_SHORT"
+
+	trigger = {
+		exists = yes
+		NOT = { has_country_flag = existing_country }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "May god have mercy on us all..."
+		set_country_flag = existing_country
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			militancy = -2
+		}
+		leadership = 900
+                money = 1000000
+		random_owned = {
+			limit = {
+				owner = { has_country_flag = civilize_after_release }
+			}
+			owner = { civilized = yes }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1880
+					NOT = { year = 1900 }
+				}
+			}
+			owner = { years_of_research = 0.01 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1900
+					NOT = { year = 1920 }
+				}
+			}
+			owner = { years_of_research = 0.01 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1920
+				}
+			}
+			owner = { years_of_research = 0.01 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					admin_reform = no_admin_reform
+					year = 1880
+				}
+			}
+			owner = {
+				economic_reform = yes_admin_reform
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					finance_reform = no_finance_reform
+					year = 1880
+				}
+			}
+			owner = {
+				economic_reform = yes_finance_reform
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					any_owned_province = { port = yes }
+					foreign_navies = no_foreign_navies
+					OR = {
+						foreign_training = yes_foreign_training
+						army_schools = yes_army_schools
+						foreign_officers = yes_foreign_officers
+					}
+					year = 1880
+				}
+			}
+			owner = {
+				military_reform = yes_foreign_navies
+				activate_technology = post_nelsonian_thought
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					foreign_officers = no_foreign_officers
+					OR = {
+						foreign_training = yes_foreign_training
+						army_schools = yes_army_schools
+					}
+					year = 1900
+				}
+			}
+			owner = {
+				military_reform = yes_foreign_officers
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					foreign_training = yes_foreign_training
+					army_schools = no_army_schools
+					year = 1900
+				}
+			}
+			owner = {
+				military_reform = yes_army_schools
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					foreign_training = no_foreign_training
+					foreign_weapons = yes_foreign_weapons
+					year = 1880
+				}
+			}
+			owner = {
+				military_reform = yes_foreign_training
+				activate_technology = military_staff_system
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					foreign_weapons = no_foreign_weapons
+					year = 1870
+				}
+			}
+			owner = {
+				military_reform = yes_foreign_weapons
+				activate_technology = flintlock_rifles
+			}
+		}		
+		any_country = {
+			limit = {
+				exists = no
+				has_country_flag = existing_country
+			}
+			clr_country_flag = existing_country
+		}
+	}
+}
+
+#independence event
+country_event = {
+	id = 29
+	title = "GP Money"
+	desc = "Your country has been given extra starting money"
+	news = yes
+	news_title = "EVTNAME60160_NEWS_TITLE"
+	news_desc_long = "EVTDESC60160_NEWS_LONG"
+	news_desc_medium = "EVTDESC60160_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC60160_NEWS_SHORT"
+
+	trigger = {
+		NOT = { has_country_flag = gpmoney }
+		OR = {
+			tag = JAP
+			tag = RUS
+			tag = ENG
+			tag = FRA
+			tag = GER
+			tag = KUK
+			tag = ITA
+			tag = USA
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Thanks"
+		set_country_flag = gpmoney
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			militancy = -2
+		}
+                money = 2000000
+		random_owned = {
+			limit = {
+				owner = { has_country_flag = civilize_after_release }
+			}
+			owner = { civilized = yes }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1880
+					NOT = { year = 1900 }
+				}
+			}
+			owner = { years_of_research = 0.01 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1900
+					NOT = { year = 1920 }
+				}
+			}
+			owner = { years_of_research = 0.01 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1920
+				}
+			}
+			owner = { years_of_research = 0.01 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					admin_reform = no_admin_reform
+					year = 1880
+				}
+			}
+			owner = {
+				economic_reform = yes_admin_reform
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					finance_reform = no_finance_reform
+					year = 1880
+				}
+			}
+			owner = {
+				economic_reform = yes_finance_reform
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					any_owned_province = { port = yes }
+					foreign_navies = no_foreign_navies
+					OR = {
+						foreign_training = yes_foreign_training
+						army_schools = yes_army_schools
+						foreign_officers = yes_foreign_officers
+					}
+					year = 1880
+				}
+			}
+			owner = {
+				military_reform = yes_foreign_navies
+				activate_technology = post_nelsonian_thought
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					foreign_officers = no_foreign_officers
+					OR = {
+						foreign_training = yes_foreign_training
+						army_schools = yes_army_schools
+					}
+					year = 1900
+				}
+			}
+			owner = {
+				military_reform = yes_foreign_officers
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					foreign_training = yes_foreign_training
+					army_schools = no_army_schools
+					year = 1900
+				}
+			}
+			owner = {
+				military_reform = yes_army_schools
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					foreign_training = no_foreign_training
+					foreign_weapons = yes_foreign_weapons
+					year = 1880
+				}
+			}
+			owner = {
+				military_reform = yes_foreign_training
+				activate_technology = military_staff_system
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					civilized = no
+					foreign_weapons = no_foreign_weapons
+					year = 1870
+				}
+			}
+			owner = {
+				military_reform = yes_foreign_weapons
+				activate_technology = flintlock_rifles
+			}
+		}		
+		any_country = {
+			limit = {
+				exists = no
+				has_country_flag = existing_country
+			}
+			clr_country_flag = existing_country
+		}
+	}
+}

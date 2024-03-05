@@ -1,0 +1,13 @@
+owner = TKG
+controller = TKG
+add_core = TKG
+trade_goods = grain
+life_rating = 35
+1914.1.1 = {
+	owner = JAP
+	controller = JAP
+	add_core = JAP
+	remove_core = TKG
+	
+	railroad = 2
+}

@@ -1,0 +1,38 @@
+country_event = { 
+
+id = 1947194866
+
+major = no
+news = yes
+news_desc_long = "EVTDESC1_NEWS_LONG"
+news_desc_medium = "EVTDESC1_NEWS_MEDIUM"
+news_desc_short = "EVTDESC1_NEWS_SHORT"
+title = "The Fall of Belgium"
+desc= "The last Belgium stronghold has fallen"
+
+	fire_only_once = yes
+        
+    is_triggered_only = yes
+	option = {
+		name = "Very humiliating..."
+							
+                        395 = { change_controller = GER }
+                        398 = { change_controller = GER }
+                        396 = { change_controller = GER }
+                        392 = { change_controller = GER }
+                        394 = { change_controller = GER }
+                        393 = { change_controller = GER }
+                        387 = { change_controller = GER }
+                        391 = { change_controller = GER }
+                        390 = { change_controller = GER }
+                        389 = { change_controller = GER }
+                        404 = { change_controller = GER }
+                        405 = { change_controller = GER }
+                        403 = { change_controller = GER }
+                        413 = { change_controller = GER }
+                        399 = { change_controller = GER }
+                        401 = { change_controller = GER }
+                        397 = { change_controller = GER }
+                        408 = { change_controller = GER }
+		}
+	}

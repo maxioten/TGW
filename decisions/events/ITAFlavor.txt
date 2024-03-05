@@ -1,0 +1,184 @@
+country_event = {
+
+	id = 35300
+
+	trigger = {
+		tag = ITA
+		year = 1910
+		NOT = {
+			year = 1913
+		}
+		
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1911
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1912
+		}
+	}
+
+	title = "EVTNAME35300"
+	desc = "EVTDESC35300"
+	picture = "theatre"
+
+	option = {
+		name = "EVTOPTA35300" 
+		prestige = 2
+	}
+}
+
+country_event = {
+
+	id = 35301
+
+	trigger = {
+		tag = ITA
+		year = 1902
+		NOT = {
+			year = 1905
+			}
+		
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1903
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1904
+		}
+	}
+
+	title = "EVTNAME35301"
+	desc = "EVTDESC35301"
+	picture = "theatre"
+
+	option = {
+		name = "EVTOPTA35301" 
+		prestige = 3
+	}
+}
+
+country_event = {
+
+	id = 35302 #Parallel to PAP35700
+	title = "EVTNAME35700"
+	desc = "EVTDESC35700"
+	picture = "pope"
+	
+	trigger = {
+		tag = ITA
+		year = 1891
+		NOT = {
+			year = 1894
+			exists = PAP
+			has_global_flag = RerumNovarum
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1892
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1893
+		}
+	}
+
+	option = {
+		name = "EVTOPTA35700" 
+		prestige = 5
+		labourers = {
+			consciousness = 1
+		}
+		craftsmen = {
+			consciousness = 1
+		}
+		artisans = {
+			consciousness = 1
+		}
+		soldiers = {
+			consciousness = 1
+		}
+		set_global_flag = RerumNovarum		
+	}
+}
+
+# Become Savoy
+country_event = {
+	id = 35310
+	title = "EVTNAME35310"
+	desc = "EVTDESC35310"
+	picture = ""
+
+	trigger = {
+		tag = SAR
+		war = no
+		NOT = {
+			owns = 765
+			owns = 766
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA35310" #We will be great again one day!
+		
+		change_tag = SVY
+		remove_accepted_culture = south_italian
+		primary_culture = north_italian
+		capital = 720
+	}
+}
+
+# Become Sardinia
+country_event = {
+	id = 35311
+	title = "EVTNAME35311"
+	desc = "EVTDESC35311"
+	picture = ""
+
+	trigger = {
+		tag = SAR
+		war = no
+		NOT = {
+			SAR_466 = { owned_by = THIS }
+			SAR_720 = { owned_by = THIS }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA35311" #We will be great again one day!
+		
+		change_tag = SRD
+		remove_accepted_culture = north_italian
+		primary_culture = south_italian
+		capital = 765
+	}
+}

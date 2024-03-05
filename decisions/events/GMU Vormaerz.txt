@@ -1,0 +1,2179 @@
+### Events 91300-91525 ### Vormaerz ### by Marco Dandolo ###
+
+# Events 91300-13 Goettinger Seven
+
+#Vormaerz in general
+
+# Event  91335	Introduction
+# Event  91340	Kneeling controversy (BAV)
+# Events 91345-18 Free press events (BAD)
+# Events 91360-20 Grimms Woerterbuch
+# Events 91370-23 Heines Wintermaerchen
+# Event  91385	Beethovenfest response
+# Events 91390-28 Beethoven festival scandal
+# Events 91410-32 Germanistentag
+# Event  91430	Goethedenkmal
+# Event  91435	Kurhessischer Verfassungskonflikt
+# Event  91440	Kosmos (Humboldt)
+
+# Events 91445-45 Composers
+
+# Event  91445	Schumann
+# Event  91450	Mendelssohn
+# Event  91455	Liszt
+# Event  91460	Brahms
+# Event  91465	Schubert's Unfinished
+# Event  91470	Johann Strauss
+# Event  91475	Mahler
+# Event  91480	Richard Strauss
+# Event  91485	Anton Bruckner
+# Event  91490	Schönberg
+
+#Other Vormaerz events
+
+# Event  91495	Mondnacht
+# Event  91500	Spitzweg
+# Event  91505	Brentano
+# Event  91510-52 The Weavers
+
+
+
+########################
+# The Goettinger Seven #
+########################
+
+
+#Revocation of the constitution
+country_event = {
+
+	id = 91300
+
+	title = "EVTNAME91300" 
+	desc = "EVTDESC91300"
+	picture = "queenvictoria"
+
+	trigger = {
+		tag = HAN
+		NOT = { vassal_of = ENG }
+		NOT = {
+			has_country_flag = han_constitution_revoked
+			has_country_flag = han_constitution_approved
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = "EVTOPTA91300"
+		set_country_flag = han_constitution_revoked
+		prestige = 5
+		government = absolute_monarchy
+		political_reform = none_voting
+			any_pop = {
+				scaled_consciousness = {
+					ideology = liberal
+					factor = 1.5
+				}
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = conservative
+					factor = -2
+				}
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = reactionary
+					factor = -3
+				}
+			}
+		any_pop = {
+			limit = {
+				is_culture_group = germanic
+			}
+			ideology = {
+				value = reactionary
+				factor = 0.02
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB91300"
+		set_country_flag = han_constitution_approved
+		prestige = -5
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = -3
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = 8
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 10
+			}
+		}
+		
+		ai_chance = {
+			factor = 0.01
+		}
+	}
+}
+
+
+#The Goettinger Seven
+country_event = {
+
+	id = 91305
+
+	title = "EVTNAME91305"
+	desc = "EVTDESC91305"
+	picture = "diesieben"
+
+	trigger = {
+		has_country_flag = han_constitution_revoked
+		NOT = { has_global_flag = die_goettinger_sieben }
+		NOT = { has_global_flag = die_goettinger_sieben_approve }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA91305"
+		prestige = 10
+		set_global_flag = die_goettinger_sieben
+		set_country_flag = goettinger_sieben_bad
+		any_pop = {
+			limit = { is_culture_group = germanic }
+			ideology = {
+				value = liberal
+				factor = 0.15
+			}
+		}
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = 3
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = 3
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = -3
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = -3
+			}
+		}
+		ENG = { country_event = 91315 }
+		any_country = {
+			limit = {
+				is_culture_group = germanic
+				NOT = { tag = THIS }
+			}
+			country_event = 91310
+		}
+	}
+
+	option = {
+		name = "EVTOPTB91305"
+		set_country_flag = die_goettinger_sieben_approve
+		government = prussian_constitutionalism
+		political_reform = free_press
+		vote_franschise = wealth_voting
+		prestige = -10
+		any_pop = {
+			limit = { is_culture_group = germanic }
+			ideology = {
+				value = liberal
+				factor = 0.25
+			}
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = liberal
+				factor = -3
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = 3
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 6
+			}
+		}
+		
+		ai_chance = {
+			factor = 0.01
+		}
+	}
+}
+
+#The cause in the German states
+country_event = {
+
+	id = 91310
+
+	title = "EVTNAME91310"
+	desc = "EVTDESC91310"
+	picture = "diesieben"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91310"
+		set_country_flag = goettinger_sieben_good
+		prestige = 5
+		plurality = 2
+		relation = {
+			who = FROM
+			value = -10
+		}
+		any_pop = {
+			limit = { is_culture_group = germanic }
+			ideology = {
+				value = liberal
+				factor = 0.05
+			}
+		}
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0
+				tag = AUS
+		   }
+		}
+	}
+
+	option = {
+		name = "EVTOPTB91310"
+		set_country_flag = goettinger_sieben_bad
+		prestige = 10
+		relation = {
+			who = FROM
+			value = 25
+		}
+		any_pop = {
+			limit = { is_culture_group = germanic }
+			ideology = {
+				value = liberal
+				factor = 0.02
+			}
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = liberal
+				factor = 1
+			}
+		}
+		
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+#Britain reacts
+country_event = {
+
+	id = 91315
+
+	title = "EVTNAME91315"
+	desc = "EVTDESC91315"
+	picture = "diesieben"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91315"
+		set_country_flag = goettinger_sieben_good
+		prestige = 1
+		relation = {
+			who = FROM
+			value = -25
+		}
+	}
+}
+
+#Student Propaganda
+country_event = {
+
+	id = 91320
+
+	title = "EVTNAME91320"
+	desc = "EVTDESC91320"
+	picture = "Revolution"
+
+	trigger = {
+		has_country_flag = goettinger_sieben_bad
+		NOT = { has_country_flag = goettingen_student_propaganda }
+		NOT = { has_country_flag = liberal_revolution_fired }
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "EVTOPTA91320"
+		set_country_flag = goettingen_student_propaganda
+		any_pop = {
+			limit = {
+				is_culture_group = germanic
+			}
+			ideology = {
+				value = liberal
+				factor = 0.01
+			}
+		}
+		middle_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.02
+			}
+		}
+	}
+}
+
+#Dahlmann&others
+country_event = {
+
+	id = 91325
+
+	title = "EVTNAME91325"
+	desc = "EVTDESC91325"
+	picture = "diesieben"
+
+	trigger = {
+		has_country_flag = goettinger_sieben_good
+		NOT = { has_global_flag = goettingen_seven_here }
+		NOT = { has_country_flag = no_goettingen_seven_here }
+		NOT = { year = 1850 }
+	}
+
+	mean_time_to_happen = {
+		months = 80
+		modifier = {
+			factor = 0.7
+			tag = PRU
+		}
+		modifier = {
+			factor = 0.7
+			tag = NGF
+		}
+		modifier = {
+			factor = 0.8
+			tag = SAX
+		}
+		modifier = {
+			factor = 0.8
+			tag = BAD
+		}
+		modifier = {
+			factor = 0.8
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 0.7
+			average_consciousness = 7
+		}
+		modifier = {
+			factor = 0.6
+			average_consciousness = 9
+		}
+		modifier = {
+			factor = 0.5
+			has_country_flag = WilhelmIV_king
+		}
+		modifier = {
+			factor = 5
+			tag = AUS
+		}
+		modifier = {
+			factor = 0.5
+			year = 1842
+		}
+	}
+
+	option = {
+		name = "EVTOPTA91325"
+		set_global_flag = goettingen_seven_here
+		prestige = 20
+		plurality = 10
+		any_pop = {
+			limit = {
+				is_culture_group = germanic
+			}
+			ideology = {
+				value = liberal
+				factor = 0.05
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB91325"
+		set_country_flag = no_goettingen_seven_here
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = 2
+			}
+		}
+	}
+}
+
+#Aftermath
+country_event = {
+
+	id = 91330
+
+	title = "EVTNAME91330"
+	desc = "EVTDESC91330"
+	picture = "diesieben"
+
+	trigger = {
+		tag = GER
+		press_rights = free_press
+		public_meetings = yes_meeting
+		OR = { 
+			government = democracy
+			government = hms_government
+		}
+		OR = { 
+			ruling_party_ideology = conservative
+			ruling_party_ideology = liberal
+			ruling_party_ideology = socialist
+		}
+		has_global_flag = die_goettinger_sieben
+		NOT = { has_country_flag = die_goettinger_sieben_honoured }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA91330"
+		set_country_flag = die_goettinger_sieben_honoured
+		plurality = 5
+		prestige = 25
+		any_pop = {
+			limit = { is_culture_group = germanic }
+			militancy = -0.5
+			consciousness = -0.5
+		}
+	}
+}
+
+
+
+##################################################
+# These Events deal with the Vormaerz in general #
+##################################################
+
+#Introduction
+country_event = {
+
+	id = 91335
+
+	trigger = {
+		NOT = { year = 1848 }
+		is_culture_group = germanic
+		NOT = { has_country_flag = liberal_revolution_fired }
+		NOT = { has_country_flag = vormaerz }
+	}
+ 
+	mean_time_to_happen =  {
+		days = 1
+	}
+
+	title = "EVTNAME91335"
+	desc = "EVTDESC91335"
+	picture = "Vormaerz"
+
+	option = {
+		name = "EVTOPTA91335" 
+		set_country_flag = vormaerz
+		rich_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.02
+			}
+		}
+		middle_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.01
+			}
+		}
+	}	
+}
+
+#Kneeling controversy (BAV)
+country_event = {
+
+	id = 91340
+
+	trigger = {
+		tag = BAV
+		year = 1838 
+		NOT = { year = 1845 }
+	}
+
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 6
+	}
+
+	title = "EVTNAME91340"
+	desc = "EVTDESC91340"
+	picture = "bayern"
+
+	option = {
+		name = "EVTOPTA91340" 
+		prestige = 5
+		any_pop = {
+			limit = { has_pop_religion = protestant }
+			consciousness = 1
+			militancy = 0.5
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}	
+
+	option = {
+		name = "EVTOPTB91340"
+		prestige = -5 
+		any_pop = {
+			limit = { has_pop_religion = catholic }
+			consciousness = 1
+			militancy = 0.5
+		}
+	}
+}
+
+#################
+# BADEN'S PRESS #
+#################
+
+#Era Blittersdorf (BAD)
+
+country_event = {
+
+	id = 91345
+
+	trigger = {
+		tag = BAD
+		year = 1838 
+		NOT = { year = 1843 }
+		OR = { 
+			ruling_party_ideology = reactionary
+			ruling_party_ideology = conservative
+		}
+	}
+
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		days = 10
+	}
+
+	title = "EVTNAME91345"
+	desc = "EVTDESC91345"
+	picture = "meeting3"
+
+	option = {
+		name = "EVTOPTA91345" 
+		prestige = 2
+		any_pop = {
+			limit = { type = bureaucrats }
+			consciousness = 2
+			militancy = 1
+		}
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = 0.5
+			}
+			ideology = {
+				value = liberal
+				factor = 0.01
+			}
+		}
+	}	
+}
+
+#Free Press in Baden (AUS/PRU)
+
+country_event = {
+
+	id = 91350
+
+	is_triggered_only = yes
+
+	title = "EVTNAME91350"
+	desc = "EVTDESC91350"
+	picture = "news"
+
+	option = {
+		name = "EVTOPTA91350" 
+		prestige = 5
+		set_country_flag = against_baden_press
+		relation = {
+			who = FROM
+			value = -50
+		}
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = 0.5
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = 0.25
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.2
+				tag = AUS
+			}
+			modifier = {
+				factor = 1.3
+				ruling_party_ideology = conservative
+			}
+			modifier = {
+				factor = 1.4
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 1.5
+				government = absolute_monarchy
+			}
+		}
+	}	
+
+	option = {
+		name = "EVTOPTB91350" 
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = -0.5
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				ruling_party_ideology = liberal
+			}
+			modifier = {
+				factor = 1.6
+				government = prussian_constitutionalism
+			}
+			modifier = {
+				factor = 1.7
+				government = hms_government
+			}
+		}
+	}
+}
+
+#Response to Baden
+
+country_event = {
+
+	id = 91355
+
+	trigger = {
+		tag = BAD
+		has_country_flag = free_press_in_baden
+		PRU = { has_country_flag = against_baden_press }
+		AUS = { has_country_flag = against_baden_press }
+	}
+
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		days = 7
+	}
+
+	title = "EVTNAME91355"
+	desc = "EVTDESC91355"
+	picture = "news"
+
+	option = {
+		name = "EVTOPTA91355" 
+		prestige = 2
+		relation = {
+			who = AUS
+			value = -50
+		}
+		relation = {
+			who = PRU
+			value = -50
+		}
+	}
+	option = {
+		name = "EVTOPTB91355" 
+		political_reform = censored_press
+		prestige = -5
+		relation = {
+			who = AUS
+			value = 150
+		}
+		relation = {
+			who = PRU
+			value = 150
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = liberal
+				factor = 1
+			}
+		}
+		ai_chance = {
+			factor = 0.4
+		}
+	}	
+}
+
+#Grimm Woerterbuch
+
+#Grimm Woerterbuch2
+
+############################
+# GERMANY, A WINTER'S TALE #
+############################
+
+#Deutschland, ein Wintermaerchen (publishing)
+
+country_event = {
+
+	id = 91370
+
+	trigger = {
+		owns = 528
+		year = 1844
+		NOT = { has_global_flag = heines_wintermaerchen  }
+	}
+
+	fire_only_once = yes
+ 
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	title = "EVTNAME91370"
+	desc = "EVTDESC91370"
+	picture = "Heine"
+
+	option = {
+		name = "EVTOPTA91370"
+		set_global_flag = heines_wintermaerchen 
+		prestige = 10
+		plurality = 2
+		rich_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.03
+			}
+		}
+		middle_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.05
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = germanic
+				NOT = { tag = THIS }
+			}
+			country_event = 91375
+		}
+		
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 2
+				ruling_party_ideology = liberal
+			}
+			modifier = {
+				factor = 0.5
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 2
+				government = democracy
+			}
+			modifier = {
+				factor = 1.5
+				government = hms_government
+			}
+			modifier = {
+				factor = 0.5
+				government = absolute_monarchy
+			}
+			modifier = {
+				factor = 2
+				tag = HAM
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB91370" 
+		prestige = -10
+		
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0.1
+				ruling_party_ideology = liberal
+			}
+			modifier = {
+				factor = 2
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 0.1
+				government = democracy
+			}
+			modifier = {
+				factor = 0.5
+				government = hms_government
+			}
+			modifier = {
+				factor = 1.5
+				government = prussian_constitutionalism
+			}
+			modifier = {
+				factor = 2
+				government = absolute_monarchy
+			}
+			modifier = {
+				factor = 2
+				tag = PRU
+			}
+		}
+	}	
+}
+
+#Deutschland, ein Wintermaerchen (published)
+
+country_event = {
+
+	id = 91375
+
+	is_triggered_only = yes
+
+	title = "EVTNAME91370"
+	desc = "EVTDESC91370"
+	picture = "heine"
+
+	option = {
+		name = "EVTOPTA91375" 
+		prestige = 2
+		rich_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.015
+			}
+		}
+		middle_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.025
+			}
+		}
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 1.2
+				tag = AUS
+			}
+			modifier = {
+				factor = 1.2
+				tag = PRU
+			}
+			modifier = {
+				factor = 1.3
+				ruling_party_ideology = conservative
+			}
+			modifier = {
+				factor = 1.3
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 1.4
+				government = absolute_monarchy
+			}
+			modifier = {
+				factor = 1.4
+				press_rights = state_press
+			}
+		}
+	}	
+
+	option = {
+		name = "EVTOPTB91375" 
+		prestige = 5
+		plurality = 2
+		rich_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.03
+			}
+		}
+		middle_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.05
+			}
+		}
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 2
+				ruling_party_ideology = liberal
+			}
+			modifier = {
+				factor = 1.5
+				government = prussian_constitutionalism
+			}
+			modifier = {
+				factor = 2
+				government = hms_government
+			}
+			modifier = {
+				factor = 3
+				government = democracy
+			}
+			modifier = {
+				factor = 1.5
+				press_rights = censored_press
+			}
+			modifier = {
+				factor = 4
+				press_rights = free_press
+			}
+		}
+	}	
+}
+
+#Deutschland, ein Wintermaerchen (Cologne cathedral)
+
+country_event = {
+
+	id = 91380
+
+	trigger = {
+		has_global_flag = heines_wintermaerchen 
+		has_country_flag = dombau_beginn
+		NOT = { has_country_flag = heines_mocking }
+ 		NOT = { has_global_flag = cologne_cathedral_build }			   
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	title = "EVTNAME91380"
+	desc = "EVTDESC91380"
+	picture = "db_beginn"
+
+	option = {
+		name = "EVTOPTA91380" 
+		prestige = -5
+		set_country_flag = heines_mocking
+	}
+}
+
+######################
+# Beethoven festival #
+######################
+
+#Beethovenfest response
+
+country_event = {
+
+	id = 91385
+
+	is_triggered_only = yes
+
+	title = "EVTNAME91240"
+	desc = "EVTDESC91240"
+	picture = "Beethoven"
+
+	option = {
+		name = "EVTOPTA91385" 
+		set_country_flag = beethovenfest
+		prestige = 2
+		relation = {
+			who = FROM
+			value = 25
+		}
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0.5
+				NOT = { capital_scope = { continent = europe } }
+			}
+			modifier = {
+				factor = 0
+				tag = TUR 
+			}
+			modifier = {
+				factor = 2
+				tag = ENG 
+			}
+			modifier = {
+				factor = 2
+				tag = BAV 
+			}
+			modifier = {
+				factor = 2
+				tag = FRA 
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB91385"
+		prestige = 4
+		relation = {
+			who = FROM
+			value = -25
+		}
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 3
+				NOT = { capital_scope = { continent = europe } }
+			}
+		}
+	}
+}
+
+#Beethovenfest main
+
+country_event = {
+
+	id = 91390
+
+	trigger = {
+		owns = 575 
+		has_country_flag = beethovenfest
+		ENG = { has_country_flag = beethovenfest }
+		FRA = { has_country_flag = beethovenfest }
+		BAV = { has_country_flag = beethovenfest }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	title = "EVTNAME91390"
+	desc = "EVTDESC91390"
+	picture = "Beethoven"
+
+	option = {
+		name = "EVTOPTA91390"
+		prestige = 2
+		relation = {
+			who = FRA
+			value = -25
+		}
+		relation = {
+			who = ENG
+			value = 5
+		}
+		FRA = { country_event = 91395 }
+		ENG = { country_event = 91400 }
+		BAV = { country_event = 91405 }
+	}
+}
+
+#Beethovenfest FRA
+
+country_event = {
+
+	id = 91395
+
+	is_triggered_only = yes
+
+	title = "EVTNAME91390"
+	desc = "EVTDESC91390"
+	picture = "Beethoven"
+
+	option = {
+		name = "EVTOPTA91395"
+		prestige = -2
+		relation = {
+			who = FROM
+			value = -25
+		}
+	}
+}
+
+#Beethovenfest ENG
+
+country_event = {
+
+	id = 91400
+
+	is_triggered_only = yes
+
+	title = "EVTNAME91390"
+	desc = "EVTDESC91390"
+	picture = "Beethoven"
+
+	option = {
+		name = "EVTOPTA91400"
+		relation = {
+			who = FROM
+			value = 5
+		}
+	}
+}
+
+#Beethovenfest BAV
+
+country_event = {
+
+	id = 91405
+
+	is_triggered_only = yes
+
+	title = "EVTNAME91390"
+	desc = "EVTDESC91390"
+	picture = "Beethoven"
+
+	option = {
+		name = "EVTOPTA91405"
+		prestige = -1
+	}
+}
+
+# Germanistentag 1846 Frankfurt
+
+country_event = {
+
+	id = 91410
+
+	trigger = {
+		owns = 564	   
+		year = 1846
+		NOT = { year = 1847 }
+		NOT = { has_country_modifier = springtime_of_nations }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "EVTNAME91410"
+	desc = "EVTDESC91410"
+	picture = "Frankfurt"
+
+	option = {
+		name = "EVTOPTA91410"
+		prestige = 5
+		plurality = 1
+		rich_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.01
+			}
+		}
+		middle_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.02
+			}
+		}
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = 0.5
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = germanic
+				NOT = { tag = THIS }
+			}
+			country_event = 91415
+		}
+	}
+}
+
+# Germanistentag 1846 Frankfurt for others
+
+country_event = {
+
+	id = 91415
+
+	is_triggered_only = yes
+
+	title = "EVTNAME91410"
+	desc = "EVTDESC91410"
+	picture = "Frankfurt"
+
+	option = {
+		name = "EVTOPTA91415"
+		prestige = 1
+		rich_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.01
+			}
+		}
+		middle_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.02
+			}
+		}
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = 0.5
+			}
+		}
+	}
+}
+
+# Germanistentag 1847 Lubeck
+
+country_event = {
+
+	id = 91420
+
+	trigger = {
+		owns = 564	   
+		year = 1847
+		NOT = { year = 1848 }
+		NOT = { has_country_modifier = springtime_of_nations }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	title = "EVTNAME91420"
+	desc = "EVTDESC91420"
+	picture = "Lubeck"
+
+	option = {
+		name = "EVTOPTA91410"
+		prestige = 5
+		plurality = 1
+		rich_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.01
+			}
+		}
+		middle_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.02
+			}
+		}
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = 0.5
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = germanic
+				NOT = { tag = THIS }
+			}
+			country_event = 91425
+		}
+	}
+}
+
+# Germanistentag 1847 Lubeck for others
+
+country_event = {
+
+	id = 91425
+
+	is_triggered_only = yes
+
+	title = "EVTNAME91420"
+	desc = "EVTDESC91420"
+	picture = "Lubeck"
+
+	option = {
+		name = "EVTOPTA91415"
+		prestige = 1
+		rich_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.01
+			}
+		}
+		middle_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.02
+			}
+		}
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = 0.5
+			}
+		}
+	}
+}
+
+# Goethedenkmal
+
+country_event = {
+
+	id = 91430
+
+	is_triggered_only = yes
+
+	title = "EVTNAME91430"
+	desc = "EVTDESC91430"
+	picture = "Frankfurt"
+
+	option = {
+		name = "EVTOPTA91430"
+		prestige = 1
+		plurality = 1
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = 0.5
+			}
+		}
+	}
+}
+
+# Kurhessischer Verfassungskonflikt
+
+country_event = {
+
+	id = 91435
+
+	trigger = {
+		tag = HEK
+		year = 1850
+		NOT = { year = 1860 }
+		government = prussian_constitutionalism
+		OR = { 
+			ruling_party_ideology = reactionary
+			ruling_party_ideology = conservative
+		}
+		has_country_flag = had_liberal_revolution
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "EVTNAME91435"
+	desc = "EVTDESC91435"
+	picture = "Monarchy"
+
+	option = {
+		name = "EVTOPTA91435"
+		prestige = 10
+		government = absolute_monarchy
+		political_reform = none_voting
+		rich_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.03
+			}
+		}
+		middle_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.05
+			}
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = liberal
+				factor = 6
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB91435"
+		prestige = -2
+	}
+}
+
+# Kosmos (Humboldt)
+
+country_event = {
+
+	id = 91440
+
+	trigger = {
+		year = 1845
+		NOT = { year = 1861 }
+		owns = 549
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	title = "EVTNAME91440"
+	desc = "EVTDESC91440"
+	picture = "Kosmos"
+
+	option = {
+		name = "EVTOPTA91440"
+		prestige = 5
+		plurality = 2
+		years_of_research = 0.10
+	}
+}
+
+
+
+#############################################################
+# Composers in Austria and Germany (historically 1836-1920) #
+#############################################################
+
+# Schumann
+
+country_event = {
+
+	id = 91445
+
+	trigger = {	   
+		year = 1851
+		NOT = { year = 1857 }
+		owns = 578
+		has_country_flag = dombau_ja
+		romanticism = 1
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	title = "EVTNAME91445"
+	desc = "EVTDESC91445"
+	picture = "schumann"
+
+	option = {
+		name = "EVTOPTA91445"
+		prestige = 10
+	}
+}
+
+# Mendelssohn
+
+country_event = {
+
+	id = 91450
+
+	trigger = {	   
+		year = 1845
+		NOT = { year = 1848 }
+		owns = 559
+		romanticism = 1
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "EVTNAME91450"
+	desc = "EVTDESC91450"
+	picture = "mendelssohn"
+
+	option = {
+		name = "EVTOPTA91450"
+		prestige = 10
+	}
+}
+
+# Liszt
+
+country_event = {
+
+	id = 91455
+
+	trigger = {	   
+		year = 1851
+		NOT = { year = 1864 }
+		owns = 561
+		romanticism = 1
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "EVTNAME91455"
+	desc = "EVTDESC91455"
+	picture = "liszt"
+
+	option = {
+		name = "EVTOPTA91455"
+		prestige = 10
+	}
+}
+
+# Brahms
+
+country_event = {
+
+	id = 91460
+
+	trigger = {	   
+		year = 1868
+		NOT = { year = 1897 }
+		owns = 619
+		romanticism = 1
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "EVTNAME91460"
+	desc = "EVTDESC91460"
+	picture = "Brahms"
+
+	option = {
+		name = "EVTOPTA91460"
+		prestige = 10
+	}
+}
+
+# Schubert
+
+country_event = {
+
+	id = 91465
+
+	trigger = {	   
+		year = 1865
+		NOT = { year = 1867 }
+		owns = 619
+		romanticism = 1
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "EVTNAME91465"
+	desc = "EVTDESC91465"
+	picture = "Unvollendete"
+
+	option = {
+		name = "EVTOPTA91465"
+		prestige = 8
+	}
+}
+
+# Johann Strauss
+
+country_event = {
+
+	id = 91470
+
+	trigger = {	   
+		year = 1874
+		NOT = { year = 1900 }
+		owns = 619
+		romanticism = 1
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "EVTNAME91470"
+	desc = "EVTDESC91470"
+	picture = "Johann_Strauss"
+
+	option = {
+		name = "EVTOPTA91470"
+		prestige = 8
+	}
+}
+
+# Mahler
+
+country_event = {
+
+	id = 91475
+
+	trigger = {	   
+		year = 1897
+		NOT = { year = 1911 }
+		owns = 619
+		realism = 1 # I know that this is debatable, but someone who wants prestige, should invest research points in culture technology
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	title = "EVTNAME91475"
+	desc = "EVTDESC91475"
+	picture = "Mahler"
+
+	option = {
+		name = "EVTOPTA91475"
+		prestige = 7
+	}
+}
+
+# Richard Strauss
+
+country_event = {
+
+	id = 91480
+
+	trigger = {	   
+		year = 1909
+		NOT = { year = 1914 }
+		owns = 558
+		realism = 1 # I know that this is debatable, but someone who wants prestige, should invest research points in culture technology
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	title = "EVTNAME91480"
+	desc = "EVTDESC91480"
+	picture = "Richard_Strauss"
+
+	option = {
+		name = "EVTOPTA91480" 
+		prestige = 7
+	}
+}
+
+# Bruckner
+
+country_event = {
+
+	id = 91485
+
+	trigger = {	   
+		year = 1896
+		NOT = { year = 1898 }
+		owns = 619
+		romanticism = 1
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "EVTNAME91485"
+	desc = "EVTDESC91485"
+	picture = "Bruckner"
+
+	option = {
+		name = "EVTOPTA91485"
+		prestige = 7
+	}
+}
+
+# Schönberg
+
+country_event = {
+
+	id = 91490
+
+	trigger = {	   
+		year = 1920
+		owns = 619
+		expressionism = 1
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	title = "EVTNAME91490"
+	desc = "EVTDESC91490"
+	picture = "Schoenberg"
+
+	option = {
+		name = "EVTOPTA91490"
+		prestige = 5
+	}
+}
+
+
+
+
+######################################
+# Romantic culture and Weberaufstand #
+######################################
+
+
+# Mondnacht
+
+country_event = {
+
+	id = 91495
+
+	trigger = {	   
+		year = 1837
+		NOT = { year = 1848 }
+		NOT = { has_country_flag = mondnacht }
+		is_culture_group = germanic
+		OR = {
+			invention = romanticist_literature
+			tag = PRU
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	title = "EVTNAME91495"
+	desc = "EVTDESC91495"
+	picture = "Mondnacht"
+
+	option = {
+		name = "EVTOPTA91495"
+		prestige = 5
+		set_country_flag = mondnacht
+		any_pop = {
+			limit = {
+				is_culture_group = germanic
+			}
+			militancy = -1
+			consciousness = -1
+		}
+	}
+}
+
+# Spitzweg
+
+country_event = {
+
+	id = 91500
+
+	trigger = {	   
+		year = 1839
+		NOT = { year = 1886 }
+		NOT = { has_country_flag = spitzweg }
+		is_culture_group = germanic
+		OR = {
+			invention = romanticist_art
+			tag = BAV
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	title = "EVTNAME91500"
+	desc = "EVTDESC91500"
+	picture = "Spitzweg"
+
+	option = {
+		name = "EVTOPTA91500"
+		prestige = 5
+		set_country_flag = spitzweg
+		rich_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.01
+			}
+		}
+		middle_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.01
+			}
+		}
+	}
+}
+
+# Brentano
+
+country_event = {
+
+	id = 91505
+
+	trigger = {	   
+		year = 1838
+		NOT = { year = 1843 }
+		NOT = { has_country_flag = brentano }
+		is_culture_group = germanic
+		invention = romanticist_literature
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	title = "EVTNAME91505"
+	desc = "EVTDESC91505"
+	picture = "Brentano"
+
+	option = {
+		name = "EVTOPTA91505"
+		prestige = 3
+		set_country_flag = brentano
+		any_pop = {
+			limit = { has_pop_religion = catholic }
+			consciousness = -1
+		}
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = -0.5
+			}
+		}
+	}
+}
+
+###############
+# THE WEAVERS #
+###############
+
+# Weaver begin
+
+province_event = {
+
+	id = 91510
+
+	trigger = {
+		year = 1840
+		NOT = { year = 1848 }
+		owner = {
+			has_country_flag = liberal_revolution_in_progress
+			is_culture_group = germanic
+			government = absolute_monarchy
+			NOT = { press_rights = free_press }
+			NOT = { has_country_flag = no_weber_aufstand }
+			NOT = { has_country_flag = weber_aufstand }
+			NOT = { has_global_flag = weber_aufstand }
+		}
+		state_scope = {
+			has_building = factory
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 36
+		modifier = {
+			factor = 0.9
+			owner = { tag = PRU }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				poor_strata_life_needs = 0.9
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				poor_strata_everyday_needs = 0.9
+			}
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				average_militancy = 3
+			}
+		}
+	}
+
+	title = "EVTNAME91510"
+	desc = "EVTDESC91510"
+	picture = "Weberaufstand"
+
+	option = {
+		name = "EVTOPTA10200"
+		poor_strata = {
+			militancy = 6
+		}
+		owner = {
+			prestige = 1
+			set_country_flag = weber_aufstand
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = "EVTOPTB10200"
+		any_pop = { consciousness = 3 }
+		owner = {
+			prestige = -2
+			set_country_flag = no_weber_aufstand
+		}
+	}
+}
+
+# Weaver rebellion
+
+country_event = {
+
+	id = 91515
+
+	trigger = {
+		has_country_flag = weber_aufstand
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	title = "EVTNAME91515"
+	desc = "EVTDESC91515"
+	picture = "Weberaufstand"
+	major = yes
+
+	option = {
+		name = "EVTOPTA91515"
+		set_global_flag = weber_aufstand
+		prestige = -2
+		rich_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.02
+			}
+		}
+		middle_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.02
+			}
+		}
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = 0.5
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = germanic
+				NOT = { tag = THIS }
+			}
+			country_event = 91520
+		}
+	}
+}
+
+# Weaver rebellion 2
+
+country_event = {
+
+	id = 91520
+
+	is_triggered_only = yes
+
+	title = "EVTNAME91515"
+	desc = "EVTDESC91520"
+	picture = "Weberaufstand"
+
+	option = {
+		name = "EVTOPTA91515"
+		rich_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.01
+			}
+		}
+		middle_strata = {
+			ideology = {
+				value = liberal
+				factor = 0.01
+			}
+		}
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = 0.25
+			}
+		}
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 1.3
+				ruling_party_ideology = conservative
+			}
+			modifier = {
+				factor = 1.4
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 1.5
+				government = absolute_monarchy
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB91520"
+		prestige = -1
+		any_pop = {
+			scaled_consciousness = {
+				ideology = liberal
+				factor = -0.5
+			}
+		}
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 2
+				ruling_party_ideology = liberal
+			}
+			modifier = {
+				factor = 0.5
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 2
+				government = democracy
+			}
+			modifier = {
+				factor = 1.5
+				government = hms_government
+			}
+			modifier = {
+				factor = 1.1
+				government = prussian_constitutionalism
+			}
+			modifier = {
+				factor = 0.5
+				government = absolute_monarchy
+			}
+		}
+	}
+}
+
+# Gerhard Hauptmann
+
+country_event = {
+
+	id = 91525
+
+	title = "EVTNAME91525" # Aftermath
+	desc = "EVTDESC91525"
+	picture = "Weberaufstand"
+
+	trigger = {
+		has_global_flag = weber_aufstand
+		tag = GER
+		press_rights = free_press
+		public_meetings = yes_meeting
+		realism = 1
+		NOT = { 
+			government = absolute_monarchy 
+			government = presidential_dictatorship 
+			government = bourgeois_dictatorship 
+			government = fascist_dictatorship
+		}
+		year = 1894 
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 9
+	}
+
+	option = {
+		name = "EVTOPTA91525"
+		plurality = 1
+		prestige = 5
+		any_pop = {
+			scaled_consciousness = {
+				ideology = socialist
+				factor = 0.5
+			}
+		}
+	}
+}

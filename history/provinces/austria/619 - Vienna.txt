@@ -1,0 +1,50 @@
+owner = AUS
+controller = AUS
+add_core = AUS
+trade_goods = grain
+life_rating = 35
+fort = 1
+1914.1.1 = {
+	controller = KUK
+	owner = KUK
+	add_core = KUK
+	
+	railroad = 5	# Berlin-Baghdad railway
+	fort = 4
+	
+	state_building = {
+		level = 8
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 8
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 8
+		building = artillery_factory
+		upgrade = yes
+	}
+        state_building = {
+	       level = 8
+	       building = steel_factory
+	       upgrade = yes
+        }
+        state_building = {
+	       level = 8
+	       building = explosives_factory
+	       upgrade = yes
+        }
+        state_building = {
+	       level = 8
+	       building = small_arms_factory
+	       upgrade = yes
+        }
+        state_building = {
+	       level = 8
+	       building = machine_parts_factory
+	       upgrade = yes         
+}
+}

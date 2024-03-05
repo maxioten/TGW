@@ -1,0 +1,150 @@
+#DEATH_OF_KUK
+country_event = {
+	id = 58
+	news = yes
+	news_desc_long = "EVTDESC1_NEWS_LONG"
+	news_desc_medium = "EVTDESC1_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC1_NEWS_SHORT"
+	title = "The Collapse of the Osmanli Dinasty"
+	desc= "Our empire lost his last battle, we can't continue this dream of a multiethnic nation, now we are goin to become a republic, not a osmanli one, a turkish one!."
+	picture = "911"
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = TUR
+		year = 1917
+		has_recently_lost_war = yes
+		NOT = {
+			has_global_flag = tur_died_finally
+		}
+	}
+	
+	option = {
+		name = "Nothin ever last forever..."
+		capital = 876
+		prestige = -150
+        government = democracy
+		858 = {
+		secede_province = GRE 
+		}
+		859 = {
+		secede_province = GRE 
+		}
+		828 = {
+		secede_province = GRE 
+		}
+		860 = {
+		secede_province = GRE 
+		}
+		861 = {
+		secede_province = GRE 
+		}
+		any_owned = { 
+			limit = {
+					is_core = YEM
+					}
+				secede_province = ENG 
+				remove_core = TUR
+				}
+		any_owned = { 
+			limit = {
+					is_core = HDJ
+					}
+				secede_province = NEJ
+				remove_core = TUR
+				}
+		any_owned = { 
+			limit = {
+					is_core = JOR
+					}
+				secede_province = ENG
+				remove_core = TUR
+				}
+		any_owned = { 
+			limit = {
+					is_core = PLS
+					}
+				secede_province = ENG 
+				remove_core = TUR
+				}
+		any_owned = { 
+			limit = {
+					is_core = LEB
+					}
+				secede_province = FRA 
+				remove_core = TUR
+				}
+		any_owned = { 
+			limit = {
+					is_core = IRQ
+					}
+				secede_province = ENG 
+				remove_core = TUR
+				}
+		any_owned = { 
+			limit = {
+					is_core = SYR
+					}
+				secede_province = FRA 
+				remove_core = TUR
+				}
+		any_owned = { 
+			limit = {
+					is_core = ARM
+					}
+				secede_province = ARM 
+				}
+		any_owned = { 
+			limit = {
+					is_core = GEO
+					}
+				secede_province = GEO 
+				remove_core = TUR
+				}
+		any_pop = {
+			consciousness = 4
+			militancy = 2
+		}
+		ITA = {
+			846 = {
+			secede_province = GRE 
+		}
+		ARM = {
+                        money = 150000
+		}
+                government = democracy
+                political_reform = wealth_voting
+                political_reform = appointed
+	        political_reform = public_meetings
+	        political_reform = state_press
+	        political_reform = state_controlled
+		political_reform = non_secret_ballots
+                remove_country_modifier = tur_mobo
+                war_exhaustion = -70
+		leadership = 400
+		GRE = {
+			war = {
+				target = TUR
+				attacker_goal = {
+					casus_belli = acquire_state
+					state_province_id = 861
+				}
+				attacker_goal = {
+					casus_belli = acquire_state
+					state_province_id = 862
+				}
+				attacker_goal = {
+					casus_belli = acquire_state
+					state_province_id = 865
+				}			
+				defender_goal = {
+					casus_belli = acquire_state
+					state_province_id = 860
+				}	
+			}
+			set_global_flag = tur_died_finally
+		}
+	}
+}

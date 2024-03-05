@@ -1,0 +1,11 @@
+owner = KOR
+controller = KOR
+add_core = KOR
+trade_goods = coal
+life_rating = 35
+naval_base = 5
+1914.1.1 = {
+	owner = JAP
+	controller = JAP
+	colonial = 1
+}

@@ -1,0 +1,51 @@
+political_decisions = {
+        schlieffenplanlux = {
+                picture = schlieffenbel
+		potential = {
+			tag = GER
+			exists = LUX
+			LUX = {
+				owns = 397
+			}
+			NOT = {
+				has_country_flag = schlieffenplanlux
+			}
+		}
+		
+		allow = {
+			ideological_thought = 1
+                        war_with = FRA
+		}
+		
+		effect = {
+			any_country = {
+				limit = {
+					OR = {
+						primary_culture = dutch
+						primary_culture = flemish
+					}
+				}
+				relation = {
+					who = THIS
+					value = 1
+				}
+			}
+			casus_belli = {
+				target = LUX
+				type = conquest
+				months = 3
+			}
+			prestige = 10
+			badboy = 1
+			set_country_flag = schlieffenplanlux
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					badboy = 0.5
+				}
+			}
+		}
+	}

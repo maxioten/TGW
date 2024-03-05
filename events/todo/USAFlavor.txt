@@ -1,0 +1,299 @@
+#Oregon Treaty events
+#Boundary Dispute Erupts 1/5
+country_event = {
+	id = 44124
+	title = "EVTNAME44124"
+	desc = "EVTDESC44124"
+	picture = ""
+	
+	trigger = {
+		OR = {
+			tag = USA
+			tag = ENG
+		}
+		NOT = {
+			OR = {
+				war_with = USA
+				war_with = ENG
+			}
+		}
+		CAN_13 = {
+			OR = {
+				owner = USA
+				owner = ENG
+			}
+		}
+		USA_78 = {
+			OR = {
+				owner = USA
+				owner = ENG
+			}
+		}
+		USA = { has_country_flag = hasmanifestdestiny }
+		NOT = { has_country_flag = oregon_boundary_dispute }
+		year = 1845
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.01	# Added for optimization so this doesn't spam the event stack by default
+			OR = {
+				ENG = { has_country_flag = oregon_boundary_dispute }
+				USA = { has_country_flag = oregon_boundary_dispute }
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA44124"
+		set_country_flag = oregon_boundary_dispute
+		set_country_flag = 54th_parallel
+	}
+	
+	option = {
+		name = "EVTOPTB44124"
+		set_country_flag = oregon_boundary_dispute
+		set_country_flag = 49th_parallel
+	}
+	
+	option = {
+		name = "EVTOPTC44124"
+		set_country_flag = oregon_boundary_dispute
+		set_country_flag = british_seattle
+	}
+}
+
+#Perhaps Compromise Is Necessary 2/5
+country_event = {
+	id = 44125
+	title = "EVTNAME44125"
+	desc = "EVTDESC44125"
+	picture = ""
+	
+	fire_only_once = yes
+	
+	trigger = {
+		ENG = { has_country_flag = oregon_boundary_dispute }
+		USA = { has_country_flag = oregon_boundary_dispute }
+		NOT = { ENG = { has_country_flag = 54th_parallel } }
+		NOT = { USA = { has_country_flag = british_seattle } }
+		
+		OR = {
+			ENG = { has_country_flag = british_seattle }
+			USA = { has_country_flag = 54th_parallel }
+			
+			AND = {
+				ENG = { has_country_flag = 49th_parallel }
+				NOT = { USA = { has_country_flag = 49th_parallel } }
+			}
+			AND = {
+				USA = { has_country_flag = 49th_parallel }
+				NOT = { ENG = { has_country_flag = 49th_parallel } }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.01	# Added for optimization so this doesn't spam the event stack by default
+			OR = {
+				ENG = { has_country_flag = oregon_boundary_dispute }
+				USA = { has_country_flag = oregon_boundary_dispute }
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA44125"
+		ENG = { country_event = { id = 44127 days = 5 } }
+		USA = { country_event = { id = 44127 days = 5 } }
+	}
+	
+	option = {
+		name = "EVTOPTB44125"
+		random_country = {
+			limit = {
+				NOT = { tag = THIS }
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+			}
+			country_event = { id = 44128 days = 5 }
+		}
+	}
+}
+
+#Diplomatic Solution! 3/5
+country_event = {
+	id = 44126
+	title = "EVTNAME44126"
+	desc = "EVTDESC44126"
+	picture = ""
+
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			ENG = { has_country_flag = 54th_parallel }
+			USA = { has_country_flag = british_seattle }
+			AND = {
+				ENG = { has_country_flag = 49th_parallel }
+				USA = { has_country_flag = 49th_parallel }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.01	# Added for optimization so this doesn't spam the event stack by default
+			OR = {
+				ENG = { has_country_flag = oregon_boundary_dispute }
+				USA = { has_country_flag = oregon_boundary_dispute }
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA44126"
+		random_country = {
+			limit = {
+				tag = USA
+				ENG = { has_country_flag = 54th_parallel }
+			}
+			USA_78 = {
+				secede_province = USA
+				add_core = USA
+				remove_core = ENG
+			}
+			CAN_13 = {
+				secede_province = USA
+				add_core = USA
+				remove_core = ENG
+			}
+			16 = {
+				secede_province = USA
+				add_core = USA
+				remove_core = ENG
+			}
+			19 = {
+				secede_province = USA
+				add_core = USA
+				remove_core = ENG
+			}
+		}
+		random_country = {
+			limit = {
+				tag = USA
+				has_country_flag = 49th_parallel
+				ENG = { has_country_flag = 49th_parallel }
+			}
+			USA_78 = {
+				secede_province = USA
+				add_core = USA
+				remove_core = ENG
+			}
+		}
+		random_country = {
+			limit = {
+				tag = ENG
+				USA = { has_country_flag = british_seattle }
+			}
+			USA_78 = {
+				limit = {
+					NOT = { province_id = 78 }
+				}
+				secede_province = USA
+				add_core = USA
+				remove_core = ENG
+			}
+			78 = {
+				secede_province = ENG
+				add_core = ENG
+				remove_core = USA
+			}
+		}
+	}
+}
+
+#49th Parallel Compromise! 4/5
+country_event = {
+	id = 44127
+	title = "EVTNAME44127"
+	desc = "EVTDESC44127"
+	picture = ""
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA44127"
+		ENG = { clr_country_flag = oregon_boundary_dispute }
+		USA = { clr_country_flag = oregon_boundary_dispute }
+		USA_78 = {
+			secede_province = USA
+			add_core = USA
+			remove_core = ENG
+		}
+	}
+}
+
+#Then War It Is! 5/5
+country_event = {
+	id = 44128
+	title = "EVTNAME44128"
+	desc = "EVTDESC44128"
+	picture = ""
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA44128"
+		ENG = { clr_country_flag = oregon_boundary_dispute }
+		USA = { clr_country_flag = oregon_boundary_dispute }
+		USA = {
+			casus_belli = {
+				target = ENG
+				type = acquire_state
+				months = 12
+			}
+		}
+		ENG = {
+			casus_belli = {
+				target = USA
+				type = acquire_state
+				months = 12
+			}
+		}
+		ENG = {
+			casus_belli = {
+				target = USA
+				type = cut_down_to_size
+				months = 12
+			}
+		}
+		USA = {
+			war = {
+				target = ENG
+				attacker_goal = {
+					casus_belli = acquire_state
+					state_province_id = 78
+				}
+				attacker_goal = {
+					casus_belli = acquire_state
+					state_province_id = 19
+				}
+				attacker_goal = {
+					casus_belli = acquire_state
+					state_province_id = 13
+				}
+				defender_goal = {
+					casus_belli = cut_down_to_size
+				}
+				call_ally = no
+			}
+		}
+	}
+}

@@ -1,0 +1,536 @@
+political_decisions = {
+	accademia_della_crusca = {
+        potential = {
+           	tag = TUS
+            NOT = { has_country_flag = accademia_della_crusca }
+		}
+		
+		allow = {
+			romanticism = 1
+			idealism = 1
+			money = 40000
+		}
+		
+		effect = { 
+           	treasury = -80000
+            prestige = 15
+            political_reform = free_press
+            set_country_flag = accademia_della_crusca
+        }
+	}
+	
+	plombieres = {
+		picture = cavours_diplomacy
+		potential = {
+			OR = {
+				tag = SAR
+				tag = SVY
+			}
+			NOT = { exists = ITA }
+			NOT = { has_country_flag = plombieres }
+			SAR_466 = { owned_by = THIS }
+			AUS_726 = {
+				OR = {
+					owned_by = AUS
+					owned_by = KUK
+				}
+			}
+			FRA = { is_greater_power = yes }
+		}
+		
+		allow = {
+			war = no
+			in_sphere = FRA
+			alliance_with = FRA
+			state_n_government = 1
+			FRA = {
+				war = no
+				government = presidential_dictatorship	# France's imperial government type. Implies the Napoleon dynasty is back on the throne.
+			}
+		}
+		
+		effect = {
+			set_country_flag = plombieres
+			prestige = 10
+			badboy = 5
+			AUS_726 = { add_core = THIS }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					truce_with = AUS
+					truce_with = KUK
+				}
+			}
+			modifier = {
+				factor = 0
+				FRA = {
+					OR = {
+						truce_with = AUS
+						truce_with = KUK
+					}
+				}
+			}
+		}
+	}
+	
+	cavours_diplomacy = {
+		potential = {
+			OR = {
+				AND = { 
+					tag = ITA
+					NOT = { exists = SAR }
+					NOT = { exists = SVY }
+				}
+				AND = { 
+					tag = SAR
+					NOT = { exists = ITA }
+				}
+				AND = { 
+					tag = SVY
+					NOT = { exists = ITA }
+				}
+			}
+			has_country_flag = plombieres
+			NOT = {
+				has_country_flag = cavour_has_done_his
+			}
+			owns = 465
+			owns = 466
+			owns = 472
+			FRA = {
+				exists = yes
+				is_greater_power = yes
+			}
+		}
+		allow = {
+			war = no
+			alliance_with = FRA
+			relation = {
+				who = FRA
+				value = 150
+			}
+			OR = {
+				owns = 726
+				owns = 727
+				owns = 728
+				AUS_729 = { owned_by = THIS }
+			}
+		}
+		
+		effect = {
+			prestige = 20
+			badboy = -10
+			relation = {
+				who = FRA
+				value = 50
+			}
+			SAR_466 = {
+				remove_core = ITA
+				remove_core = THIS
+				add_core = FRA
+				secede_province = FRA
+			}
+			any_country = {
+				limit = {
+					OR = {
+						is_sphere_leader_of = PAP
+						is_sphere_leader_of = TUS
+						is_sphere_leader_of = MOD
+						is_sphere_leader_of = LUC
+						is_sphere_leader_of = PAR
+					}
+					NOT = { tag = FRA }
+				}
+				relation = { who = THIS value = -50 }
+				casus_belli = {
+					target = THIS
+					type = free_peoples
+					months = 12
+				}
+			}
+			any_country = {
+				limit = {
+					exists = yes
+					primary_culture = north_italian
+				}
+				annex_to = THIS
+			}
+			PAP = {
+				PAP_741 = { secede_province = THIS }
+			}
+			FRA = {
+				diplomatic_influence = { who = THIS value = 100 }
+				diplomatic_influence = { who = PAP value = -100 }
+				diplomatic_influence = { who = SIC value = -100 }
+			}
+			set_country_flag = cavour_has_done_his
+		}
+	}
+	
+	award_order_of_st_francis = {
+		potential = {
+			tag = SIC
+			government = absolute_monarchy
+			NOT = {
+				has_country_flag = order_awarded
+			}
+		}
+		
+		allow = {
+			prestige = 25
+		}
+		
+		effect = {
+			years_of_research = 0.2
+			prestige = 2
+			set_country_flag = order_awarded
+		}
+	}
+	
+	#Statuto Albertino changed by Marco Dandolo. The constitution had free press rights and two chambers, a Senate (Upper house) and a Camera (Lower house). The King had an important role and much power, but he was tamed but a constitution, which makes the Statuto Albertino a decision, which will abolish the absolute monarchy
+	statuto_albertino = {
+		potential = {
+			OR = {
+				tag = SAR
+				tag = SVY
+			}
+			government = absolute_monarchy
+			NOT = {
+				has_country_flag = get_your_statuto_albertino_here
+			}
+		}
+		
+		allow = {
+			average_militancy = 3
+		}
+		
+		effect = {
+			any_pop = {
+				militancy = -2
+			}
+			prestige = 5
+			political_reform = landed_voting
+			political_reform = free_press
+			set_country_flag = get_your_statuto_albertino_here
+		}
+	}
+
+	#Vittoriano changed by Marco Dandolo. Should be possible to build by every monarchy. Rome should be owned.
+	build_vittoriano = {
+		potential = {
+			tag = ITA
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+			NOT = {
+				has_country_flag = vittoriano_built
+			}
+		}
+		
+		allow = {
+			realism = 1
+			owns = 749
+		}
+		
+		effect = {
+			prestige = 5
+			any_pop = {
+				militancy = -1
+			}
+			749 = {
+				add_province_modifier = {
+					name = altare_della_patria
+					duration = -1
+				}
+			}
+			set_country_flag = vittoriano_built
+		}
+	}
+	the_case_of_edgardo_mortara = {
+		potential = {
+			tag = PAP
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+			NOT = {
+				has_country_flag = edgardo_mortara
+			}
+			year = 1858
+			owns = 741
+		}
+		allow = {
+			idealism = 1
+		}
+		effect = {
+			prestige = 15
+			badboy = 1
+			any_greater_power = {
+				relation = {
+					value = -20
+					who = THIS
+				}
+			}
+			set_country_flag = edgardo_mortara
+		}
+	}
+	
+	the_first_vatican_council = {
+		potential = {
+			tag = PAP
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+			NOT = {
+				has_country_flag = first_vatican_council_held
+			}
+		}
+		
+		allow = {
+			empiricism = 1
+		}
+		
+		effect = {
+			prestige = 10
+			badboy = 1
+			any_country = {
+				limit = {
+					religion = catholic
+				}
+				relation = {
+					who = THIS
+					value = 10
+				}
+			}
+			set_country_flag = first_vatican_council_held
+		}
+	}
+	
+	law_of_guarantees = {
+		potential = {
+			tag = ITA
+			NOT = {
+				capital = 749
+			}
+		}
+		
+		allow = {
+			owns = 749
+		}
+		
+		effect = {
+			capital = 749
+			prestige = 5
+			badboy = -2
+		}
+	}
+	
+	italia_irredenta = {
+		potential = {
+			tag = ITA
+			NOT = {
+				has_country_flag = italia_ulterior
+			}
+		}
+		
+		allow = {
+			is_greater_power = yes
+			all_core = { owned_by = THIS }
+		}
+		
+		effect = {
+			set_country_flag = italia_ulterior
+			729 = {
+				add_core = ITA
+			}
+			730 = {
+				add_core = ITA
+			}
+			731 = {
+				add_core = ITA
+			}
+			732 = {
+				add_core = ITA
+			}
+			733 = {
+				add_core = ITA
+			}
+			734 = {
+				add_core = ITA
+			}
+			735 = {
+				add_core = ITA
+			}
+			736 = {
+				add_core = ITA
+			}
+			737 = {
+				add_core = ITA
+			}
+			769 = {
+				add_core = ITA
+			}
+			770 = {
+				add_core = ITA
+			}
+			778 = {
+				add_core = ITA
+			}
+			780 = {
+				add_core = ITA
+			}
+			781 = {
+				add_core = ITA
+			}
+			782 = {
+				add_core = ITA
+			}
+			2582 = {
+				add_core = ITA
+			}
+		}
+	}
+	
+	second_italia_irredenta = {
+		potential = {
+			tag = ITA
+			has_country_flag = italia_ulterior
+			NOT = {
+				has_country_flag = second_italia_ulterior
+			}
+		}
+		
+		allow = {
+			is_greater_power = yes
+			all_core = { owned_by = THIS }
+			government = fascist_dictatorship
+		}
+		
+		effect = {
+			set_country_flag = second_italia_ulterior
+			472 = { add_core = ITA }
+			826 = { add_core = ITA }
+			827 = { add_core = ITA }
+			854 = { add_core = ITA }
+			SAR_466 = { add_core = ITA }
+			SAR_765 = { add_core = ITA }
+		}
+	}
+	
+	garibaldi_redshirts = {
+		potential = {
+			tag = SAR
+			year = 1860
+			exists = SIC
+			NOT = {
+				exists = ITA
+				has_global_flag = garibaldi_redshirts
+			}
+		}
+		
+		allow = {
+			war = no
+			TUS_744 = { owned_by = THIS }
+			PAP_741 = { owned_by = THIS }
+			MOD_739 = { owned_by = THIS }
+			AUS_726 = { owned_by = THIS }
+		}
+		
+		effect = {
+			set_global_flag = garibaldi_redshirts
+			prestige = 20
+			badboy = 5
+			SIC = {
+				any_pop = {
+					limit = { is_culture_group = italian }
+					
+					consciousness = 3
+					militancy = 10
+				}
+			}
+		}
+	}
+	
+	become_piedmont = {
+		picture = become_savoy
+		potential = {
+			OR = {
+				tag = SVY
+				tag = SRD
+			}
+		}
+		
+		allow = {
+			war = no
+			SVY = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							OR = {
+								AND = {
+									is_vassal = no
+									in_sphere = THIS
+								}
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+			SRD = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							OR = {
+								AND = {
+									is_vassal = no
+									in_sphere = THIS
+								}
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					OR = {
+						tag = SVY
+						tag = SRD
+					}
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				limit = {
+					OR = {
+						is_core = SVY
+						is_core = SRD
+					}
+				}
+				add_core = SAR
+				remove_core = SVY
+			}
+			change_tag = SAR
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

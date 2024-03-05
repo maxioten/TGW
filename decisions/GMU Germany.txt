@@ -1,0 +1,299 @@
+###Gott mit uns decisions###
+
+#Gruenderzeit (for whole Germany)
+#Cologne cathedral
+#Baden press
+#Frankfurt Goethe monument
+#Stuttgart Schiller monument
+#Neuschwanstein
+#Maximilianstrasse
+#Heligoland
+
+political_decisions = {
+	# GRUENDERZEIT
+	the_grunderzeit2 = {
+		picture = the_grunderzeit
+		potential = {
+			is_culture_group = germanic
+			NOT = { tag = AUS }
+			NOT = { tag = KUK }
+			NOT = { has_country_flag = grunderzeit_we_have_done }
+		}
+		allow = {
+			iron_railroad = 1
+			cheap_iron = 1
+		}
+		effect = {
+			capital_scope = {
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.2
+					}
+				}
+				life_rating = 3
+			}
+			prestige = 10
+			set_country_flag = grunderzeit_we_have_done
+		}
+	}
+
+	# COLOGNE CATHEDRAL
+	cologne_cathedral = {
+		potential = {
+			NOT = { has_global_flag = cologne_cathedral_built }
+			has_country_flag = dombau_beginn
+		}
+		
+		allow = {
+			year = 1860
+			money = 100000
+			romanticism = 1
+			nationalism_n_imperialism = 1
+			owns = 575
+		}
+		
+		effect = {
+			set_global_flag = cologne_cathedral_built
+			money = -100000
+			prestige = 25
+			THIS = { country_event = 91220 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# BADEN
+	free_press_in_baden = {
+		potential = {
+			tag = BAD
+			NOT = { has_country_flag = free_press_in_baden }
+			NOT = { has_country_flag = liberal_revolution_fired }
+		}
+
+		allow = {
+			NOT = { year = 1848 }
+			NOT = { press_rights = free_press }
+			ideological_thought = 1
+			ruling_party_ideology = liberal
+			NOT = { in_sphere = AUS }
+		}
+		
+		effect = {
+			set_country_flag = free_press_in_baden
+			prestige = 5
+			press_rights = free_press
+			AUS = { country_event = 91350 }
+			PRU = { country_event = 91350 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Frankfurt
+	build_goethe_denkmal = {
+		potential = {
+			owns = 564
+			is_culture_group = germanic
+			NOT = { has_global_flag = goethe_denkmal_built }
+		}
+
+		allow = {
+			war = no
+			year = 1843
+			romanticism = 1
+			money = 5000
+		}
+		
+		effect = {
+			set_global_flag = goethe_denkmal_built
+			prestige = 10
+			plurality = 5
+			treasury = -5000
+			any_pop = {
+				scaled_consciousness = {
+					ideology = liberal
+					factor = 0.5
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = -1
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = -1
+				}
+			}
+			any_country = {
+				limit = {
+					is_culture_group = germanic
+					NOT = { tag = THIS }
+				}
+				country_event = 91430
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Württemberg
+	build_schiller_denkmal = {
+		potential = {
+			owns = 589
+			is_culture_group = germanic
+			NOT = { has_global_flag = schiller_denkmal_built }
+		}
+
+		allow = {
+			war = no
+			year = 1838
+			romanticism = 1
+			money = 5000
+		}
+		
+		effect = {
+			set_global_flag = schiller_denkmal_built
+			prestige = 10
+			plurality = 5
+			treasury = -5000
+			any_pop = {
+				scaled_consciousness = {
+					ideology = liberal
+					factor = 0.5
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = -1
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = -1
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Bavaria
+	build_neuschwanstein = {
+		potential = {
+			owns = 592
+			year = 1869
+			is_culture_group = germanic
+			NOT = { has_global_flag = neuschwanstein_built }
+		}
+
+		allow = {
+			war = no
+			romanticism = 1
+			money = 100000
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+		}
+		
+		effect = {
+			set_global_flag = neuschwanstein_built
+			treasury = -100000
+			592 = {
+				add_province_modifier = {
+					name = the_neuschwanstein
+					duration = -1
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	build_maximilianstrasse = {
+		potential = {
+			owns = 599
+			year = 1850
+			is_culture_group = germanic
+			NOT = { has_global_flag = maximilianstrasse_built }
+		}
+
+		allow = {
+			war = no
+			romanticism = 1
+			invention = populism_vs._establishment
+			money = 30000
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+		}
+		
+		effect = {
+			set_global_flag = maximilianstrasse_built
+			treasury = -30000
+			599 = {
+				add_province_modifier = {
+					name = the_maximilianstrasse
+					duration = -1
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Heligoland
+	the_heligoland_question2 = {
+		picture = the_heligoland_question
+		potential = {
+			NOT = { tag = GER }
+			GER = { has_country_flag = has_questioned_heligoland }
+			owns = 533
+		}
+		
+		allow = {
+			war = no
+			GER = {
+				war = no
+				relation = {
+					who = THIS
+					value = 50
+				}
+			}
+		}
+		
+		effect = {
+			relation = { who = GER value = 100 }
+			prestige = 5
+			badboy = -5
+			533 = {
+				remove_core = ENG
+				remove_core = THIS
+				secede_province = GER
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				
+				NOT = { badboy = 5 }
+			}
+		}
+	}
+}

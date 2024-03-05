@@ -1,0 +1,25 @@
+#Ottoman Canal
+country_event = {
+	id = 202012
+	title = "The Bosphorus"
+	desc = "Since we control the straits. We can control the traffic that comes through and prevent enemy ships from aiding our enemy Russia. Whilst allowing ourselves and our allies to pass freely."
+	picture = "ottomancanal"
+
+	trigger = {
+		tag = TUR
+		is_vassal = no
+		NOT = {
+			has_country_flag = ottomancanal
+		}
+	}
+
+	option = {
+		name = "Great!"
+                set_country_flag = ottomancanal
+                enable_canal = 4
+                enable_canal = 5
+                860 = { set_province_flag = ottoman_canal }
+                prestige = 5
+
+	}
+}

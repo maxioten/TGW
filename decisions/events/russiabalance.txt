@@ -1,0 +1,21 @@
+#Balance Russia
+country_event = {
+	id = 19471947
+	title = "Russian General Staff"
+	desc = "Given our recent defeat in the Russo-Japanese war we can admit and must be aware that our military and leadership is inadequate and underdeveloped."
+	picture = "russiaorg"
+
+	trigger = {
+		tag = RUS
+		is_vassal = no
+		NOT = {
+			has_country_modifier = russian_general_staff
+		}
+	}
+
+	option = {
+		name = "Blyat!"
+		RUS = { add_country_modifier = { name = russian_general_staff duration = 5000 } }
+
+	}
+}

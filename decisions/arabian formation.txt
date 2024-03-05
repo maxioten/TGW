@@ -1,0 +1,88 @@
+political_decisions = {
+	form_arabia = {
+		potential = {
+			ARA = { exists = no }
+			is_culture_group = arab
+		}
+		
+		allow = {
+			NEJ = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							OR = {
+								AND = {
+									is_vassal = no
+									in_sphere = THIS
+								}
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+			HAL = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							OR = {
+								AND = {
+									is_vassal = no
+									in_sphere = THIS
+								}
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+			HDJ = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							OR = {
+								tag = TUR
+								AND = {
+									is_vassal = no
+									in_sphere = THIS
+								}
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 20
+			change_tag = ARA
+			add_accepted_culture = union
+			NEJ = {
+				all_core = {
+					add_core = ARA
+					remove_core = NEJ
+				}
+			}
+			HAL = {
+				all_core = {
+					add_core = ARA
+					remove_core = HAL
+				}
+			}
+			HDJ = {
+				all_core = {
+					add_core = ARA
+					remove_core = HDJ
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+}

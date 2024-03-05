@@ -1,0 +1,12 @@
+owner = TKG
+controller = TKG
+add_core = AIN
+trade_goods = fish
+life_rating = 35
+1914.1.1 = {
+	owner = JAP
+	controller = JAP
+	add_core = JAP
+	colonial = 2
+	railroad = 2
+}

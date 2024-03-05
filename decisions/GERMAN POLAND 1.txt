@@ -1,0 +1,17 @@
+political_decisions = {
+german_poland = {
+        picture = returnrussia
+		potential = {
+			tag = GER
+			NOT = { has_country_flag = poopland }
+			}
+			allow = {
+			controls = 706
+			}
+		effect = {
+		set_country_flag = poopland
+                prestige = 30
+				RUS = { country_event = 129833 }
+		}		
+	}
+}

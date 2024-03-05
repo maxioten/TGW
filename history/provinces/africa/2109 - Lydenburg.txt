@@ -1,0 +1,18 @@
+owner = MAT
+controller = MAT
+add_core = SUA
+trade_goods = grain
+life_rating = 35
+1861.1.1 = {
+	owner = TRN
+	controller = TRN
+	add_core = TRN
+	remove_core = SUA
+	colonial = 2
+}
+1914.1.1 = {
+	owner = SAF
+	controller = SAF
+	add_core = SAF
+	colonial = 0
+}

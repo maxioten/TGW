@@ -1,0 +1,26 @@
+#Assasination
+country_event = {
+	id = 1
+	news = yes
+	news_desc_long = "EVTDESC1_NEWS_LONG"
+	news_desc_medium = "EVTDESC1_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC1_NEWS_SHORT"
+	title = "Assasination of Archduke Franz Ferdinand"
+	desc= "The assassination of Archduke Franz Ferdinand of Austria, heir presumptive to the Austro-Hungarian throne, and Franz Ferdinand's wife Sophie, Duchess of Hohenberg, occurred on 28 June 1914 in Sarajevo when they were mortally wounded by Gavrilo Princip."
+	picture = "911"
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = KUK
+		year = 1914
+		month = 6
+	}
+	
+	option = {
+		name = "This will not go unpunished!"
+		prestige = -30
+		}
+	}
+}

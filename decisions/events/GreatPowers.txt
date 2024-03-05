@@ -1,0 +1,291 @@
+# Great Power Contention
+country_event = {
+	id = 19000
+	title = "EVTNAME19000"
+	desc = "EVTDESC19000"
+	picture = "greatpowers"
+
+	trigger = {
+		any_greater_power = {
+			diplomatic_influence = {
+				who = THIS
+				value = 30
+			}
+		}
+		any_greater_power = {
+			diplomatic_influence = {
+				who = THIS
+				value = 5
+			}
+			NOT = {
+				diplomatic_influence = {
+					who = THIS
+					value = 30
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 500
+		modifier = {
+			factor = 0.9
+			prestige = 10
+		}
+		modifier = {
+			factor = 0.9
+			prestige = 15
+		}
+		modifier = {
+			factor = 1.1
+			military_score = 5
+		}
+		modifier = {
+			factor = 1.2
+			military_score = 10
+		}
+	}
+
+	option = {
+		name = "EVTOPTA19000"
+		any_greater_power = {
+			limit = {
+				diplomatic_influence = {
+					who = THIS
+					value = 5
+					}
+				NOT = {
+					diplomatic_influence = {
+					who = THIS
+ 					value = 75
+ 					}
+ 				}
+			}
+			country_event = { id=19005 days=0 }
+		}
+	}
+}
+
+# Reply to Above
+country_event = {
+	id = 19005
+	title = "EVTNAME19005"
+	desc = "EVTDESC19005"
+	picture = "greatpowers"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA19005"
+		diplomatic_influence = {
+			who = FROM
+			value = 5
+		}
+		badboy = 1
+	}
+
+	option = {
+		name = "EVTOPTB19005"
+		diplomatic_influence = {
+			who = FROM
+			value = -5
+		}
+		prestige = -5
+	}
+}
+
+# Parade
+country_event = {
+	id = 19010
+	news = yes
+	news_desc_long = "EVTDESC19010_NEWS_LONG"
+	news_desc_medium = "EVTDESC19010_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC19010_NEWS_SHORT"
+	title = "EVTNAME19010"
+	desc = "EVTDESC19010"
+	picture = "greatpowers"
+
+	trigger = {
+		is_greater_power = yes
+		colonial_nation = yes
+		prestige = 100
+	}
+
+	mean_time_to_happen = {
+		months = 250
+
+		modifier = {
+			factor = 0.9
+			prestige = 150
+		}
+		modifier = {
+			factor = 0.9
+			prestige = 200
+		}
+		modifier = {
+			factor = 1.2
+			badboy = 0.4
+		}
+		modifier = {
+			factor = 10
+			badboy = 0.8
+		}
+	}
+
+	option = {
+		name = "EVTOPTA19010"
+		prestige = 5
+		capital_scope = {
+			any_pop = {
+				militancy = -1
+				consciousness = -1
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB19010"
+		any_greater_power = {
+			prestige = -1
+		}
+		capital_scope = {
+			any_pop = {
+				militancy = -1
+				consciousness = -1
+			}
+		}
+	}
+}
+
+#Provincename Botanical Expedition
+
+### MAM REMOVED ###
+#19030 Crimean war
+#19031 Protectorate Denied!
+#19032 They Refuse
+#19033 They Accept
+
+#19040 Valley of The Kings
+#19041 Egypt Allows
+#19042 Egypt Refuses
+#19043 Excavation team gets into trouble
+#19044 Tomb Found
+#19046 Tutankhamun's Tomb
+#19047 Mummy Found
+
+#19200 The Ems Dispatch (fired by Prussian decision)
+#19300 The Statue of Liberty (fired by French decision)
+
+# The Mandate of Heaven
+country_event = {
+	id = 19310
+	news = yes
+	news_desc_long = "EVTDESC19310_NEWS_LONG"
+	news_desc_medium = "EVTDESC19310_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC19310_NEWS_SHORT"
+	title = "EVTNAME19310"
+	desc = "EVTDESC19310"
+	picture = "asian_ruler"
+
+	trigger = {
+		tag = CHI
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA19310"
+		prestige = 5
+		any_pop = {
+			militancy = -3
+		}
+	}
+}
+
+# The Empire of the Sun
+country_event = {
+	id = 19320
+	news = yes
+	news_desc_long = "EVTDESC19320_NEWS_LONG"
+	news_desc_medium = "EVTDESC19320_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC19320_NEWS_SHORT"
+	title = "EVTNAME19320"
+	desc = "EVTDESC19320"
+	picture = "japanese_power"
+
+	trigger = {
+		tag = JAP
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA19320"
+		prestige = 5
+		any_pop = {
+			militancy = -3
+		}
+	}
+}
+
+# Great wars
+#country_event = {
+	id = 19355
+	news = yes
+	news_desc_long = "EVTDESC19355_NEWS_LONG"
+	news_desc_medium = "EVTDESC19355_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC19355_NEWS_SHORT"
+	title = "EVTNAME19355"
+	desc = "EVTDESC19355"
+	major = yes
+	picture = "greatpowers"
+
+	fire_only_once = yes
+
+	trigger = {
+		great_wars_enabled = no
+		NOT = { has_global_flag = great_wars_enabled }
+		year = 1914
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	option = {
+		name = "EVTOPTA19355"
+		great_wars_enabled = yes
+		set_global_flag = great_wars_enabled
+	}
+}
+
+# Great wars
+country_event = {
+	id = 19356
+	news = yes
+	news_desc_long = "EVTDESC19356_NEWS_LONG"
+	news_desc_medium = "EVTDESC19356_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC19356_NEWS_SHORT"
+	title = "EVTNAME19356"
+	desc = "EVTDESC19356"
+	major = yes
+	picture = "greatpowers"
+
+	fire_only_once = yes
+
+	trigger = {
+		world_wars_enabled = no
+		NOT = { has_global_flag = world_wars_enabled }
+		year = 1914		
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	option = {
+		name = "EVTOPTA19356"
+		world_wars_enabled = yes
+		set_global_flag = world_wars_enabled
+	}
+}

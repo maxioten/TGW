@@ -1,0 +1,24 @@
+#France mobo
+country_event = {
+	id = 28
+	title = "The French Army"
+	desc = "To truly authenticate the Great War your country has been given historical mobolisation."
+	picture = "fra"
+
+	trigger = {
+		tag = FRA
+                year = 1914
+                month = 8
+		is_vassal = no
+		NOT = {
+			has_country_modifier = fra_mobo
+		}
+	}
+
+
+	option = {
+		name = "Vive Le France!"
+		FRA = { add_country_modifier = { name = fra_mobo duration = -1 } }
+
+	}
+}

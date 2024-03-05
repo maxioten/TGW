@@ -1,0 +1,11 @@
+owner = BHR
+controller = BHR
+add_core = BHR
+trade_goods = grain
+life_rating = 35
+1914.1.1 = {
+	owner = ENG
+	add_core = TUR
+	controller = ENG
+	colonial = 1
+}

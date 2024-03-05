@@ -1,0 +1,76 @@
+title="Plan XVII"
+country="FRA"
+arrows_count=3
+control_points=
+{
+-1444 30091 2386 32245 6400 34528 10513 37072 13409 39017 15372 40588 }
+text="First Armee"
+control_points=
+{
+-9903 25529 -5275 26629 -706 27975 3662 29851 7527 32537 10322 34984 12344 37187 }
+text="Second Armee"
+control_points=
+{
+-19753 31811 -15179 32807 -10474 33721 -5845 34800 -2272 35555 402 36291 }
+text="Third Armee"
+matrix_transforms=
+{
+2908947 1561487 2897717 1573452 2902953 1579428 }
+ignore_smoothing=
+{
+-1 -1 -1 }
+type=
+{
+"ba_0" "ba_0" "ba_0" }
+color=
+{
+2 2 2 }
+icons_count=6
+positions=
+{
+-7932 31206 -6192 34996 -10904 34141 8465 27151 3346 32646 3564 27151 }
+matrix_transforms=
+{
+2887303 1572439 2887303 1572439 2887303 1572439 2878932 1593136 2878932 1593136 2878932 1593136 }
+type=
+{
+"mi_2" "mi_2" "mi_5" "mi_2" "mi_2" "mi_5" }
+color=
+{
+2 2 2 2 2 2 }
+rotation=
+{
+0 0 0 0 0 0 }
+texts_count=2
+positions=
+{
+-14672 30656 328 24171 }
+matrix_transforms=
+{
+2887303 1572439 2878932 1593136 }
+text="Fourth Armee (reserve)"
+text="Fifth Armee (on guard)"
+scale=
+{
+1000 1000 }
+rotation=
+{
+-600 -150 }
+is_battle_plan_shared=no
+borders_count=1
+control_points=
+{
+-37067 48239 -36208 43424 -34320 39189 -31218 35955 -27088 33702 -22969 31381 -20004 28096 -18384 23781 -18198 18979 -18344 14450 -18616 10118 }
+text=""
+matrix_transforms=
+{
+2935023 1569773 }
+ignore_smoothing=
+{
+-1 }
+type=
+{
+"bb_1" }
+color=
+{
+0 }

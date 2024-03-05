@@ -1,0 +1,21 @@
+#political_decisions = {
+#bringhope = {
+                picture = returnrussia
+		potential = {
+			tag = RUS
+                        has_country_modifier = rus_mil
+			NOT = { has_country_flag = bringhope }
+			}
+			allow = {
+			controls = 706
+			}
+		effect = {
+		set_country_flag = bringhope
+                prestige = 30
+                remove_country_modifier = rus_mil
+		}
+				
+		}
+}
+
+

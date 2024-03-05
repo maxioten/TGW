@@ -1,0 +1,15 @@
+
+add_core = CHI
+add_core = XIN
+add_core = UYG
+trade_goods = grain
+life_rating = 32
+
+owner = XIN
+controller = XIN
+
+
+1914.1.1 = {
+	owner = CHI
+	controller = CHI
+}

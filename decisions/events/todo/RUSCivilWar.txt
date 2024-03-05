@@ -1,0 +1,141 @@
+#Russian Civil War
+country_event = {
+	id = 7
+	title = "Russian Civil War"
+	desc = "A civil war has erupted between the Bolsheviks and Whites"
+	major = yes
+	
+	trigger = {
+		tag = RUS
+		NOT = {
+			has_global_flag = russian_civil_war_has_happened
+		}
+		has_country_flag = sendlenin
+		upper_house = {
+			ideology = liberal
+			value = 0.4
+		}
+	}
+	
+	immediate = { clr_country_flag = the_slavery_debate }
+	immediate = {
+		SOV = {
+			set_country_flag = the_slavery_debate
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+			factor = 20
+			NOT = {
+				year = 1845
+			}
+		}
+		modifier = {
+			factor = 10
+			year = 1845
+			NOT = {
+				year = 1855
+			}
+		}
+		modifier = {
+			factor = 5
+			year = 1855
+			NOT = {
+				year = 1860
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA16000"
+		any_pop = {
+			consciousness = -7
+			militancy = -3
+		}
+		any_owned = {
+			limit = {
+				is_core = SOV
+				NOT = {
+					province_id = 146
+					province_id = 147
+					province_id = 148
+					province_id = 149
+					province_id = 150
+					province_id = 217
+					province_id = 218
+					province_id = 219
+					province_id = 220
+					province_id = 221
+					province_id = 222
+				}
+			}
+			secede_province = SOV
+		}
+		SOV = {
+			capital = 211
+			leadership = 80
+		}
+		capital = 220
+		war = {
+			target = SOV
+			attacker_goal = {
+				casus_belli = civil_war
+			}
+			
+			defender_goal = {
+				casus_belli = civil_war
+			}
+		}
+		set_global_flag = russian_civil_war_has_happened
+		clr_country_flag = the_slavery_debate
+	}
+	
+	option = {
+		name = "EVTOPTB16000"
+		any_pop = {
+			consciousness = -7
+			militancy = -3
+		}
+		any_owned = {
+			limit = {
+				is_core = SOV
+				NOT = {
+					province_id = 146
+					province_id = 147
+					province_id = 148
+					province_id = 149
+					province_id = 150
+					province_id = 217
+					province_id = 218
+					province_id = 219
+					province_id = 220
+					province_id = 221
+					province_id = 222
+				}
+			}
+			secede_province = SOV
+		}
+		SOV = {
+			capital = 211
+			leadership = 80
+		}
+		capital = 220
+		
+		change_tag_no_core_switch = SOV
+		RUS = {
+			war = {
+				target = SOV
+				attacker_goal = {
+					casus_belli = civil_war
+				}
+				defender_goal = {
+					casus_belli = civil_war
+				}
+			}
+		}
+		set_global_flag = american_civil_war_has_happened
+		clr_country_flag = the_slavery_debate
+	}
+}

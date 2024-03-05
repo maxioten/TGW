@@ -1,0 +1,385 @@
+#Guyana (99600)
+#Ruled by Britain 1836
+#Georgetown (58600/14650 POPS)
+2239 = {
+	capitalists = {
+		culture = british
+		religion =  protestant 
+		size = 355
+	 } 
+	capitalists = {
+		culture = british
+		religion = protestant 
+		size = 10
+	 } 
+	officers = {
+		culture = british
+		religion =  protestant 
+		size = 212
+	 } 
+	officers = {
+		culture = british
+		religion = protestant 
+		size = 6
+	 } 
+	soldiers = {
+		culture = british
+		religion =  protestant 
+		size = 142
+	 } 
+	soldiers = {
+		culture = british
+		religion = protestant 
+		size = 4
+	 } 
+	soldiers = {
+		culture = mestizo
+		religion =  hindu 
+		size = 711
+	 } 
+	soldiers = {
+		culture = avadhi
+		religion = hindu 
+		size = 20
+	 } 
+	aristocrats = {
+		culture = mestizo
+		religion =  hindu 
+		size = 2849
+	 } 
+	aristocrats = {
+		culture = avadhi
+		religion = hindu 
+		size = 80
+	 } 
+	bureaucrats = {
+		culture = mestizo
+		religion =  hindu 
+		size = 70
+	 } 
+	bureaucrats = {
+		culture = avadhi
+		religion = hindu 
+		size = 2
+	 } 
+	clergymen = {
+		culture = mestizo
+		religion =  hindu 
+		size = 711
+	 } 
+	clergymen = {
+		culture = avadhi
+		religion = hindu 
+		size = 20
+	 } 
+	artisans = {
+		culture = mestizo
+		religion =  hindu 
+		size = 714
+	 } 
+	artisans = {
+		culture = avadhi
+		religion = hindu 
+		size = 20
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  hindu 
+		size = 26996
+	 } 
+	farmers = {
+		culture = avadhi
+		religion = hindu 
+		size = 763
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  catholic 
+		size = 22082
+	 } 
+	farmers = {
+		culture = mestizo
+		religion = animist
+		size = 624
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  protestant 
+		size = 9260
+	 } 
+	farmers = {
+		culture = mestizo
+		religion = protestant 
+		size = 261
+	 } 
+	farmers = {
+		culture = panjabi
+		religion =  sunni 
+		size = 6477
+	 } 
+}
+#Mahdia (4000/1000 POPS)
+2242 = {
+	officers = {
+		culture = mestizo
+		religion =  protestant 
+		size = 21
+	 } 
+	soldiers = {
+		culture = mestizo
+		religion =  protestant 
+		size = 87
+	 } 
+	soldiers = {
+		culture = mestizo
+		religion = protestant 
+		size = 2
+	 } 
+	aristocrats = {
+		culture = mestizo
+		religion =  protestant 
+		size = 291
+	 } 
+	aristocrats = {
+		culture = mestizo
+		religion = protestant 
+		size = 8
+	 } 
+	bureaucrats = {
+		culture = mestizo
+		religion =  protestant 
+		size = 6
+	 } 
+	capitalists = {
+		culture = mestizo
+		religion =  protestant 
+		size = 35
+	 } 
+	capitalists = {
+		culture = mestizo
+		religion = protestant 
+		size = 1
+	 } 
+	clergymen = {
+		culture = mestizo
+		religion =  protestant 
+		size = 72
+	 } 
+	clergymen = {
+		culture = mestizo
+		religion = protestant 
+		size = 2
+	 } 
+	artisans = {
+		culture = mestizo
+		religion =  protestant 
+		size = 72
+	 } 
+	artisans = {
+		culture = mestizo
+		religion = protestant 
+		size = 2
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  protestant 
+		size = 2182
+	 } 
+	farmers = {
+		culture = mestizo
+		religion = protestant 
+		size = 61
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  animist
+		size = 4436
+	 } 
+	farmers = {
+		culture = mestizo
+		religion = catholic
+		size = 125
+	 } 
+}
+#Essequibo (33000/8250 POPS)
+2243 = {
+	officers = {
+		culture = mestizo
+		religion =  hindu 
+		size = 29
+	 } 
+	soldiers = {
+		culture = avadhi
+		religion =  hindu 
+		size = 119
+	 } 
+	soldiers = {
+		culture = mestizo
+		religion = hindu 
+		size = 3
+	 } 
+	aristocrats = {
+		culture = mestizo
+		religion =  hindu 
+		size = 349
+	 } 
+	aristocrats = {
+		culture = avadhi
+		religion = hindu 
+		size = 9
+	 } 
+	aristocrats = {
+		culture = mestizo
+		religion =  catholic 
+		size = 49
+	 } 
+	aristocrats = {
+		culture = mestizo
+		religion = catholic 
+		size = 1
+	 } 
+	bureaucrats = {
+		culture = mestizo
+		religion =  catholic 
+		size = 9
+	 } 
+	capitalists = {
+		culture = mestizo
+		religion =  catholic 
+		size = 49
+	 } 
+	capitalists = {
+		culture = mestizo
+		religion = catholic 
+		size = 1
+	 } 
+	clergymen = {
+		culture = mestizo
+		religion =  catholic 
+		size = 99
+	 } 
+	clergymen = {
+		culture = mestizo
+		religion = catholic 
+		size = 2
+	 } 
+	artisans = {
+		culture = mestizo
+		religion =  catholic 
+		size = 99
+	 } 
+	artisans = {
+		culture = mestizo
+		religion = catholic 
+		size = 2
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  catholic 
+		size = 1486
+	 } 
+	farmers = {
+		culture = mestizo
+		religion = catholic 
+		size = 42
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  protestant 
+		size = 7558
+	 } 
+	farmers = {
+		culture = mestizo
+		religion = protestant 
+		size = 213
+	 } 
+}
+#Biloka (4000/1000 POPS)
+1979 = {
+	officers = {
+		culture = mestizo
+		religion =  protestant 
+		size = 44
+	 } 
+	officers = {
+		culture = mestizo
+		religion = protestant 
+		size = 1
+	 } 
+	soldiers = {
+		culture = mestizo
+		religion =  protestant 
+		size = 180
+	 } 
+	soldiers = {
+		culture = mestizo
+		religion = protestant 
+		size = 5
+	 } 
+	aristocrats = {
+		culture = mestizo
+		religion =  protestant 
+		size = 602
+	 } 
+	aristocrats = {
+		culture = mestizo
+		religion = protestant 
+		size = 17
+	 } 
+	bureaucrats = {
+		culture = mestizo
+		religion =  protestant 
+		size = 14
+	 } 
+	capitalists = {
+		culture = mestizo
+		religion =  protestant 
+		size = 74
+	 } 
+	capitalists = {
+		culture = mestizo
+		religion = protestant 
+		size = 2
+	 } 
+	clergymen = {
+		culture = mestizo
+		religion =  protestant 
+		size = 150
+	 } 
+	clergymen = {
+		culture = mestizo
+		religion = protestant 
+		size = 4
+	 } 
+	artisans = {
+		culture = mestizo
+		religion =  protestant 
+		size = 150
+	 } 
+	artisans = {
+		culture = mestizo
+		religion = protestant 
+		size = 4
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  protestant 
+		size = 9181
+	 } 
+	farmers = {
+		culture = mestizo
+		religion = protestant 
+		size = 259
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  animist
+		size = 4495
+	 } 
+	farmers = {
+		culture = mestizo
+		religion = protestant 
+		size = 127
+	 } 
+
+}

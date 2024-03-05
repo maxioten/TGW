@@ -1,0 +1,34 @@
+leader = {
+	name = "Leon Trotsky"
+	date = 1914.1.1
+	type = land
+	personality = intuitive
+	background = gifted_administrator
+        picture = "trotsky"
+        prestige = 1
+}
+
+leader = {
+	name = "Joseph Stalin"
+	date = 1914.1.1
+	type = land
+	personality = harsh
+	background = hated
+        picture = "stalin"
+        prestige = 0.5
+}
+
+
+leader = {
+	name = "Mikhail Tukhachevsky"
+	date = 1914.1.1
+	type = land
+	personality = implacable
+	background = bootlicker
+        picture = "tukhachevsky"
+        prestige = 0.5
+}
+
+
+
+

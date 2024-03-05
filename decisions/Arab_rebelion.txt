@@ -1,0 +1,44 @@
+political_decisions = {
+		caidaotoman2o = {
+                                picture = ibn_saud
+				potential = {
+				year = 1914
+				AND = {
+						OR = {
+						tag = RUS
+						tag = FRA
+						tag = ENG
+						tag = USA
+						tag = ITA
+						}
+				NOT = { has_global_flag = arabecaco }
+				}
+		}
+			allow = {
+			war_with = TUR
+                        controls = 917
+						controls = 902
+						controls = 913
+		}
+			
+			effect = {
+			prestige = 10
+			set_global_flag = arabecaco 
+			TUR = {
+			war_exhaustion = 15
+			add_country_modifier = {
+				name = arab_sabotages
+				duration = 625
+			}
+			any_pop = {
+				limit = {
+					OR = {
+					culture = mashriqi
+					culture = bedouin
+				}
+				consciousness = 6
+				militancy = 5
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+owner = SPA
+controller = SPA
+trade_goods = fish
+life_rating = 30
+colonial = 2
+1914.1.1 = {
+	owner = GER
+	controller = GER
+	naval_base = 1
+}

@@ -1,0 +1,11 @@
+add_core = ETH
+add_core = GEL
+add_core = MAJ
+trade_goods = cattle
+life_rating = 15
+1914.1.1 = {
+	owner = FRA
+	controller = FRA
+	remove_core = ETH
+	colonial = 2
+}

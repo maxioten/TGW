@@ -1,0 +1,9 @@
+trade_goods = wool
+life_rating = 15
+1914.1.1 = {
+	owner = ARG
+	controller = ARG
+	add_core = ARG
+	railroad = 2
+	colonial = 2
+}

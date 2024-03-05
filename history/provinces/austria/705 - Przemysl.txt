@@ -1,0 +1,30 @@
+owner = AUS
+controller = AUS
+add_core = POL
+add_core = PLC
+add_core = GLM
+trade_goods = coal
+life_rating = 35
+1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+	controller = KUK
+	owner = KUK
+	
+	railroad = 4
+	fort = 4
+	state_building = {
+		level = 3
+		building = fuel_refinery
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = steel_factory
+		upgrade = yes
+	}
+}

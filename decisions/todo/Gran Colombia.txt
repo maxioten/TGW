@@ -1,0 +1,34 @@
+political_decisions = {
+	gran_colombia_by_sword = {
+		picture = unite_gran_colombia
+		potential = {
+			OR = {
+				tag = CLM
+				tag = ECU
+				tag = VNZ
+			}
+			NOT = {
+				exists = GCO
+				has_country_flag = we_shall_unite_by_sword
+			}
+		}
+		
+		allow = {
+			nationalism_n_imperialism = 1
+			is_greater_power = yes
+			war_policy = jingoism
+			war = no
+		}
+		
+		effect = {
+			set_country_flag = we_shall_unite_by_sword
+			CLM = { all_core = { add_core = THIS } }
+			ECU = { all_core = { add_core = THIS } }
+			VNZ = { all_core = { add_core = THIS } }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

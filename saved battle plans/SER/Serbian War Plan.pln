@@ -1,0 +1,51 @@
+title="Serbian War Plan"
+country="SER"
+arrows_count=0
+icons_count=10
+positions=
+{
+-7758 35118 -2772 37532 3501 37807 9510 37327 -10444 32154 -9095 25969 -9089 19356 -3487 31514 6585 31962 -3750 23163 }
+matrix_transforms=
+{
+3123732 1485872 3124549 1483612 3124549 1483612 3124549 1483612 3124549 1483612 3124549 1483612 3124549 1483612 3124549 1483612 3124549 1483612 3124549 1483612 }
+type=
+{
+"mi_2" "mi_2" "mi_2" "mi_2" "mi_2" "mi_2" "mi_2" "mi_5" "mi_5" "mi_5" }
+color=
+{
+1 1 1 1 1 1 1 1 1 1 }
+rotation=
+{
+0 0 0 0 0 0 0 0 0 0 }
+texts_count=1
+positions=
+{
+769 26251 }
+matrix_transforms=
+{
+3128271 1481926 }
+text="Divisions 1 - 10"
+scale=
+{
+2000 }
+rotation=
+{
+750 }
+is_battle_plan_shared=no
+borders_count=1
+control_points=
+{
+-20308 25144 -19777 29802 -20152 34386 -21529 39031 -21433 43470 -19577 46440 -15671 47705 -11056 47382 -6147 46767 -1285 46349 3587 45985 }
+text=""
+matrix_transforms=
+{
+3129638 1477687 }
+ignore_smoothing=
+{
+-1 }
+type=
+{
+"bb_1" }
+color=
+{
+3 }

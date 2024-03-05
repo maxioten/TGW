@@ -1,0 +1,239 @@
+#HiIndonesiana Region (952000) #see Bhutan.txt and India.txt for balance of region
+#under the rule of Nepal in 1836  
+#Katmandu (540000/135000 POPS)   
+1326 = {
+	officers = {
+		culture = Indian
+		religion =  hindu 
+		size = 1296
+	 } 
+	officers = {
+		culture = Indian
+		religion = hindu 
+		size = 16
+	 } 
+	soldiers = {
+		culture = Indian
+		religion =  hindu 
+		size = 5186
+	 } 
+	soldiers = {
+		culture = Indian
+		religion = hindu 
+		size = 65
+	 } 
+	aristocrats = {
+		culture = Indian
+		religion =  hindu 
+		size = 48575
+	 } 
+	aristocrats = {
+		culture = Indian
+		religion = hindu 
+		size = 614
+	 } 
+	bureaucrats = {
+		culture = Indian
+		religion =  hindu 
+		size = 1213
+	 } 
+	bureaucrats = {
+		culture = Indian
+		religion = hindu 
+		size = 15
+	 } 
+	capitalists = {
+		culture = Indian
+		religion =  hindu 
+		size = 6071
+	 } 
+	capitalists = {
+		culture = Indian
+		religion = hindu 
+		size = 76
+	 } 
+	clergymen = {
+		culture = Indian
+		religion =  hindu 
+		size = 12143
+	 } 
+	clergymen = {
+		culture = Indian
+		religion = hindu 
+		size = 153
+	 } 
+	artisans = {
+		culture = Indian
+		religion =  hindu 
+		size = 13431
+	 } 
+	artisans = {
+		culture = Indian
+		religion = hindu 
+		size = 170
+	 } 
+	farmers = {
+		culture = Indian
+		religion =  hindu 
+		size = 453694
+	 } 
+	farmers = {
+		culture = Indian
+		religion = hindu 
+		size = 5742
+	 } 
+	farmers = {
+		culture = Indian
+		religion =  hindu 
+		size = 491822
+	 } 
+	farmers = {
+		culture = avadhi
+		religion = hindu 
+		size = 6225
+	 } 
+	farmers = {
+		culture = Indian
+		religion =  sunni 
+		size = 56568
+	 } 
+	farmers = {
+		culture = Indian
+		religion =  gelugpa
+		size = 60718
+	 } 
+	farmers = {
+		culture = Indian
+		religion = animist
+		size = 768
+	 } 
+	farmers = {
+		culture = tibetan
+		religion =  gelugpa
+		size = 41924
+	 } 
+	farmers = {
+		culture = tibetan
+		religion = gelugpa
+		size = 530
+	 } 
+}
+#Jumla (412000/103000 POPS)   
+1327 = {
+	officers = {
+		culture = Indian
+		religion =  hindu 
+		size = 1072
+	 } 
+	officers = {
+		culture = Indian
+		religion = hindu 
+		size = 13
+	 } 
+	soldiers = {
+		culture = Indian
+		religion =  hindu 
+		size = 4291
+	 } 
+	soldiers = {
+		culture = Indian
+		religion = hindu 
+		size = 54
+	 } 
+	aristocrats = {
+		culture = Indian
+		religion =  hindu 
+		size = 40191
+	 } 
+	aristocrats = {
+		culture = Indian
+		religion = hindu 
+		size = 508
+	 } 
+	bureaucrats = {
+		culture = Indian
+		religion =  hindu 
+		size = 1004
+	 } 
+	bureaucrats = {
+		culture = Indian
+		religion = hindu 
+		size = 12
+	 } 
+	capitalists = {
+		culture = Indian
+		religion =  hindu 
+		size = 5023
+	 } 
+	capitalists = {
+		culture = Indian
+		religion = hindu 
+		size = 63
+	 } 
+	clergymen = {
+		culture = Indian
+		religion =  hindu 
+		size = 10047
+	 } 
+	clergymen = {
+		culture = Indian
+		religion = hindu 
+		size = 127
+	 } 
+	artisans = {
+		culture = Indian
+		religion =  hindu 
+		size = 11113
+	 } 
+	artisans = {
+		culture = Indian
+		religion = hindu 
+		size = 140
+	 } 
+	farmers = {
+		culture = Indian
+		religion =  hindu 
+		size = 375388
+	 } 
+	farmers = {
+		culture = Indian
+		religion = hindu 
+		size = 4751
+	 } 
+	farmers = {
+		culture = Indian
+		religion =  hindu 
+		size = 406935
+	 } 
+	farmers = {
+		culture = avadhi
+		religion = hindu 
+		size = 5151
+	 } 
+	farmers = {
+		culture = Indian
+		religion =  sunni 
+		size = 46805
+	 } 
+	farmers = {
+		culture = Indian
+		religion =  gelugpa
+		size = 50239
+	 } 
+	farmers = {
+		culture = Indian
+		religion = animist
+		size = 635
+	 } 
+	farmers = {
+		culture = tibetan
+		religion =  gelugpa
+		size = 34686
+	 } 
+	farmers = {
+		culture = tibetan
+		religion = gelugpa
+		size = 439
+	 } 
+}
+

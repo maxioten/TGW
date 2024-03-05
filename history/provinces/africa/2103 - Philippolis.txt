@@ -1,0 +1,18 @@
+owner = BSH
+controller = BSH
+add_core = BSH
+trade_goods = iron
+life_rating = 35
+1861.1.1 = {
+	owner = ORA
+	controller = ORA
+	add_core = ORA
+	remove_core = BSH
+	colonial = 2
+}
+1914.1.1 = {
+	owner = SAF
+	controller = SAF
+	add_core = SAF
+	colonial = 0
+}

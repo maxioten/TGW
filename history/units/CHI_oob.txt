@@ -1,0 +1,944 @@
+army = {
+	name = "Army 1"
+	location = 1538
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry"
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+	    	
+		type = infantry
+        }
+}
+
+army = {
+	name = "Army 2"
+	location = 1612
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry"
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+         
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+         
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+         
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+         
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+         
+		type = infantry
+        }
+}
+
+army = {
+	name = "Army 3"
+	location = 1479
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+         
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+         
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry"
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+          
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+        }
+}
+
+army = {
+	name = "Army 1"
+	location = 1519
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry"
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+	    	
+		type = infantry
+        }
+}
+
+army = {
+	name = "Army 2"
+	location = 1493
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry"
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+         
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+         
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+         
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+         
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+         
+		type = infantry
+        }
+}
+
+army = {
+	name = "Army 3"
+	location = 1601
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+         
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+         
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry"
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+          
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+        }
+}
+
+army = {
+	name = "Army 1"
+	location = 1536
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry"
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+	    	
+		type = infantry
+        }
+}
+
+army = {
+	name = "Army 2"
+	location = 1617
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry"
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+         
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+         
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+         
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+         
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+         
+		type = infantry
+        }
+}
+
+army = {
+	name = "Army 3"
+	location = 1859
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+         
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+         
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry"
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+          
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+        
+		type = infantry
+        }
+}

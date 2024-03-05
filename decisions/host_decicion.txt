@@ -1,0 +1,260 @@
+political_decisions = {	
+	become_host_nation = {
+		picture = embrace_minority
+		potential = {
+			ai = no 
+			NOT = {
+				has_global_flag = host_nation
+			}
+		}
+		
+		allow = {
+	
+		}
+		
+		effect = {
+		    set_country_flag = host_nation
+			set_global_flag = host_nation
+		}
+	}
+	show_host_decisions = {
+	picture = host
+		potential = {
+			NOT = { has_country_flag = showing_host_decisions }
+			has_country_flag = host_nation
+		}
+	
+		allow = {
+			
+		}
+		
+		effect = {
+			set_country_flag = showing_host_decisions
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	enable_puppet_decicion = {
+		picture = embrace_minority
+		potential = {
+			ai = no 
+			has_country_flag = showing_host_decisions
+			NOT = {
+				has_global_flag = puppet_nation
+			}
+		}
+		
+		allow = {
+	
+		}
+		
+		effect = {
+			set_global_flag = puppet_nation
+		}
+	}
+		form_scandi_host = {
+		picture = embrace_minority
+		potential = {
+			ai = no 
+			NOT = {
+				exists = SCA
+			}
+			has_country_flag = showing_host_decisions
+		}
+		
+		allow = {
+	
+		}
+		
+		effect = {
+			SWE = {
+				change_tag = SCA
+				inherit = NOR
+				inherit = DEN
+			}
+		}
+	}
+	bulgaria_puppet = {
+		picture = embrace_minority
+		potential = {
+			ai = no 
+			tag = KUK
+			has_global_flag = puppet_nation
+			has_global_flag = host_nation
+			NOT = {
+				has_country_flag = puppet_bulgaria
+			}
+		}
+		
+		allow = {
+	    BUL = {
+				ai = yes
+			}
+		}
+		
+		effect = {
+		    create_vassal = BUL
+			create_alliance = BUL
+			diplomatic_influence = {
+				who = BUL
+				value = 200
+			} 
+			set_country_flag = puppet_bulgaria
+		}
+	}
+	belgica_puppet = {
+		picture = embrace_minority
+		potential = {
+			ai = no 
+			tag = ENG
+			has_global_flag = puppet_nation
+			has_global_flag = host_nation
+			NOT = {
+				has_country_flag = puppet_belgica
+			}
+		}
+		
+		allow = {
+	    BEL = {
+				ai = yes
+			}
+		}
+		
+		effect = {
+		    create_vassal = BEL
+			create_alliance = BEL
+			set_country_flag = puppet_belgica	
+		}
+	}
+	grecia_puppet = {
+		picture = embrace_minority
+		potential = {
+			ai = no 
+			tag = ENG
+			has_global_flag = puppet_nation
+			has_global_flag = host_nation
+			NOT = {
+				has_country_flag = puppet_grecia
+			}
+		}
+		
+		allow = {
+	    GRE = {
+				ai = yes
+			}
+		}
+		
+		effect = {
+		    create_vassal = GRE
+			create_alliance = GRE
+			set_country_flag = puppet_grecia
+		}
+	}
+	rumania_puppet = {
+		picture = embrace_minority
+		potential = {
+			ai = no 
+			tag = RUS
+			has_global_flag = puppet_nation
+			has_global_flag = host_nation
+			NOT = {
+				has_country_flag = puppet_rumania
+			}
+		}
+		
+		allow = {
+	    ROM = {
+				ai = yes
+			}
+		}
+		
+		effect = {
+		    create_vassal = ROM
+			create_alliance = ROM
+			set_country_flag = puppet_rumania
+		}
+	}
+	montenegro_puppet = {
+		picture = embrace_minority
+		potential = {
+			ai = no 
+			tag = MON
+			has_global_flag = puppet_nation
+			has_global_flag = host_nation
+			NOT = {
+				has_country_flag = puppet_montenegro
+			}
+		}
+		
+		allow = {
+	    MON = {
+				ai = yes
+			}
+		}
+		
+		effect = {
+		    create_vassal = MON
+			create_alliance = MON
+			set_country_flag = puppet_montenegro
+		}
+	}
+	ally_all_countries = {
+	picture = ally_yes
+		potential = {
+			has_country_flag = showing_host_decisions
+			has_country_flag = host_nation
+		}
+	
+		allow = {
+			
+		}
+		
+		effect = {
+			any_country = {
+				create_alliance = THIS
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	unally_all_countries = {
+	picture = ally_no
+		potential = {
+			has_country_flag = showing_host_decisions
+			has_country_flag = host_nation
+		}
+	
+		allow = {
+			
+		}
+		
+		effect = {
+			any_country = {
+				leave_alliance = THIS
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	hide_host_decisions = {
+	picture = host
+		potential = {
+			has_country_flag = showing_host_decisions
+			has_country_flag = host_nation
+		}
+	
+		allow = {
+			
+		}
+		
+		effect = {
+			clr_country_flag = showing_host_decisions
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	}

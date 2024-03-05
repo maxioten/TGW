@@ -1,0 +1,989 @@
+#################################################################
+#																#
+#                  Establishment of Natal						#
+#																#
+#################################################################
+
+country_event = {
+	id = 19500
+	title = "EVTNAME19500" # Invasion of the Laagers
+	desc = "EVTDESC19500"
+	picture = "pioneer_wagons"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ZUL
+		owns = 2111
+		owns = 2112
+		year = 1837
+		NOT = { exists = NAL }
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	immediate = {
+		any_pop = {
+			limit = { has_pop_culture = boer }
+			literacy = 0.25
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA19500"
+		prestige = 5
+		badboy = 5
+		any_pop = {
+			limit = { has_pop_culture = zulu }
+			reduce_pop = 0.95
+		}
+		random_list = {
+			90 = {
+				any_pop = {
+					limit = { has_pop_culture = boer }
+					reduce_pop = 0.8
+				}
+				2111 = {
+					secede_province = NAL
+					add_core = NAL
+					remove_core = ZUL
+					colonial = 2
+				}
+				2112 = {
+					secede_province = NAL
+					add_core = NAL
+					remove_core = ZUL
+					colonial = 2
+				}
+				2111 = {
+					state_scope = { is_slave = yes }
+				}
+				NAL = {
+					any_pop = {
+						limit = { is_culture_group = southern_african }
+						pop_type = slaves
+					}
+					country_event = 19505
+				}
+			}
+			10 = {
+				any_pop = {
+					limit = { has_pop_culture = boer }
+					reduce_pop = 0.05
+				}
+			}
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB19500"
+		2111 = {
+			secede_province = NAL
+			add_core = NAL
+			remove_core = ZUL
+			colonial = 2
+		}
+		2112 = {
+			secede_province = NAL
+			add_core = NAL
+			remove_core = ZUL
+			colonial = 2
+		}
+		ENG = {
+			any_pop = {
+				limit = {
+					has_pop_culture = boer
+					OR = {
+						location = { province_id = 2097 }
+						location = { province_id = 2096 }
+					}
+				}
+				money = 250
+				move_pop = 2111
+			}
+		}
+		any_pop = {
+			limit = { has_pop_culture = zulu }
+			militancy = 4
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = 19505
+	title = "EVTNAME19505" # The Battle of Blood River
+	desc = "EVTDESC19505"
+	news = yes
+	news_desc_long = "EVTDESC19505"
+	news_desc_medium = "EVTDESC19505_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC19505_NEWS_SHORT"
+	picture = "blood_river"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		any_country = {
+			any_pop = {
+				limit = {
+					has_pop_culture = boer
+					OR = {
+						location = { province_id = 2097 }
+						location = { province_id = 2096 }
+					}
+				}
+				money = 250
+				move_pop = 2111
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA19505"
+		prestige = 5
+		relation = { who = ZUL value = -100 }
+	}
+}
+
+country_event = {
+	id = 19510
+	title = "EVTNAME19510" # British Rule of Natal
+	desc = "EVTDESC19510"
+	news = yes
+	news_desc_long = "EVTDESC19510_NEWS_LONG"
+	news_desc_medium = "EVTDESC19510_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC19510_NEWS_SHORT"
+	picture = "deliberation"
+	major = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ENL
+		}
+		war = no
+		year = 1842
+		exists = NAL
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "EVTOPTA19510"
+		prestige = 20
+		badboy = 5
+		NAL = { country_event = 19515 }
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB19510"
+		prestige = -20
+		badboy = -5
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = 19515
+	title = "EVTNAME19515" # The Annexation of Natalia
+	desc = "EVTDESC19515"
+	picture = "administration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA19515"
+		any_pop = {
+			limit = { has_pop_culture = boer }
+			militancy = -5
+			dominant_issue = {
+				factor = 0.2
+				value = jingoism
+			}
+		}
+		relation = { who = FROM value = -100 }
+		FROM = { country_event = 19520 }
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB19515"
+		FROM = {
+			inherit = THIS
+			any_owned = { 
+				limit = { is_core = NAL }
+				add_province_modifier = {
+					name = boer_exodus
+					duration = -1
+				}
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = 19520
+	title = "EVTNAME19520" # The Boers Have Refused!
+	desc = "EVTDESC19520"
+	picture = "deliberation"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA19520"
+		casus_belli = {
+			target = NAL
+			type = conquest
+		}
+		war = {
+			target = NAL
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			call_ally = no
+		}
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0.5
+				war = yes
+			}
+			modifier = {
+				factor = 0.5
+				war_exhaustion = 5
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB19520"
+		prestige = -25
+		badboy = -3
+		ai_chance = {
+			factor = 30
+		}
+	}
+}
+
+#################################################################
+#																#
+#      	      Establishment of Oranje & Transvaal				#
+#																#
+#################################################################
+
+country_event = {
+	id = 19525
+	title = "EVTNAME19525" # The Transvaal
+	desc = "EVTDESC19525"
+	picture = "pioneer_wagons"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MAT
+		NOT = { exists = TRN }
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	immediate = {
+		any_pop = {
+			limit = { has_pop_culture = boer }
+			literacy = 0.25
+		}
+	}
+
+	option = {
+		name = "EVTOPTA19525"
+		random_list = {
+			90 = {
+				TRN_2108 = {
+					secede_province = TRN
+					add_core = TRN
+					remove_core = MAT
+					remove_core = BSH
+					remove_core = GAZ
+					colonial = 2
+					is_slave = yes
+					any_pop = {
+						limit = {
+							has_pop_culture = nguni
+							location = {
+								OR = {
+									province_id = 2108
+									province_id = 2107
+								}
+							}
+						}
+						move_pop = 2071
+					}
+					any_pop = {
+						limit = { is_culture_group = southern_african }
+						pop_type = slaves
+					}
+				}
+				2109 = { remove_core = SUA }
+				2114 = { remove_core = TRN }
+			}
+			10 = {
+				any_pop = {
+					limit = { has_pop_culture = boer }
+					reduce_pop = 0.05
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 19530
+	title = "EVTNAME19530" # The Orange Free State
+	desc = "EVTDESC19530"
+	picture = "pioneer_wagons"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ENL
+		}
+		year = 1845
+		exists = BSH
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	immediate = {
+		any_pop = {
+			limit = { has_pop_culture = boer }
+			literacy = 0.25
+		}
+	}
+
+	option = {
+		name = "EVTOPTA19530"
+		BSH = {
+			2101 = {
+				secede_province = ORA
+				add_core = ORA
+				remove_core = BSH
+				colonial = 2
+			}
+			2102 = {
+				secede_province = ORA
+				add_core = ORA
+				remove_core = BSH
+				colonial = 2
+			}
+			2103 = {
+				secede_province = ORA
+				add_core = ORA
+				remove_core = BSH
+				colonial = 2
+			}
+		}
+		2101 = {
+			state_scope = { is_slave = yes }
+		}
+		ORA = {
+			any_pop = {
+				limit = { is_culture_group = southern_african }
+				pop_type = slaves
+			}
+		}
+		create_vassal = ORA
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = "EVTOPTA19530"
+		any_pop = {
+			limit = { has_pop_culture = boer }
+			consciousness = 3
+			militancy = 6
+		}
+		relation = {
+			who = BSH
+			value = 100
+		}
+		diplomatic_influence = {
+			who = BSH
+			value = 200
+		}
+	}
+}
+
+country_event = {
+	id = 19535
+	title = "EVTNAME19535" # Orange River Sovereignty
+	desc = "EVTDESC19535"
+	picture = "pioneer_wagons"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ENL
+		}
+		ORA = { vassal_of = ENG }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA19535"
+		random_list = {
+			75 = {
+				release_vassal = ORA
+			}
+			25 = {
+				# No effect
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 19540
+	title = "EVTNAME19540" # The Boer Exodus 1/3
+	desc = "EVTDESC19540"
+
+	trigger = {
+		continent = africa
+		any_pop = { has_pop_culture = boer }
+		OR = {
+			ORA = { exists = yes }
+			TRN = { exists = yes }
+		}
+		NOT = { has_province_modifier = boer_exodus }
+		NOT = {
+			owner = { primary_culture = boer }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = "EVTOPTA19540"
+		add_province_modifier = {
+			name = boer_exodus
+			duration = -1
+		}
+	}
+}
+
+province_event = {
+	id = 19545
+	title = "EVTNAME19545" # The Boer Exodus 2/3
+	desc = "EVTDESC19545"
+
+	trigger = {
+		exists = TRN
+		has_province_modifier = boer_exodus
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	immediate = {
+		remove_province_modifier = boer_exodus
+	}
+
+	option = {
+		name = "EVTOPTA19545"
+		any_pop = {
+			limit = { has_pop_culture = boer }
+			move_pop = 2105
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+
+	option = {
+		name = "EVTOPTB19545"
+		
+		owner = { treasury = -5000 }
+		any_pop = {
+			limit = { has_pop_culture = boer }
+			random = {
+				chance = 50
+				money = 250
+				move_pop = 2105
+			}
+		}
+		any_pop = {
+			limit = { has_pop_culture = boer }
+			consciousness = -3
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				owner = { civilized = no }
+			}
+			modifier = {
+				factor = 0
+				owner = {
+					NOT = { money = 40000 }
+				}
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 19546
+	title = "EVTNAME19545" # The Boer Exodus 3/3
+	desc = "EVTDESC19545"
+
+	trigger = {
+		exists = ORA
+		has_province_modifier = boer_exodus
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	immediate = {
+		remove_province_modifier = boer_exodus
+	}
+
+	option = {
+		name = "EVTOPTA19545"
+		any_pop = {
+			limit = { has_pop_culture = boer }
+			move_pop = 2101
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+
+	option = {
+		name = "EVTOPTB19545"
+		
+		owner = { treasury = -5000 }
+		any_pop = {
+			limit = { has_pop_culture = boer }
+			random = {
+				chance = 50
+				money = 250
+				move_pop = 2101
+			}
+		}
+		any_pop = {
+			limit = { has_pop_culture = boer }
+			consciousness = -3
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				owner = { civilized = no }
+			}
+			modifier = {
+				factor = 0
+				owner = {
+					NOT = { money = 40000 }
+				}
+			}
+		}
+	}
+}
+
+#################################################################
+#																#
+#      	      			Boer War Events							#
+#																#
+#################################################################
+
+country_event = {
+	id = 19550
+	title = "EVTNAME19550" # F.W. Reitz is elected
+	desc = "EVTDESC19550"
+	picture = "FWReitz"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ORA
+		election = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+	}
+	
+	option = {
+		name = "EVTOPTA19550"
+		random_list = {
+			75 = {
+				alliance_with = TRN
+				relation = { who = TRN value = 200 }
+				ENG = {
+					release_vassal = THIS
+					country_event = 19555
+				}
+			}
+			25 = {
+				# No effect
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 19555
+	title = "EVTNAME19555" # F.W. Reitz is elected
+	desc = "EVTDESC19555"
+	picture = "FWReitz"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA19555"
+		relation = { who = ORA value = -100 }
+	}
+}
+
+country_event = {
+	id = 19560
+	title = "EVTNAME19560" # Witwatersrand Gold Rush
+	desc = "EVTDESC19560"
+	picture = "goldrush"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		primary_culture = boer
+		2106 = {
+			trade_goods = precious_metal
+			owned_by = THIS
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA19560"
+		add_country_modifier = {
+			name = witwatersrand_gold_rush
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = 19565
+	title = "EVTNAME19501" # Witwatersrand Gold Rush Response
+	desc = "EVTDESC19501"
+	picture = "goldrush"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ENL
+		}
+		TRN = { has_country_modifier = witwatersrand_gold_rush }
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	option = {
+		name = "EVTOPTA19501"
+		relation = {
+			who = TRN
+			value = -200
+		}
+		diplomatic_influence = {
+			who = TRN
+			value = -400
+		}
+		relation = {
+			who = ORA
+			value = -200
+		}
+		diplomatic_influence = {
+			who = ORA
+			value = -400
+		}
+		casus_belli = {
+			target = TRN
+			type = conquest
+			months = 12
+		}
+		add_casus_belli = {
+			target = TRN
+			type = acquire_state
+			months = 12
+		}
+		add_casus_belli = {
+			target = TRN
+			type = place_in_the_sun
+			months = 12
+		}
+	}
+}
+
+#################################################################
+#																#
+#      	      			Xulu & Xhosa Wars						#
+#																#
+#################################################################
+
+country_event = {
+	id = 19570
+	title = "EVTNAME19570" # Border Dispute with the Zulu
+ 	desc = "EVTDESC19570"
+ 	picture = "zulu"
+
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ENL
+		}
+		year = 1878
+		NOT = { exists = SAF }
+		ZUL = {
+			neighbour = THIS
+			NOT = {
+				number_of_states = 2
+				war_with = THIS
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
+		modifier = {
+			factor = 0.8
+			nationalism_n_imperialism = 1
+		}
+		modifier = {
+			factor = 0.5
+			year = 1880
+		}
+		modifier = {
+			factor = 0.25
+			year = 1882
+		}
+	}
+
+	option = {
+		name = "EVTOPTA19570"
+		leave_alliance = ZUL
+		diplomatic_influence = {
+			who = ZUL
+			value = -200
+		}
+		casus_belli = {
+			target = ZUL
+			type = establish_protectorate_casus_belli
+			months = 12
+		}
+	}
+}
+
+country_event = {
+	id = 19575
+	title = "EVTNAME19575" # Conflict with the Xhosa
+	desc = "EVTDESC19575"
+	picture = "zulu"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ENL
+		}
+		neighbour = XHO
+		NOT = {
+			war_with = XHO
+			has_country_flag = claimed_xhosa
+			check_variable = {
+				which = xhosa_conflict
+				value = 3
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
+		modifier = {
+			factor = 0.8
+			nationalism_n_imperialism = 1
+		}
+		modifier = {
+			factor = 0.5
+			year = 1860
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA19575"
+		change_variable = {
+			which = xhosa_conflict
+			value = 1
+		}
+		leave_alliance = XHO
+		diplomatic_influence = { who = XHO value = -200 }
+		relation = { who = XHO value = -100 }
+		casus_belli = {
+			target = XHO
+			type = add_to_sphere
+			months = 60
+		}
+	}
+}
+
+country_event = {
+	id = 19580
+	title = "EVTNAME19580" # The Final Straw
+	desc = "EVTDESC19580"
+	picture = "zulu"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ENL
+		}
+		neighbour = XHO
+		OR = {
+			check_variable = {
+				which = xhosa_conflict
+				value = 3
+			}
+			has_global_flag = berlin_conference
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
+		modifier = {
+			factor = 0.8
+			nationalism_n_imperialism = 1
+		}
+		modifier = {
+			factor = 0.5
+			year = 1870
+		}
+		modifier = {
+			factor = 0.1
+			year = 1880
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA19580"
+		leave_alliance = XHO
+		diplomatic_influence = { who = XHO value = -200 }
+		casus_belli = {
+			target = XHO
+			type = establish_protectorate_casus_belli
+			months = 24
+		}
+	}
+}
+
+country_event = {
+	id = 19585
+	title = "EVTNAME19585" # Walvis Bay
+	desc = "EVTDESC19585"
+	picture = "pioneer_wagons"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_greater_power = yes
+		owns = 2088
+		owns = 2087
+		2083 = { empty = yes }
+		year = 1878
+		nationalism_n_imperialism  = 1
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "EVTOPTA19585"
+		prestige = 5
+		treasury = -10000
+		2083 = {
+			add_core = SAF
+			secede_province = THIS
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB19585"
+		prestige = -5
+	}
+}

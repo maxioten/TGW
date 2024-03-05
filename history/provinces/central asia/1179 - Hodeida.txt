@@ -1,0 +1,14 @@
+owner = TUR
+controller = TUR
+add_core = YEM
+add_core = ASR
+trade_goods = grain
+life_rating = 35
+colonial = 1
+
+1914.1.1 = {
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+	colonial = 0
+}

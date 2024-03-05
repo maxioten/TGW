@@ -1,0 +1,26 @@
+political_decisions = {
+	greater_abyssinian_empire = {
+		potential = {
+			tag = ETH
+		}
+		
+		allow = {
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			all_core = { owned_by = THIS }
+		}
+		
+		effect = {
+			GEL = {
+				all_core = { add_core = THIS }
+			}
+			2031 = { add_core = THIS }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

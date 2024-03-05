@@ -1,0 +1,42 @@
+# Dissolution of United Provinces of Central America
+country_event = {
+	id = 49000
+	title = "EVTNAME49000"
+	desc = "EVTDESC49000"
+	picture = ""
+
+	trigger = {
+		tag = UCA
+		OR = {
+			AND = {
+				COS = { exists = yes }
+				ELS = { exists = yes }
+				HON = { exists = yes }
+				NIC = { exists = yes }
+			}
+			NOT = {
+				any_owned_province = { is_core = COS }
+				any_owned_province = { is_core = ELS }
+				any_owned_province = { is_core = HON }
+				any_owned_province = { is_core = NIC }
+			}
+		}
+		NOT = {
+			COS = { vassal_of = THIS }
+			ELS = { vassal_of = THIS }
+			HON = { vassal_of = THIS }
+			NIC = { vassal_of = THIS }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA49000"
+		prestige = -10
+		all_core = { remove_core = UCA }
+		change_tag = GUA
+	}
+}

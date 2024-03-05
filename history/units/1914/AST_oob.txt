@@ -1,0 +1,162 @@
+NET= {	
+value = -200
+	truce_until="1950.1.1"
+}
+
+army = {
+	name = "Army 1"
+	location = 2468
+	regiment = {
+		name= "Hussars" 
+        home = 2468
+		type = hussar
+	}
+	regiment = {
+		name= "Hussars" 
+        home = 2468
+		type = hussar
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 2468
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 2468
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 2468
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 2468
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 2468
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 2468
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 2468
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 2468
+		type = infantry
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 2468
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 2468
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery"
+        home = 2468
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 2468
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 2468
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 2468
+		type = artillery
+	}
+	regiment = {
+		name= "Artillery" 
+        home = 2468
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+        home = 2468
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+        home = 2468
+		type = artillery
+        }
+	regiment = {
+		name= "Artillery" 
+	    home = 2468	
+		type = artillery
+        }
+
+}
+
+navy = {
+	name = "Australian Navy"
+	location = 2468
+	ship = {
+		name= "Navy"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Navy"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Navy"
+		type = commerce_raider
+	}	ship = {
+		name= "1. Transport"
+		type = steam_transport}	ship = {
+		name= "2. Transport"
+		type = steam_transport}	ship = {
+		name= "3. Transport"
+		type = steam_transport}	ship = {
+		name= "4. Transport"
+		type = steam_transport}	ship = {
+		name= "5. Transport"
+		type = steam_transport}	ship = {
+		name= "6. Transport"
+		type = steam_transport}	ship = {
+		name= "7. Transport"
+		type = steam_transport}	ship = {
+		name= "8. Transport"
+		type = steam_transport}	ship = {
+		name= "9. Transport"
+		type = steam_transport}	ship = {
+		name= "10. Transport"
+		type = steam_transport}	ship = {
+		name= "11. Transport"
+		type = steam_transport}ship = {
+		name= "12. Transport"
+		type = steam_transport}	ship = {
+		name= "12. Transport"
+		type = steam_transport}	ship = {
+		name= "13. Transport"
+		type = steam_transport}	ship = {
+		name= "14. Transport"
+		type = steam_transport}	ship = {
+		name= "15. Transport"
+		type = steam_transport}	ship = {
+		name= "16. Transport"
+		type = steam_transport}}

@@ -1,0 +1,95 @@
+# Triggered modifiers are here.
+# these are checked for each countries once/month and then applied.
+#
+# Effects are fully scriptable here.
+
+grand_navy = {
+	trigger = {
+		civilized = yes
+		total_amount_of_ships = 100
+	}
+	
+	prestige = 0.01
+	
+	icon = 9
+}
+
+grand_army = {
+	trigger = {
+		civilized = yes
+		total_amount_of_divisions = 100
+	}
+	
+	prestige = 0.01
+	
+	icon = 9
+}
+
+large_nation = {
+	trigger = {
+		civilized = yes
+		num_of_cities = 50
+		NOT = {
+			num_of_cities = 100
+		}
+	}
+	
+	prestige = 0.01
+	
+	icon = 9
+}
+
+sprawling_empire = {
+	trigger = {
+		civilized = yes
+		num_of_cities = 100
+	}
+	
+	prestige = 0.02
+	
+	icon = 9
+}
+
+undisciplined_mob = {
+	trigger = {
+		NOT = { officers = 0.0005 }
+		civilized = yes
+	}
+	
+	land_organisation = -0.25
+	naval_organisation = -0.25
+	
+	icon = 18
+}
+
+poorly_drilled = {
+	trigger = {
+		NOT = { officers = 0.001 }
+		civilized = yes
+	}
+	
+	land_organisation = -0.1
+	naval_organisation = -0.1
+	
+	icon = 18
+}
+
+well_drilled = {
+	trigger = {
+		officers = 0.0015
+		civilized = yes
+	}
+	
+	land_organisation = 0.1
+	naval_organisation = 0.1
+	
+	icon = 17
+}
+
+vassal_nation = {
+	trigger = { is_vassal = yes }
+	
+	prestige = -1.0
+	
+	icon = 10
+}

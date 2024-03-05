@@ -1,0 +1,44 @@
+owner = MAT
+controller = MAT
+add_core = BSH
+trade_goods = wool
+life_rating = 35
+1861.1.1 = {
+	owner = TRN
+	controller = TRN
+	add_core = TRN
+	remove_core = BSH
+	colonial = 2
+}
+1914.1.1 = {
+	owner = SAF
+	controller = SAF
+	add_core = SAF
+	colonial = 0
+
+        state_building = {
+		level = 5
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = liquor_distillery
+		upgrade = yes
+	}  
+}

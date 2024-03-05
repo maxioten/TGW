@@ -1,0 +1,66 @@
+owner = SWI
+controller = SWI
+add_core = SWI
+trade_goods = fruit
+life_rating = 35
+fort = 1
+
+state_building = {
+	level = 1
+	building = steel_factory
+	upgrade = yes
+}
+
+1861.1.1 = { 
+	railroad = 1
+
+	state_building = {
+		level = 1
+		building = fabric_factory
+		upgrade = yes
+ 	}
+}
+1914.1.1 = {
+	railroad = 3
+	fort = 4
+	
+	state_building = {
+	level = 2
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 3
+	building = cement_factory
+	upgrade = yes
+}
+state_building = {
+	level = 5
+	building = canned_food_factory
+	upgrade = yes
+}
+state_building = {
+	level = 5
+	building = ammunition_factory
+	upgrade = yes
+}
+state_building = {
+	level = 3
+	building = machine_parts_factory
+	upgrade = yes
+}
+state_building = {
+	level = 6
+	building = small_arms_factory
+	upgrade = yes
+}
+state_building = {
+	level = 6
+	building = artillery_factory
+	upgrade = yes
+}
+state_building = {
+	level = 6
+	building = liquor_distillery
+	upgrade = yes
+}		

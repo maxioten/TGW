@@ -1,0 +1,33 @@
+navy = {
+	name = "Divisão Naval em Operações de Guerra"
+	location = 2447
+	ship = {
+		name= "Bahia"
+		type = crusier
+	}
+
+	ship = {
+		name= "Rio Grande do Sul"
+		type = crusier
+	}
+
+	ship = {
+		name= "CT Piauhy"
+		type = destroyer
+	}
+
+	ship = {
+		name= "CT Rio Grande do Norte"
+		type = destroyer
+	}
+
+	ship = {
+		name= "CT Parahyba"
+		type = destroyer
+	}
+
+	ship = {
+		name= "CT Santa Catarina"
+		type = destroyer
+	}
+}

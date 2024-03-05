@@ -1,0 +1,22 @@
+political_decisions = {
+	the_meiji_restoration = {
+		potential = {
+			civilized = no
+			tag = JAP
+			not = { has_country_modifier = meiji_restoration_boost }
+		}
+		allow = {
+			war = no
+			part_of_sphere = yes
+		}
+		effect = {
+			religion = shinto
+			years_of_research = 5
+			prestige = 10
+			add_country_modifier = {
+				name = meiji_restoration_boost
+				duration = -1
+			}
+		}
+	}
+}

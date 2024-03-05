@@ -1,0 +1,26 @@
+#Balance Germany
+country_event = {
+	id = 194719471
+	title = "German General Staff"
+	desc = "The German General staff, spawned from the prestigious Prussian Staff has created one of the most powerful and organised military forces in the world, the world will bow to our military might."
+	picture = "germanorg"
+
+	trigger = {
+		tag = GER
+		is_vassal = no
+		NOT = {
+			has_country_modifier = german_general_staff
+		}
+	}
+
+	option = {
+		name = "Fur Den Kaiser!"
+		GER = { add_country_modifier = { name = german_general_staff duration = -1 } }
+		small_arms = 2000
+		artillery = 2000
+		canned_food = 2000
+		liquor = 2000
+		wine = 2000
+
+	}
+}

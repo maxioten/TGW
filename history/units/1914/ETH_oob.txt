@@ -1,0 +1,314 @@
+army = {
+	name = "Army 1"
+	location = 1852
+	regiment = {
+		name= "infantry" 
+        home = 1852
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        home = 1852
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 1852
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 1852
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 1852
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 1852
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 1852
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 1852
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 1852
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 1852
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        home = 1852
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        home = 1852
+		type = infantry
+	}
+	regiment = {
+		name= "infantry"
+        home = 1852
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        home = 1852
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        home = 1852
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        home = 1852
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        home = 1852
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+        home = 1852
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+        home = 1852
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+	    home = 1852	
+		type = infantry
+        }
+}
+
+army = {
+	name = "Army 2"
+	location = 1863
+	regiment = {
+		name= "infantry" 
+        home = 1863
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        home = 1863
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 1863
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 1863
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 1863
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 1863
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 1863
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 1863
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 1863
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 1863
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        home = 1863
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        home = 1863
+		type = infantry
+	}
+	regiment = {
+		name= "infantry"
+        home = 1863
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        home = 1863
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        home = 1863
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+         home = 1863
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+         home = 1863
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+         home = 1863
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+         home = 1863
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+         home = 1863
+		type = infantry
+        }
+}
+
+army = {
+	name = "Army 3"
+	location = 1859
+	regiment = {
+		name= "infantry" 
+        home = 1859
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        home = 1859
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 1859
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+         home = 1859
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 1859
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 1859
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+         home = 1859
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 1859
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 1859
+		type = infantry
+	}
+	regiment = {
+		name= "Infantry" 
+        home = 1859
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        home = 1859
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        home = 1859
+		type = infantry
+	}
+	regiment = {
+		name= "infantry"
+        home = 1859
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        home = 1859
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+          home = 1859
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        home = 1859
+		type = infantry
+	}
+	regiment = {
+		name= "infantry" 
+        home = 1859
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+        home = 1859
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+        home = 1859
+		type = infantry
+        }
+	regiment = {
+		name= "infantry" 
+        home = 1859
+		type = infantry
+        }
+}

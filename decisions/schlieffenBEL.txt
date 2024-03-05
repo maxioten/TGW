@@ -1,0 +1,52 @@
+political_decisions = {
+        schlieffenplanbel = {
+                picture = schlieffenbel
+		potential = {
+			tag = GER
+			exists = BEL
+			BEL = {
+				owns = 387
+				owns = 388
+			}
+			NOT = {
+				has_country_flag = schlieffenplanbel
+			}
+		}
+		
+		allow = {
+			ideological_thought = 1
+                        war_with = FRA
+		}
+		
+		effect = {
+			any_country = {
+				limit = {
+					OR = {
+						primary_culture = dutch
+						primary_culture = flemish
+					}
+				}
+				relation = {
+					who = THIS
+					value = 0
+				}
+			}
+			casus_belli = {
+				target = BEL
+				type = humiliate
+				months = 3
+			}
+			prestige = 1
+			badboy = 1
+			set_country_flag = schlieffenplanbel
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					badboy = 0.5
+				}
+			}
+		}
+	}

@@ -1,0 +1,35 @@
+
+#Ultimatum
+country_event = {
+	id = 22
+	news = yes
+	news_desc_long = "EVTDESC1_NEWS_LONG"
+	news_desc_medium = "EVTDESC1_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC1_NEWS_SHORT"
+	title = "Serbian Ultimatum"
+	desc= "Upon hearing the Serbs refusing our demands, we must act accordingly."
+	picture = "ultimatum"
+	
+	fire_only_once = yes
+	major = no
+	
+	trigger = {
+		tag = KUK
+		year = 1914
+		month = 7
+	}
+	
+	option = { 
+name = "War it is then!" 
+casus_belli ={
+target = SER
+
+type = make_puppet
+
+months = 12
+
+}
+ai_chance = { 
+factor = 95 
+} 
+} 

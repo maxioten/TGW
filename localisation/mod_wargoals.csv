@@ -1,0 +1,27 @@
+######################################################################;;;;;;;;;;;;;;x;;;;
+# War names & desc;;;;;;;;;;;;;;x;;;;
+######################################################################;;;;;;;;;;;;;;x;;;;
+NORMAL_WAR_UNIFICATION_NAME_PRU_AUS;$ORDER$Austro-Prussian War;;;;;;;;;;;;x;
+NORMAL_UNIFICATION_HUMILIATE_NAME_PRU_AUS;$ORDER$Austro-Prussian War;;;;;;;;;;;;x;
+NORMAL_WAR_REMOVE_CORE_NAME;$ORDER$$FIRST$ War against $SECOND$ $STATE$ Claims;;;;;;;;;;;;;x;
+AGRESSION_WAR_REMOVE_CORE_NAME;$ORDER$$FIRST$-$SECOND$ War over $STATE$;;;;;;;;;;;;;x;
+remove_cores_cb;Remove cores;;;;;;;;;;;;;x;
+remove_cores_cb_desc;Force a country to §Yrenounce claims§W to one of our states;;;;;;;;;;;;;x;
+remove_cores_cb_short;$RECIPIENT$ renounces claims;;;;;;;;;;;;;x;
+remove_cores_cb_setup;Force $RECIPIENT$ to renounce claims to $STATE$;;;;;;;;;;;;;x;
+great_war_liberate_union;Liberate union;;;;;;;;;;;;;x;
+great_war_liberate_union_desc;Liberate an §Yentire cultural union§W from its oppressors;;;;;;;;;;;;;x;
+great_war_liberate_union_short;$THIRD$ acquires $STATE$;$THIRD$ prend $STATE$;$THIRD$ erwirbt $STATE$;;$THIRD$ adquiere $STATE$;;;;;;;;;x;;;;
+great_war_liberate_union_setup;Hand $STATE$ back to $THIRD$ from $RECIPIENT$;Prendre $STATE$ à $RECIPIENT$ pour le rendre à $THIRD$;Geben Sie $STATE$ an $THIRD$ von $RECIPIENT$ zurück;;Arrebatar el estado de $STATE$ de manos de $RECIPIENT$ y devolvérselo a $THIRD$;;;;;;;;;x;;;;
+place_in_the_sun_berlin_conference;Place in the sun;Une place au soleil;Ein Platz an der Sonne;;Un lugar bajo el sol;;;;;;;;;x;;;;
+place_in_the_sun_berlin_conference_desc;Aquire an enemy §Ycolonial state§W;Prendre un §YÉtat colonial§W ennemi;Erobern Sie einen feindlichen §YKolonialstaat§W.;;Adquirir un §Yestado colonial§W enemigo;;;;;;;;;x
+place_in_the_sun_berlin_conference_short;Acquire $STATE$; Prendre l'État de $STATE$;Kolonie $STATE$ erobern;;Adquirir $STATE$;;;;;;;;;x;;;;
+place_in_the_sun_berlin_conference_setup;Acquire colony $STATE$ from $RECIPIENT$;Prendre colonie $STATE$ à $RECIPIENT$;Kolonie $STATE$ von $RECIPIENT$ erobern.;;Adquirir la colonia de $STATE$ de manos de $RECIPIENT$;;;;;;;;;x;;;;
+free_peoples_berlin_conference;Free people;Libérer la population;Freies Volk;;Liberar pueblo;;;;;;;;;x;;;;
+free_peoples_berlin_conference_desc;Liberate a §Ycountry§W from its oppressors;Libérer un §Ypays§W de ses oppresseurs;Befreien Sie ein §YLand§W von seinen Unterdrückern.;;Liberar a un §Ypaís§W de sus opresores;;;;;;;;;x
+free_peoples_berlin_conference_short;$THIRD$ acquires $STATE$;$THIRD$ prend $STATE$;$THIRD$ erwirbt $STATE$;;$THIRD$ adquiere $STATE$;;;;;;;;;x;;;;
+free_peoples_berlin_conference_setup;Hand $STATE$ back to $THIRD$ from $RECIPIENT$;Prendre $STATE$ à $RECIPIENT$ pour le rendre à $THIRD$;Geben Sie $STATE$ an $THIRD$ von $RECIPIENT$ zurück;;Arrebatar el estado de $STATE$ de manos de $RECIPIENT$ y devolvérselo a $THIRD$;;;;;;;;;x;;;;
+liberate_country_berlin_conference;Liberate Country;;Befreit das Land;;;;;;;;x;;;;
+liberate_country_berlin_conference_desc;Liberate an §Yentire country§W from its oppressors;;Befreit ein §Yganzes Land§W von seinen Unterdrückern;;;;;;;;x;;;;
+liberate_country_berlin_conference_short;$THIRD$ acquires $STATE$;$THIRD$ prend $STATE$;$THIRD$ erwirbt $STATE$;;$THIRD$ adquiere $STATE$;;;;;;;;;x;
+liberate_country_berlin_conference_setup;Return $STATE$ to $THIRD$ from $RECIPIENT$;Prendre $STATE$ à $RECIPIENT$ pour le rendre à $THIRD$;Gebt $STATE$ an $THIRD$ von $RECIPIENT$ zurück;;Arrebatar el estado de $STATE$ de manos de $RECIPIENT$ y devolvérselo a $THIRD$;;;;;;;;;x;

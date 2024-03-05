@@ -1,0 +1,12 @@
+owner = HAR
+controller = HAR
+add_core = ETH
+add_core = HAR
+add_core = GEL
+add_core = MAJ
+trade_goods = grain
+life_rating = 30
+1914.1.1 = {
+	owner = ETH
+	controller = ETH
+}

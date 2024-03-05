@@ -1,0 +1,9 @@
+oob = "REB_oob.txt"
+
+1861.1.1 = {
+	oob = "/1861/REB_oob.txt"
+}
+
+1853.1.1 = { decision = protector_of_eastern_christendom_modifier }
+1886.1.1 = { decision = statue_of_liberty_modifier }
+1905.1.1 = { decision = enable_great_wars }

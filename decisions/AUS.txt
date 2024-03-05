@@ -1,0 +1,251 @@
+political_decisions = {
+	enact_dual_monarchy = {
+		potential = {
+			tag = AUS
+			OR = {
+				government = absolute_monarchy
+				government = hms_government
+				government = prussian_constitutionalism
+			}
+			any_owned_province = {
+				is_core = HUN
+			}
+			NOT = {
+				has_country_flag = dual_monarchy_done
+			}
+		}
+	
+		allow = {
+			war = no
+			exists = ITA
+			exists = GER
+			NOT = {
+				OR = {
+					exists = HUN
+					exists = KUK
+				}
+			}
+			nationalism_n_imperialism = 1
+			has_country_flag = had_liberal_revolution
+		}
+	
+		effect = {
+			all_core = {
+				add_core = KUK
+			}
+			HUN = {
+				all_core = { add_core = KUK }
+			}
+			any_pop = {
+				limit = {
+					culture = hungarian
+				}
+				militancy = -2
+			}
+			any_pop = {
+				limit = {
+					is_culture_group = germanic
+				}
+				militancy = 1
+			}
+			any_pop = {
+				limit = {
+					NOT = {
+						OR = {
+							culture = hungarian
+							culture = south_german
+						}
+					}
+				}
+				militancy = 2
+			}
+						
+			add_accepted_culture = hungarian
+			change_tag = KUK
+			set_country_flag = dual_monarchy_done
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	the_grunderzeit = {
+		potential = {
+			is_culture_group = germanic
+			owns = 619
+			NOT = {
+				has_global_flag = grunderzeit_we_have_done
+			}
+		}
+		allow = {
+			iron_railroad = 1
+			cheap_iron = 1
+		}
+		effect = {
+			619 = {
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.2
+					}
+				}
+				life_rating = 5
+			}
+			prestige = 25
+			set_global_flag = grunderzeit_we_have_done
+		}
+	}
+
+	enact_danube_federation = {
+		picture = propose_danube_federation
+		potential = {
+			tag = KUK
+			OR = {
+				government = democracy
+				government = proletarian_dictatorship
+				AND = {
+					government = hms_government
+					OR = {
+						ruling_party_ideology = liberal
+						ruling_party_ideology = socialist
+					}
+				}
+			}
+			NOT = { has_global_flag = danube_federation_done }
+		}
+		
+		allow = {
+			war = no
+			social_science = 1
+			revolution_n_counterrevolution = 1
+		}
+		
+		effect = {
+			set_global_flag = danube_federation_done
+			prestige = 25
+			
+			# Czecho-Slovak
+			add_accepted_culture = slovak
+			add_accepted_culture = czech
+			# Pan-Romanian
+			add_accepted_culture = romanian
+			# Polish culture group
+			add_accepted_culture = polish
+			# South Slavic
+			add_accepted_culture = bulgarian
+			add_accepted_culture = albanian
+			add_accepted_culture = slovene
+			add_accepted_culture = bosniak
+			add_accepted_culture = croat
+			add_accepted_culture = serb
+			
+			all_core = { remove_core = KUK }
+			all_core = {
+				limit = {
+					NOT = {
+						region = AUS_612
+						region = AUS_613
+						region = AUS_619
+						region = AUS_623
+						region = AUS_641
+						region = AUS_734
+					}
+				}
+				
+				remove_core = AUS
+				remove_core = HUN
+			}
+			any_country = {
+				limit = {
+					# Danube river flows through these culture groups in southern Europe
+					OR = {
+						is_primary_culture = south_german
+						is_culture_group = south_slavic
+						is_culture_group = pan_romanian
+						is_culture_group = polish_culture_group
+						is_culture_group = hungarian_culture_group
+						is_culture_group = czecho_slovak_culture_group
+					}
+					# Add core for countries we own entirely
+					NOT = {
+						any_core = {
+							NOT = { owned_by = THIS }
+						}
+					}
+				}
+				all_core = { add_core = DNB }
+			}
+			change_tag = DNB
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bosnian_annexation = {
+		picture = treaty_signing
+		potential = {
+			OR = {
+				tag = AUS
+				tag = KUK
+			}
+			BOS = { vassal_of = THIS }
+		}
+		
+		allow = {
+			war = no
+			mass_politics = 1
+		}
+		
+		effect = {
+			prestige = 10
+			badboy = 5
+			inherit = BOS
+			any_country = {
+				limit = {
+					OR = {
+						tag = RUS
+						is_culture_group = south_slavic
+					}
+				}
+				relation = { who = THIS value = -100 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	unite_with_germany = {
+		picture = form_germany
+		potential = {
+			ai = yes
+			tag = AUS
+			exists = GER
+			NOT = { has_country_flag = unified_with_germany }
+		}
+		
+		allow = {
+			war = no
+			year = 1936
+			# All owned provinces are cores of this
+			NOT = {
+				any_owned_province = {
+					NOT = { is_core = THIS }
+				}
+			}
+		}
+		
+		effect = {
+			set_country_flag = unified_with_germany
+			all_core = { add_core = GER }
+			GER = { inherit = THIS }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

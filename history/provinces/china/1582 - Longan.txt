@@ -1,0 +1,12 @@
+owner = SZC
+controller = SZC
+add_core = CHI
+add_core = SZC
+trade_goods = coal
+life_rating = 32
+
+
+1914.1.1 = {
+	owner = CHI
+	controller = CHI
+}

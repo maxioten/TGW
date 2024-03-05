@@ -1,0 +1,18 @@
+political_decisions = {
+german_belgium = {
+        picture = schlieffenbel
+		potential = {
+			tag = GER
+			NOT = { has_country_flag = negritopro }
+			}
+			allow = {
+			has_country_flag = schlieffenplanbel
+			controls = 395
+			}
+		effect = {
+		set_country_flag = negritopro 
+                prestige = 10
+				BEL = { country_event = 1947194866 }
+		}		
+	}
+}

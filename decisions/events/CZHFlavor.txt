@@ -1,0 +1,63 @@
+# Dissolution of Czechoslovakia 1/2
+country_event = {
+	id = 49050
+	title = "EVTNAME49050"
+	desc = "EVTDESC49050"
+	picture = ""
+
+	trigger = {
+		tag = CZH
+		OR = {
+			SLV = { exists = yes }
+			NOT = {
+				any_owned_province = { is_core = SLV }
+			}
+		}
+		NOT = {
+			SLV = { vassal_of = THIS }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA49050"
+		prestige = -10
+		all_core = { remove_core = CZH }
+		change_tag = BOH
+	}
+}
+
+# Dissolution of Czechoslovakia 2/2
+country_event = {
+	id = 49051
+	title = "EVTNAME49051"
+	desc = "EVTDESC49051"
+	picture = ""
+
+	trigger = {
+		tag = CZH
+		OR = {
+			BOH = { exists = yes }
+			NOT = {
+				any_owned_province = { is_core = BOH }
+			}
+		}
+		NOT = {
+			BOH = { vassal_of = THIS }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA49051"
+		prestige = -10
+		all_core = { remove_core = CZH }
+		change_tag = SLV
+	}
+}

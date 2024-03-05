@@ -1,0 +1,23 @@
+#Bulgaria mobo
+country_event = {
+	id = 15
+	title = "The Multi-Ethnic Army"
+	desc = "To truly authenticate the Great War your country has been given historical mobolisation."
+	picture = "kuk"
+
+	trigger = {
+		tag = KUK
+                year = 1914
+                month = 6
+		is_vassal = no
+		NOT = {
+			has_country_modifier = kuk_mobo
+		}
+	}
+
+	option = {
+		name = "Gott Mitt Uns!"
+		KUK = { add_country_modifier = { name = kuk_mobo duration = -1 } }
+
+	}
+}

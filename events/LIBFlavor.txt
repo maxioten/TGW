@@ -1,0 +1,29 @@
+# Liberian irredentism
+country_event = {
+	id = 49100
+	title = "EVTNAME49100"
+	desc = "EVTDESC49100"
+	picture = ""
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = LIB
+		has_global_flag = berlin_conference
+		1889 = { empty = yes }
+		1890 = { empty = yes }
+		1891 = { empty = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "EVTOPTA49100"
+		ENG_1887 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+	}
+}

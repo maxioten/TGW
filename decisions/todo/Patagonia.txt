@@ -1,0 +1,128 @@
+political_decisions = {
+	argentina_chile_border_treaty = {
+		picture = treaty_signing
+		potential = {
+			OR = {
+				tag = ARG
+				tag = LPL
+			}
+			any_owned_province = {
+				OR = {
+					region = CHL_2332
+					region = ARG_2391
+					region = ARG_2398
+				}
+			}
+			CHL = {
+				any_owned_province = {
+					OR = {
+						region = CHL_2332
+						region = ARG_2391
+						region = ARG_2398
+					}
+				}
+			}
+			2332 = { empty = no }
+			2333 = { empty = no }
+			2334 = { empty = no }
+			2335 = { empty = no }
+			2391 = { empty = no }
+			2392 = { empty = no }
+			2394 = { empty = no }
+			2396 = { empty = no }
+			2397 = { empty = no }
+			2398 = { empty = no }
+			2399 = { empty = no }
+			2400 = { empty = no }
+			NOT = { has_country_flag = argentina_chile_border_treaty }
+		}
+		
+		allow = {
+			war = no
+			CHL = {
+				war = no
+				NOT = { truce_with = THIS }
+			}
+		}
+		
+		effect = {
+			set_country_flag = argentina_chile_border_treaty
+			ARG_2391 = { add_core = THIS }
+			ARG_2398 = { add_core = THIS }
+			CHL = { country_event = 97090 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	entre_rios_independent = {
+		potential = {
+			tag = ENT
+			exists = yes
+			has_global_flag = entre_rios_rebellion
+			NOT = { has_country_flag = called_for_recruits }
+		}
+		
+		allow = {
+			war_with = ARG
+		}
+		
+		effect = {
+			set_country_flag = called_for_recruits
+			money = 50000
+			define_general = {
+				name = "Justo José de Urquiza"
+				personality = intelligent
+				background = school_of_the_bayonet
+			}
+			all_core = {
+				limit = { controlled_by = THIS }
+
+				any_pop = {
+					limit = { pop_type = soldiers }
+					
+					reduce_pop = 1.20
+				}
+			}
+			ARG = {
+				any_pop = {
+					scaled_militancy = {
+						ideology = liberal
+						factor = 6
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	valparaiso_harbor = {
+		potential = {
+			NOT = { is_canal_enabled = 3 }
+			NOT = { has_country_flag = valpariasoharbor_built }
+			tag = CHL
+			owns = 2325
+		}
+		
+		allow = {
+			battleship_column_doctrine = 1
+		}
+		
+		effect = {
+			2325 = {
+				life_rating = 10
+				add_province_modifier = {
+					name = gateway_to_harbor
+					duration = -1
+				}
+			}
+			prestige = 5
+			set_country_flag = valpariasoharbor_built
+		}
+	}
+}

@@ -1,0 +1,83 @@
+# These are only present to fix some problems with the 1914 start without having to do some serious re-works of the game
+# All of these should ONLY fire for REB in country history. This helps to keep things centralized as well.
+political_decisions = {
+	enable_great_wars = {
+		potential = {
+			civilized = no
+			civilized = yes #impossible trigger so it does not show
+		}
+		
+		allow = {
+			tag = REB
+		}
+		
+		effect = {
+			great_wars_enabled = yes
+			set_global_flag = great_wars_enabled
+		}
+	}
+	statue_of_liberty_modifier = {
+		potential = {
+			civilized = no
+			civilized = yes #impossible trigger so it does not show
+		}
+		
+		allow = {
+			tag = REB
+		}
+		
+		effect = {
+			USA = {
+				add_country_modifier = {
+					name = the_statue_of_liberty
+					duration = -1
+				}
+			}
+		}
+	}
+	protector_of_eastern_christendom_modifier = {
+		potential = {
+			civilized = no
+			civilized = yes #impossible trigger so it does not show
+		}
+		
+		allow = {
+			tag = REB
+		}
+		
+		effect = {
+			RUS = {
+				add_country_modifier = {
+					name = protector_of_eastern_christendom
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	# From here on are decisions to assist the AI
+	AI_GW_call_ally = {
+		potential = {
+			ai = yes
+			war = yes
+			is_greater_power = yes
+			has_country_flag = in_great_war
+		}
+		
+		allow = {
+			NOT = { has_country_modifier = AI_GW_call_ally_modifier }
+		}
+		
+		effect = {
+			war = { call_ally = yes }	# Will send call ally request for them to join any existing wars
+			add_country_modifier = {
+				name = AI_GW_call_ally_modifier
+				duration = 365
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

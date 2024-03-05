@@ -1,0 +1,102 @@
+political_decisions = {
+	capitulation_italy_entente = {
+		potential = {
+			OR = {
+				tag = KUK
+				tag = GER
+				tag = TUR
+				tag = BUL
+			}
+			NOT = {
+				has_global_flag = perder_italia_entente
+			}
+		}
+	
+		allow = {
+		war_with = ITA
+                        NOT = { ITA = { controls = 729 } }
+			OR = {
+                        AND = {
+			NOT = { ITA = { controls = 726 } }
+                        NOT = { ITA = { controls = 749 } }
+			ITA = { war_exhaustion = 60 }
+			}
+				ITA = { war_exhaustion = 75 }
+			}
+			set_global_flag = russian_civil_war_has_happened
+		}
+	
+		effect = {
+			set_global_flag = perder_italia_entente
+			ITA	= {
+		    country_event = { id = 3 days = 2 }
+        }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	capitulation_italy_centrales = {
+		potential = {
+			OR = {
+				tag = FRA
+				tag = RUS
+				tag = ENG
+				tag = USA
+			}
+			NOT = {
+				has_global_flag = perder_italia_entente
+			}
+		}
+	
+		allow = {
+		war_with = ITA
+                        NOT = { ITA = { controls = 720 } }
+			OR = {
+                        AND = {
+			NOT = { ITA = { controls = 726 } }
+                        NOT = { ITA = { controls = 749 } }
+			ITA = { war_exhaustion = 60 }
+			}
+				ITA = { war_exhaustion = 75 }
+			}
+			set_global_flag = russian_civil_war_has_happened
+		}
+	
+		effect = {
+			set_global_flag = perder_italia_entente
+			ITA	= {
+		    country_event = { id = 3 days = 2 }
+        }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	reformacion_de_italia = {
+		potential = {
+			OR = {
+				tag = SIC
+				tag = SAR
+				tag = VEN
+				tag = PAP
+			}
+			NOT = {
+				exists = ITA
+			}
+			
+		}
+	
+		allow = {
+		war = no 
+		NOT={THIS = {vassal_of = KUK}}
+		}
+	
+		effect = {
+			change_tag = ITA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

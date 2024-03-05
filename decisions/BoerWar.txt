@@ -1,0 +1,260 @@
+political_decisions = {
+	boer_republic = {
+		potential = {
+			primary_culture = boer
+			NOT = { has_country_flag = republic_founded }
+		}
+		
+		allow = {
+			NOT = { has_country_modifier = trek_boers }
+		}
+		
+		effect = {
+			set_country_flag = republic_founded
+			political_reform = underground_parties
+			political_reform = party_appointed
+			political_reform = yes_meeting
+			political_reform = free_press
+			government = presidential_dictatorship
+			small_arms = 50
+			regular_clothes = 50
+			add_country_modifier = {
+				name = trek_boers
+				duration = 730
+			}
+			any_pop = {
+				limit = { has_pop_culture = boer }
+				militancy = -8
+				ideology = {
+					value = conservative
+					factor = 0.50
+				}
+				ideology = {
+					value = reactionary
+					factor = 0.30
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	form_south_african_republic = {
+		potential = {
+			tag = TRN
+			NOT = { exists = SAF }
+			NOT = { has_global_flag = south_africa_formed }
+		}
+		
+		allow = {
+			war = no
+			NAL = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							primary_culture = boer
+							OR = {
+								is_vassal = no
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+			ORA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							primary_culture = boer
+							OR = {
+								is_vassal = no
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			set_global_flag = south_africa_formed
+			prestige = 20
+			change_tag = SAF
+			
+			ENG_2087 = { add_core = SAF }
+			ENG_2092 = { add_core = SAF }
+			ENG_2094 = { add_core = SAF }
+			ENG_2096 = { add_core = SAF }
+			ORA_2103 = { add_core = SAF }
+			TRN_2108 = { add_core = SAF }
+			ZUL_2113 = { add_core = SAF }
+			
+			any_pop = {
+				limit = { is_primary_culture = yes }
+				militancy = -4
+			}
+
+			any_country = {
+				limit = {
+					OR = {
+						tag = ORA
+						tag = NAL
+					}
+					exists = yes
+				}
+				country_event = 11101
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	create_south_africa_republic = {
+		potential = {
+			is_greater_power = yes
+			OR = {
+				is_culture_group = germanic
+				is_culture_group = dutch_cultures
+			}
+			NOT = { exists = SAF }
+			NOT = { has_global_flag = south_africa_formed }
+		}
+		
+		allow = {
+			war = no
+			TRN = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							OR = {
+								in_sphere = THIS
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+			NAL = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							OR = {
+								in_sphere = THIS
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+			ORA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							OR = {
+								in_sphere = THIS
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			set_global_flag = south_africa_formed
+			add_accepted_culture = boer
+			prestige = 20
+			
+			ENG_2087 = { add_core = SAF }
+			ENG_2092 = { add_core = SAF }
+			ENG_2094 = { add_core = SAF }
+			ENG_2096 = { add_core = SAF }
+			ORA_2103 = { add_core = SAF }
+			TRN_2108 = { add_core = SAF }
+			ZUL_2113 = { add_core = SAF }
+
+			any_country = {
+				limit = { primary_culture = boer }
+				annex_to = THIS
+			}
+			release_vassal = SAF
+			SAF = { primary_culture = boer }
+			diplomatic_influence = {
+				who = SAF
+				value = 300
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	create_union_of_south_africa = {
+		potential = {
+			NOT = { exists = SAF }
+			NOT = {
+				has_global_flag = south_africa_formed
+				OR = {
+					is_culture_group = germanic
+					primary_culture = dutch
+				}
+			}
+		}
+		
+		allow = {
+			war = no
+			NAL = {
+				all_core = { owned_by = THIS }
+			}
+			TRN = {
+				all_core = { owned_by = THIS }
+			}
+			ORA = {
+				all_core = { owned_by = THIS }
+			}
+		}
+		
+		effect = {
+			set_global_flag = south_africa_formed
+			consciousness = -1
+			militancy = -2
+			prestige = 20
+			
+			ENG_2087 = { add_core = SAF }
+			ENG_2092 = { add_core = SAF }
+			ENG_2094 = { add_core = SAF }
+			ENG_2096 = { add_core = SAF }
+			ORA_2103 = { add_core = SAF }
+			TRN_2108 = { add_core = SAF }
+			ZUL_2113 = { add_core = SAF }
+			
+			release_vassal = SAF
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { primary_culture = english }
+					}
+				}
+				SAF = { primary_culture = THIS }
+			}
+			diplomatic_influence = {
+				who = SAF
+				value = 300
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

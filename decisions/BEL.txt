@@ -1,0 +1,131 @@
+political_decisions = {
+	rename_the_congo = {
+		potential = {
+			tag = BEL
+			OR = {
+				CNG = { vassal_of = THIS }
+				AND = {
+					owns = 1987
+					owns = 1982
+					owns = 1996
+				}
+			}
+			NOT = {
+				has_global_flag = congo_renamed
+			}
+		}
+		
+		allow = {
+			invention = mission_to_civilize
+		}
+		
+		effect = {
+			1987 = {
+				change_province_name = "Elisabethville"
+			}		
+			1982 = {
+				change_province_name = "Leopoldville"
+			}
+			1996 = {
+				change_province_name = "Stanleyville"
+			}
+			prestige = 10
+			set_global_flag = congo_renamed
+		}
+	}
+
+	force_publique = {
+		potential = {
+			OR = {
+				CNG = { vassal_of = THIS }
+				any_owned_province = {
+					OR = {
+						region = BEL_1977
+						region = BEL_1984
+						region = BEL_1987
+						region = BEL_1990
+						region = BEL_1992
+					}
+				}
+			}
+			NOT = { has_global_flag = force_publique_formed }
+		}
+		
+		allow = {
+			military_logistics = 1
+		}
+		
+		effect = {
+			set_global_flag = force_publique_formed
+			any_owned = {
+				limit = {
+					OR = {
+						region = BEL_1977
+						region = BEL_1984
+						region = BEL_1987
+						region = BEL_1990
+						region = BEL_1992
+					}
+				}
+				add_province_modifier = {
+					name = force_publique
+					duration = -1
+				}
+			}
+		}
+	}
+
+	become_belgium = {
+		potential = {
+			OR = {
+				tag = FLA
+				tag = WLL
+			}
+		}
+		
+		allow = {
+			war = no
+			BEL = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							OR = {
+								AND = {
+									is_vassal = no
+									in_sphere = THIS
+								}
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			change_tag = BEL
+			add_accepted_culture = flemish
+			add_accepted_culture = wallonian
+			capital = 392
+			any_country = {
+				limit = {
+					OR = {
+						primary_culture = flemish
+						primary_culture = wallonian
+					}
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				annex_to = THIS
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

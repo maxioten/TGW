@@ -1,0 +1,17 @@
+add_core = RUS
+add_core = TKG
+trade_goods = fish
+life_rating = 20
+naval_base = 5
+1861.1.1 = {
+	owner = RUS
+	controller = RUS
+	life_rating = 25
+	colonial = 2
+}
+1914.1.1 = {
+	add_core = JAP
+	remove_core = TKG
+	life_rating = 35
+	colonial = 0
+}

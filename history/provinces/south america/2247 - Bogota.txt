@@ -1,0 +1,33 @@
+owner = CLM
+controller = CLM
+add_core = CLM
+add_core = GCO
+trade_goods = cattle
+life_rating = 30
+1914.1.1 = { railroad = 2 }
+
+	state_building = {
+		level = 5
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = liquor_distillery
+		upgrade = yes
+	}  

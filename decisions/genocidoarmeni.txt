@@ -1,0 +1,58 @@
+political_decisions = {
+	purify_the_nation = {
+		potential = {
+			tag = TUR
+			NOT = {
+				has_global_flag = armenianmassacre
+			}
+		}
+		allow = {
+			ruling_party = TUR_liberal
+			war_exhaustion = 15
+			war = yes
+			money = 50000
+			AND	= {
+				pop_majority_culture = turkish
+				primary_culture = turkish				
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = blamethearmenians
+				duration = 1400
+			}
+			treasury = -50000
+			badboy = 5
+			set_global_flag = armenianmassacre
+			any_pop = {
+				limit = {
+					OR = {
+						is_culture_group = armenian
+						is_culture_group = assyrian
+					}
+				}
+				consciousness = 9
+				militancy = 9
+			}
+			any_pop = {
+				limit = {
+					OR = {
+						is_culture_group = armenian
+						is_culture_group = assyrian
+					}
+				}
+				random_list = {
+					20 = { reduce_pop = 0.4 }
+					20 = { reduce_pop = 0.35 }
+					20 = { reduce_pop = 0.3 }
+					20 = { reduce_pop = 0.25 }
+					20 = { reduce_pop = 0.2 }
+				}
+			}
+		}
+		
+		ai_will_do = { factor = 1 }
+		
+	}
+}	

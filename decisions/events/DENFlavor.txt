@@ -1,0 +1,81 @@
+# The November Constitution 1/2
+country_event = {
+	id = 36200
+	title = "EVTNAME36200"
+	desc = "EVTDESC36200"
+	picture = "danishgovernment"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = DEN
+		year = 1862
+		SWH = { vassal_of = THIS }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA36200"
+		370 = { secede_province = THIS }
+		371 = { secede_province = THIS }
+		SWH = { release = HOL }
+		
+		any_greater_power = {
+			limit = { is_culture_group = germanic }
+			country_event = 36201
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB36200"
+		prestige = -10
+		release_vassal = SWH
+		any_pop = {
+			limit = { is_culture_group = scandinavian }
+			consciousness = 1
+			militancy = 2
+		}
+	}
+}
+
+# The November Constitution 2/2
+country_event = {
+	id = 36201
+	title = "EVTNAME36200"
+	desc = "EVTDESC36201"
+	picture = "danishgovernment"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA36201"
+		prestige = 5
+		leave_alliance = FROM
+		relation = { who = FROM value = -100 }
+		diplomatic_influence = { who = FROM value = -100 }
+		casus_belli = {
+			target = FROM
+			type = unification_casus_belli
+			months = 12
+		}
+		
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB36201"
+		prestige = -25
+		relation = { who = FROM value = 50 }
+		diplomatic_influence = { who = FROM value = 100 }
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

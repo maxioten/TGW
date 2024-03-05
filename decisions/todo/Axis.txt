@@ -1,0 +1,116 @@
+political_decisions = {
+	form_axis = {
+		potential = {
+			is_greater_power = yes
+			
+			government = fascist_dictatorship
+			
+			# Not in any faction
+			NOT = { has_country_modifier = axis_faction }
+			NOT = { has_country_modifier = allies_faction }
+			NOT = { has_country_modifier = comintern_faction }
+			
+			# axis have not formed yet
+			NOT = { has_global_flag = axis_enabled }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = axis_faction
+				
+				duration = -1
+			}
+			
+			nationalvalue = nv_order
+
+			set_country_flag = axis_leader
+			clr_global_flag = no_axis_leader
+			set_global_flag = axis_enabled
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	become_axis_leader = {
+		potential = {
+			is_greater_power = yes
+			
+			government = fascist_dictatorship
+			
+			has_country_modifier = axis_faction
+			NOT = { has_country_flag = axis_leader }
+			has_global_flag = axis_enabled
+			has_global_flag = no_axis_leader
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = axis_faction
+				
+				duration = -1
+			}
+
+			set_country_flag = axis_leader
+			clr_global_flag = no_axis_leader
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	join_axis = {
+		potential = {
+			OR = {
+				government = fascist_dictatorship
+				government = absolute_monarchy
+				
+				sphere_owner = { has_country_modifier = axis_faction }
+			}
+			
+			civilized = yes
+			
+			# Not in any faction
+			NOT = { has_country_modifier = axis_faction }
+			NOT = { has_country_modifier = allies_faction }
+			NOT = { has_country_modifier = comintern_faction }
+			
+			# axis exists
+			has_global_flag = axis_enabled
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = axis_faction
+				
+				duration = -1
+			}
+			
+			nationalvalue = nv_order
+			
+			any_country = {
+				limit = { has_country_modifier = axis_faction }
+				
+				relation = { who = THIS value = 400 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

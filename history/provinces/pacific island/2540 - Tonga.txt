@@ -1,0 +1,9 @@
+add_core = TGA
+trade_goods = fish
+life_rating = 15
+1914.1.1 = {
+	owner = NZL
+	controller = NZL
+	colonial = 2
+	naval_base = 1
+}
